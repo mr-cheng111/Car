@@ -2,6 +2,10 @@
 	"folders": [
 		{
 			"path": ".."
+		},
+		{
+			"name": "ESP32-S3-Test",
+			"path": "../../../../Documents/PlatformIO/Projects/ESP32-S3-Test"
 		}
 	],
 	"settings": {
