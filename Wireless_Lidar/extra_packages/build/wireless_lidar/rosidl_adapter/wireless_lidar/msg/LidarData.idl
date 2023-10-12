@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from wireless_lidar/src/LidarData.msg
+// generated code does not contain a copyright notice
+
+#include "wireless_lidar/msg/PointData.idl"
+
+module wireless_lidar {
+  module msg {
+    typedef wireless_lidar::msg::PointData wireless_lidar__msg__PointData;
+    typedef wireless_lidar__msg__PointData wireless_lidar__msg__PointData__16[16];
+    struct LidarData {
+      uint16 header;
+
+      uint8 pkg_length;
+
+      uint16 rate;
+
+      uint16 start_angle;
+
+      wireless_lidar__msg__PointData__16 data;
+
+      uint16 stop_angle;
+
+      uint8 sum_data;
+    };
+  };
+};

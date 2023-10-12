@@ -1,0 +1,116 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "wireless_lidar/msg/LidarData",
+      "fields": [
+        {
+          "name": "header",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "pkg_length",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "rate",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "start_angle",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "data",
+          "type": {
+            "type_id": 49,
+            "capacity": 16,
+            "string_capacity": 0,
+            "nested_type_name": "wireless_lidar/msg/PointData"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "stop_angle",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "sum_data",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "wireless_lidar/msg/PointData",
+        "fields": [
+          {
+            "name": "distance",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "strength",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "wireless_lidar/msg/LidarData",
+      "hash_string": "RIHS01_0440267252149c8e8bc99e4e5dadd9f2ce88595c1f066d8e777351972fd5657a"
+    },
+    {
+      "type_name": "wireless_lidar/msg/PointData",
+      "hash_string": "RIHS01_3ababa4dea9a4bea2a17a5105e8a92d8c7b02ed3f70ee715f2130914a9d6e428"
+    }
+  ]
+}

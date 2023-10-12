@@ -8,7 +8,8 @@
 #include <string>
 #include <Ticker.h>
 
-#include <sensor_msgs/msg/laser_scan.h>
+// #include "<sensor_msgs/msg/laser_scan.h>"
+#include "wireless_lidar/msg/lidar_data.h"
 #include <micro_ros_utilities/string_utilities.h>
 
 enum SYSTEM_FLAG
@@ -56,7 +57,7 @@ private:
 
     //声明话题发布者
     rcl_publisher_t publisher;           // 声明话题发布者
-    sensor_msgs__msg__LaserScan pub_msg; // 声明消息文件
+    wireless_lidar__msg__LidarData pub_msg; // 声明消息文件
 
     uint8_t Lidar_Rx_Buffer[58*4];
 
@@ -69,12 +70,6 @@ public:
     {
         
         digitalWrite(LED_Pin, HIGH);
-        this->pub_msg.header.frame_id = micro_ros_string_utilities_set(pub_msg.header.frame_id, "laser"); // 初始化消息内容
-        
-        //初始化雷达帧信息的递增角度、最远距离和最近距离。
-        this->pub_msg.angle_increment = 0.8 / 180 * PI;
-        this->pub_msg.range_min = 0.03;
-        this->pub_msg.range_max = 12.0;
         while(true)
         {
             if (!rmw_uros_epoch_synchronized()) // 判断时间是否同步
@@ -84,7 +79,7 @@ public:
             }
             this->System_Status_Flag.System_Time_Sync = true;
             rclc_executor_spin_some(&this->executor, RCL_MS_TO_NS(1));
-            delay(1);
+            vTaskDelay(1);
         }
     }
 
@@ -98,10 +93,12 @@ public:
                 {
                     this->System_Status_Flag.Sensor_Work_Flag = 1;
                     this->Lidar_Serial->read(this->Lidar_Rx_Buffer,58);
+                    
                 }
-                this->System_Status_Flag.Rcl_Pub_Flag = rcl_publish(&publisher, &pub_msg, NULL);
+                this->System_Status_Flag.Rcl_Pub_Flag = rcl_publish(&this->publisher, &this->pub_msg, NULL);
+                
             }
-            delay(1);
+            vTaskDelay(1);
         }
     }
     void System_Monitor_Task()
@@ -113,7 +110,7 @@ public:
                 this->System_Status_Flag.Wifi_Work_Flag = false;
             }
             // if();
-            delay(1);
+            vTaskDelay(1);
         }
     }
 

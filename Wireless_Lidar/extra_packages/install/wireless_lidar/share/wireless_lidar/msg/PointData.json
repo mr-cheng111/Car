@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "wireless_lidar/msg/PointData",
+      "fields": [
+        {
+          "name": "distance",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "strength",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "wireless_lidar/msg/PointData",
+      "hash_string": "RIHS01_3ababa4dea9a4bea2a17a5105e8a92d8c7b02ed3f70ee715f2130914a9d6e428"
+    }
+  ]
+}

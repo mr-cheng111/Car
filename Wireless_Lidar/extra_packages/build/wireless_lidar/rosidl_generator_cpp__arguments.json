@@ -1,0 +1,32 @@
+{
+  "package_name": "wireless_lidar",
+  "output_dir": "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_generator_cpp/wireless_lidar",
+  "template_dir": "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource",
+  "idl_tuples": [
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_adapter/wireless_lidar:msg/PointData.idl",
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_adapter/wireless_lidar:msg/LidarData.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../../../lib/python3.10/site-packages/rosidl_generator_cpp/__init__.py",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/action__builder.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/action__struct.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/action__traits.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/idl.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/idl__builder.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/idl__struct.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/idl__traits.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/msg__builder.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/msg__struct.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/msg__traits.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
+    "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_adapter/wireless_lidar/msg/PointData.idl",
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_adapter/wireless_lidar/msg/LidarData.idl"
+  ],
+  "type_description_tuples": [
+    "msg/PointData.idl:/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_generator_type_description/wireless_lidar/msg/PointData.json",
+    "msg/LidarData.idl:/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_generator_type_description/wireless_lidar/msg/LidarData.json"
+  ]
+}

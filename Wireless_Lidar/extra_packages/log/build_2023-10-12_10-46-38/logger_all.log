@@ -1,0 +1,102 @@
+[1.002s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.002s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f50fdc50460>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f50fdc51c00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f50fdc51c00>>)
+[1.048s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.048s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.048s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.048s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.048s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.048s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.048s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(wireless_lidar) by extensions ['ignore', 'ignore_ament_install']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(wireless_lidar) by extension 'ignore'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(wireless_lidar) by extension 'ignore_ament_install'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(wireless_lidar) by extensions ['colcon_pkg']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(wireless_lidar) by extension 'colcon_pkg'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(wireless_lidar) by extensions ['colcon_meta']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(wireless_lidar) by extension 'colcon_meta'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(wireless_lidar) by extensions ['ros']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(wireless_lidar) by extension 'ros'
+[1.076s] DEBUG:colcon.colcon_core.package_identification:Package 'wireless_lidar' with type 'ros.ament_cmake' and name 'wireless_lidar'
+[1.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.197s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/mr-cheng/Bag/fastdds/install
+[1.213s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 282 installed packages in /opt/ros/iron
+[1.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.304s] Level 5:colcon.colcon_core.verb:set package 'wireless_lidar' build argument 'cmake_args' from command line to 'None'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'wireless_lidar' build argument 'cmake_target' from command line to 'None'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'wireless_lidar' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'wireless_lidar' build argument 'cmake_clean_cache' from command line to 'False'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'wireless_lidar' build argument 'cmake_clean_first' from command line to 'False'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'wireless_lidar' build argument 'cmake_force_configure' from command line to 'False'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'wireless_lidar' build argument 'ament_cmake_args' from command line to 'None'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'wireless_lidar' build argument 'catkin_cmake_args' from command line to 'None'
+[1.305s] Level 5:colcon.colcon_core.verb:set package 'wireless_lidar' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.305s] DEBUG:colcon.colcon_core.verb:Building package 'wireless_lidar' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar', 'merge_install': False, 'path': '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/wireless_lidar', 'symlink_install': False, 'test_result_base': None}
+[1.320s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.336s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.336s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/wireless_lidar' with build type 'ament_cmake'
+[1.336s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/wireless_lidar'
+[1.353s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.353s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.353s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/wireless_lidar -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar
+[2.440s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/wireless_lidar -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar
+[2.448s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wireless_lidar)
+[2.469s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar' for CMake module files
+[2.469s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar' for CMake config files
+[2.470s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar/bin'
+[2.470s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar/lib/pkgconfig/wireless_lidar.pc'
+[2.470s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar/lib/python3.10/site-packages'
+[2.470s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar/bin'
+[2.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar/share/wireless_lidar/package.ps1'
+[2.487s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar/share/wireless_lidar/package.dsv'
+[2.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar/share/wireless_lidar/package.sh'
+[2.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar/share/wireless_lidar/package.bash'
+[2.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar/share/wireless_lidar/package.zsh'
+[2.490s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/wireless_lidar/share/colcon-core/packages/wireless_lidar)
+[2.500s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.500s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.500s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[2.500s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.520s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.520s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.520s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.530s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.546s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/local_setup.ps1'
+[2.547s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/_local_setup_util_ps1.py'
+[2.548s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/setup.ps1'
+[2.565s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/local_setup.sh'
+[2.565s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/_local_setup_util_sh.py'
+[2.565s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/setup.sh'
+[2.582s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/local_setup.bash'
+[2.582s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/setup.bash'
+[2.599s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/local_setup.zsh'
+[2.599s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/install/setup.zsh'

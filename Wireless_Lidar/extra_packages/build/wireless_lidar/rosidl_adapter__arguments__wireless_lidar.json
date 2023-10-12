@@ -1,0 +1,7 @@
+{
+  "package_name": "wireless_lidar",
+  "non_idl_tuples": [
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/wireless_lidar:src/PointData.msg",
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/wireless_lidar:src/LidarData.msg"
+  ]
+}

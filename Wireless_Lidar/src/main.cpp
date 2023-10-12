@@ -13,7 +13,7 @@ void setup()
   Wifi_input.Wifi_SSID = "Xiaomi_WIFI";
   Wifi_input.Pass_Word = "12345678910";
   Wifi_input.Host_Ip   = "192.168.31.197";
-  Wifi_input.Port      = 8888;
+  Wifi_input.Port      = 9999;
   lidar_t *L = new lidar_t(Wifi_input,1);
 }
 

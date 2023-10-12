@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from wireless_lidar/src/PointData.msg
+// generated code does not contain a copyright notice
+
+
+module wireless_lidar {
+  module msg {
+    struct PointData {
+      uint16 distance;
+
+      uint8 strength;
+    };
+  };
+};

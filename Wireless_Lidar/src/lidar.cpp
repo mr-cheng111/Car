@@ -84,7 +84,7 @@ void lidar_t::Ros_Init()
     rclc_publisher_init_default(
         &this->publisher,
         &this->pubnode,
-        ROSIDL_GET_MSG_TYPE_SUPPORT(sensor_msgs, msg, LaserScan),
+        ROSIDL_GET_MSG_TYPE_SUPPORT(wireless_lidar, msg, LidarData),
         "/Scan");
 
     // 创建执行器

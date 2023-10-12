@@ -1,0 +1,8 @@
+{
+  "package_name": "wireless_lidar",
+  "output_dir": "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_generator_type_description/wireless_lidar",
+  "idl_tuples": [
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_adapter/wireless_lidar:msg/PointData.idl",
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_adapter/wireless_lidar:msg/LidarData.idl"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "package_name": "wireless_lidar",
+  "output_dir": "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_typesupport_introspection_c/wireless_lidar",
+  "template_dir": "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource",
+  "idl_tuples": [
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_adapter/wireless_lidar:msg/PointData.idl",
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_adapter/wireless_lidar:msg/LidarData.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/iron/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
+    "/opt/ros/iron/lib/python3.10/site-packages/rosidl_typesupport_introspection_c/__init__.py",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/iron/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_adapter/wireless_lidar/msg/PointData.idl",
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar/rosidl_adapter/wireless_lidar/msg/LidarData.idl"
+  ]
+}
