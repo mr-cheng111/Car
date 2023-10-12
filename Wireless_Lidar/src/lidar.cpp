@@ -48,9 +48,9 @@ lidar_t::lidar_t(WIFI_Data_t Wifi_Input,int Serial_Num) : Wifi_Data(Wifi_Input)
                             "Lidar_Data_Task", 
                             20*1024, 
                             this, 
-                            1, 
+                            0, 
                             NULL, 
-                            0);
+                            1);
     /**
      * @brief 创建一个任务在Core 1 上
      * System_Monitor_Task    任务函数
@@ -90,6 +90,8 @@ void lidar_t::Ros_Init()
     // 创建执行器
     rclc_executor_init(&this->executor, &this->support.context, 1, &this->allocator);
 
+    memset((void*)&this->pub_msg,0,sizeof(this->pub_msg));
+    
     this->System_Status_Flag.ROS_Work_Flag = true;
 }
 
@@ -148,7 +150,7 @@ void lidar_t::Ros_Serial_Init(int Serial_Num)
     switch(Serial_Num)
     {
         // case 0:this->Lidar_Serial = &Serial;break;
-        case 1:this->Lidar_Serial = &Serial1;break;
+        case 1:this->Lidar_Serial = &Serial;break;
         case 2:this->Lidar_Serial = &Serial2;break;
         // default :this->Lidar_Serial = &Serial;break;
     }
@@ -165,6 +167,8 @@ void lidar_t::Ros_Serial_Init(int Serial_Num)
      */
     this->System_Serial = &Serial1;
     this->System_Serial->begin(115200);
+
+    memset((void *)&this->Lidar_Rx_Buffer,0,sizeof(this->Lidar_Rx_Buffer));
 
     this->System_Status_Flag.Serial_Work_Flag = true;
 }

@@ -8,7 +8,6 @@
 #include <string>
 #include <Ticker.h>
 
-// #include "<sensor_msgs/msg/laser_scan.h>"
 #include "wireless_lidar/msg/lidar_data.h"
 #include <micro_ros_utilities/string_utilities.h>
 
@@ -59,7 +58,7 @@ private:
     rcl_publisher_t publisher;           // 声明话题发布者
     wireless_lidar__msg__LidarData pub_msg; // 声明消息文件
 
-    uint8_t Lidar_Rx_Buffer[58*4];
+    uint8_t Lidar_Rx_Buffer[58*2];
 
     const WIFI_Data_t Wifi_Data;
 
@@ -74,8 +73,9 @@ public:
         {
             if (!rmw_uros_epoch_synchronized()) // 判断时间是否同步
             {
-            rmw_uros_sync_session(10); //  同步时间
-            continue;
+                this->System_Status_Flag.System_Time_Sync = false;
+                rmw_uros_sync_session(10); //  同步时间
+                continue;
             }
             this->System_Status_Flag.System_Time_Sync = true;
             rclc_executor_spin_some(&this->executor, RCL_MS_TO_NS(1));
@@ -87,17 +87,23 @@ public:
     {
         while(true)
         {
-            if(this->System_Status_Flag.Wifi_Work_Flag)
-            {
-                if(!(this->Lidar_Serial->available() % 58))
-                {
-                    this->System_Status_Flag.Sensor_Work_Flag = 1;
-                    this->Lidar_Serial->read(this->Lidar_Rx_Buffer,58);
-                    
-                }
-                this->System_Status_Flag.Rcl_Pub_Flag = rcl_publish(&this->publisher, &this->pub_msg, NULL);
+            // if(this->System_Status_Flag.Wifi_Work_Flag)
+            // {
+            //     if(this->Lidar_Serial->available() > 58)
+            //     {
+            //         this->System_Status_Flag.Sensor_Work_Flag = 1;
+            //         this->Lidar_Serial->read(this->Lidar_Rx_Buffer,58);
+            //             for (int i = 0; i < this->Lidar_Serial->available(); i++) 
+            //             {
+            //                 printf("%x ", this->Lidar_Rx_Buffer+i);
+            //             }
+            //         // this->Lidar_Serial->printf("%");
+            //     }
+            //     printf("%x ", this->Lidar_Rx_Buffer[0]<<8|this->Lidar_Rx_Buffer[1]);
+            //     this->pub_msg.header++;
+            //     this->System_Status_Flag.Rcl_Pub_Flag = rcl_publish(&this->publisher, &this->pub_msg, NULL);
                 
-            }
+            // }
             vTaskDelay(1);
         }
     }
