@@ -30,6 +30,7 @@ typedef struct wireless_lidar__msg__LidarData
   wireless_lidar__msg__PointData data[16];
   uint16_t stop_angle;
   uint8_t sum_data;
+  uint32_t time;
 } wireless_lidar__msg__LidarData;
 
 // Struct for a sequence of wireless_lidar__msg__LidarData.

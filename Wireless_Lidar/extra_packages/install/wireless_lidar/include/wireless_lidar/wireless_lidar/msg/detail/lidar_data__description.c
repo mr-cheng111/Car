@@ -11,10 +11,10 @@ wireless_lidar__msg__LidarData__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x04, 0x40, 0x26, 0x72, 0x52, 0x14, 0x9c, 0x8e,
-      0x8b, 0xc9, 0x9e, 0x4e, 0x5d, 0xad, 0xd9, 0xf2,
-      0xce, 0x88, 0x59, 0x5c, 0x1f, 0x06, 0x6d, 0x8e,
-      0x77, 0x73, 0x51, 0x97, 0x2f, 0xd5, 0x65, 0x7a,
+      0x34, 0x98, 0x84, 0xf6, 0xa9, 0x39, 0xb1, 0x82,
+      0x54, 0x0b, 0x06, 0x67, 0x70, 0x44, 0x4b, 0xe5,
+      0x8e, 0xfe, 0xcd, 0x2f, 0xba, 0x26, 0x61, 0xd8,
+      0x04, 0x75, 0xd5, 0x99, 0x17, 0xaf, 0x8c, 0xd0,
     }};
   return &hash;
 }
@@ -46,6 +46,7 @@ static char wireless_lidar__msg__LidarData__FIELD_NAME__start_angle[] = "start_a
 static char wireless_lidar__msg__LidarData__FIELD_NAME__data[] = "data";
 static char wireless_lidar__msg__LidarData__FIELD_NAME__stop_angle[] = "stop_angle";
 static char wireless_lidar__msg__LidarData__FIELD_NAME__sum_data[] = "sum_data";
+static char wireless_lidar__msg__LidarData__FIELD_NAME__time[] = "time";
 
 static rosidl_runtime_c__type_description__Field wireless_lidar__msg__LidarData__FIELDS[] = {
   {
@@ -118,6 +119,16 @@ static rosidl_runtime_c__type_description__Field wireless_lidar__msg__LidarData_
     },
     {NULL, 0, 0},
   },
+  {
+    {wireless_lidar__msg__LidarData__FIELD_NAME__time, 4, 4},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_UINT32,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
 };
 
 static rosidl_runtime_c__type_description__IndividualTypeDescription wireless_lidar__msg__LidarData__REFERENCED_TYPE_DESCRIPTIONS[] = {
@@ -136,7 +147,7 @@ wireless_lidar__msg__LidarData__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {wireless_lidar__msg__LidarData__TYPE_NAME, 28, 28},
-      {wireless_lidar__msg__LidarData__FIELDS, 7, 7},
+      {wireless_lidar__msg__LidarData__FIELDS, 8, 8},
     },
     {wireless_lidar__msg__LidarData__REFERENCED_TYPE_DESCRIPTIONS, 1, 1},
   };
@@ -156,6 +167,7 @@ static char toplevel_type_raw_source[] =
   "PointData[16] data\n"
   "uint16 stop_angle\n"
   "uint8 sum_data\n"
+  "uint32 time\n"
   "\n"
   "\n"
   "\n"
@@ -178,7 +190,7 @@ wireless_lidar__msg__LidarData__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {wireless_lidar__msg__LidarData__TYPE_NAME, 28, 28},
     {msg_encoding, 3, 3},
-    {toplevel_type_raw_source, 123, 123},
+    {toplevel_type_raw_source, 135, 135},
   };
   return &source;
 }

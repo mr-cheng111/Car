@@ -73,6 +73,7 @@ class LidarData(metaclass=Metaclass_LidarData):
         '_data',
         '_stop_angle',
         '_sum_data',
+        '_time',
         '_check_fields',
     ]
 
@@ -84,6 +85,7 @@ class LidarData(metaclass=Metaclass_LidarData):
         'data': 'wireless_lidar/PointData[16]',
         'stop_angle': 'uint16',
         'sum_data': 'uint8',
+        'time': 'uint32',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
@@ -96,6 +98,7 @@ class LidarData(metaclass=Metaclass_LidarData):
         rosidl_parser.definition.Array(rosidl_parser.definition.NamespacedType(['wireless_lidar', 'msg'], 'PointData'), 16),  # noqa: E501
         rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -118,6 +121,7 @@ class LidarData(metaclass=Metaclass_LidarData):
         )
         self.stop_angle = kwargs.get('stop_angle', int())
         self.sum_data = kwargs.get('sum_data', int())
+        self.time = kwargs.get('time', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -162,6 +166,8 @@ class LidarData(metaclass=Metaclass_LidarData):
         if self.stop_angle != other.stop_angle:
             return False
         if self.sum_data != other.sum_data:
+            return False
+        if self.time != other.time:
             return False
         return True
 
@@ -284,3 +290,18 @@ class LidarData(metaclass=Metaclass_LidarData):
             assert value >= 0 and value < 256, \
                 "The 'sum_data' field must be an unsigned integer in [0, 255]"
         self._sum_data = value
+
+    @builtins.property
+    def time(self):
+        """Message field 'time'."""
+        return self._time
+
+    @time.setter
+    def time(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'time' field must be of type 'int'"
+            assert value >= 0 and value < 4294967296, \
+                "The 'time' field must be an unsigned integer in [0, 4294967295]"
+        self._time = value

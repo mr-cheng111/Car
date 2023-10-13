@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "wireless_lidar/msg/detail/point_data__functions.h"
+#include "wireless_lidar/msg/detail/point_data__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "wireless_lidar/msg/detail/point_data__type_support.h"
-#include "wireless_lidar/msg/detail/point_data__struct.h"
 
 #ifdef __cplusplus
 extern "C"

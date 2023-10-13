@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
+class Init_LidarData_time
+{
+public:
+  explicit Init_LidarData_time(::wireless_lidar::msg::LidarData & msg)
+  : msg_(msg)
+  {}
+  ::wireless_lidar::msg::LidarData time(::wireless_lidar::msg::LidarData::_time_type arg)
+  {
+    msg_.time = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::wireless_lidar::msg::LidarData msg_;
+};
+
 class Init_LidarData_sum_data
 {
 public:
   explicit Init_LidarData_sum_data(::wireless_lidar::msg::LidarData & msg)
   : msg_(msg)
   {}
-  ::wireless_lidar::msg::LidarData sum_data(::wireless_lidar::msg::LidarData::_sum_data_type arg)
+  Init_LidarData_time sum_data(::wireless_lidar::msg::LidarData::_sum_data_type arg)
   {
     msg_.sum_data = std::move(arg);
-    return std::move(msg_);
+    return Init_LidarData_time(msg_);
   }
 
 private:

@@ -82,7 +82,7 @@ void wireless_lidar__msg__LidarData__rosidl_typesupport_introspection_c__assign_
   *item = *value;
 }
 
-static rosidl_typesupport_introspection_c__MessageMember wireless_lidar__msg__LidarData__rosidl_typesupport_introspection_c__LidarData_message_member_array[7] = {
+static rosidl_typesupport_introspection_c__MessageMember wireless_lidar__msg__LidarData__rosidl_typesupport_introspection_c__LidarData_message_member_array[8] = {
   {
     "header",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
@@ -201,13 +201,30 @@ static rosidl_typesupport_introspection_c__MessageMember wireless_lidar__msg__Li
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "time",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(wireless_lidar__msg__LidarData, time),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers wireless_lidar__msg__LidarData__rosidl_typesupport_introspection_c__LidarData_message_members = {
   "wireless_lidar__msg",  // message namespace
   "LidarData",  // message name
-  7,  // number of fields
+  8,  // number of fields
   sizeof(wireless_lidar__msg__LidarData),
   wireless_lidar__msg__LidarData__rosidl_typesupport_introspection_c__LidarData_message_member_array,  // message members
   wireless_lidar__msg__LidarData__rosidl_typesupport_introspection_c__LidarData_init_function,  // function to initialize message memory (memory has to be allocated)

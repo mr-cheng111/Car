@@ -76,7 +76,7 @@ void assign_function__LidarData__data(
   item = value;
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember LidarData_message_member_array[7] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember LidarData_message_member_array[8] = {
   {
     "header",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT16,  // type
@@ -195,13 +195,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember LidarData_mes
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "time",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(wireless_lidar::msg::LidarData, time),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers LidarData_message_members = {
   "wireless_lidar::msg",  // message namespace
   "LidarData",  // message name
-  7,  // number of fields
+  8,  // number of fields
   sizeof(wireless_lidar::msg::LidarData),
   LidarData_message_member_array,  // message members
   LidarData_init_function,  // function to initialize message memory (memory has to be allocated)

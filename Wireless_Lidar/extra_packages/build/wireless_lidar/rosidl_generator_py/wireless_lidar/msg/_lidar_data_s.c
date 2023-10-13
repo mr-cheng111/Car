@@ -134,6 +134,15 @@ bool wireless_lidar__msg__lidar_data__convert_from_py(PyObject * _pymsg, void * 
     ros_message->sum_data = (uint8_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
+  {  // time
+    PyObject * field = PyObject_GetAttrString(_pymsg, "time");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->time = PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -244,6 +253,17 @@ PyObject * wireless_lidar__msg__lidar_data__convert_to_py(void * raw_ros_message
     field = PyLong_FromUnsignedLong(ros_message->sum_data);
     {
       int rc = PyObject_SetAttrString(_pymessage, "sum_data", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // time
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->time);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "time", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -4,8 +4,6 @@ lidar_t::lidar_t(WIFI_Data_t Wifi_Input,int Serial_Num) : Wifi_Data(Wifi_Input)
 {
     this->System_Status_Flag.System_Status = SYSTEM_INIT;
 
-    Ros_Serial_Init(Serial_Num);
-
     Wifi_Init(this->Wifi_Data,2000);
     
     Ros_Init();
@@ -13,15 +11,16 @@ lidar_t::lidar_t(WIFI_Data_t Wifi_Input,int Serial_Num) : Wifi_Data(Wifi_Input)
     // 初始化LED
     pinMode(LED_Pin, OUTPUT);
 
+    
     /**
-     * @brief 创建一个任务在Core 0 上
+     * @brief 创建一个任务在Core 1 上
      * microros_task    任务函数
      * "microros_task"  任务名称
      * 10240      任务占用内存大小
      * NULL         任务参数，为空
-     * 1               任务优先级
+     * 0               任务优先级
      * NULL     任务Handle可以为空
-     * 0                 内核编号
+     * 1                 内核编号
      */
     xTaskCreatePinnedToCore([](void*param)->void
                             {lidar_t *I = static_cast<lidar_t*>(param);
@@ -31,16 +30,16 @@ lidar_t::lidar_t(WIFI_Data_t Wifi_Input,int Serial_Num) : Wifi_Data(Wifi_Input)
                             this, 
                             0, 
                             NULL, 
-                            0);
+                            1);
     /**
      * @brief 创建一个任务在Core 0 上
      * Lidar_Data_Task    任务函数
      * "Lidar_Data_Task"  任务名称
      * 1024      任务占用内存大小
      * this         任务参数，为空
-     * 1               任务优先级
+     * 0               任务优先级
      * NULL     任务Handle可以为空
-     * 0                 内核编号
+     * 1                 内核编号
      */
     xTaskCreatePinnedToCore([](void*param)->void
                             {lidar_t *I = static_cast<lidar_t*>(param);
@@ -50,7 +49,7 @@ lidar_t::lidar_t(WIFI_Data_t Wifi_Input,int Serial_Num) : Wifi_Data(Wifi_Input)
                             this, 
                             0, 
                             NULL, 
-                            1);
+                            0);
     /**
      * @brief 创建一个任务在Core 1 上
      * System_Monitor_Task    任务函数
@@ -69,7 +68,9 @@ lidar_t::lidar_t(WIFI_Data_t Wifi_Input,int Serial_Num) : Wifi_Data(Wifi_Input)
                             this, 
                             1, 
                             NULL, 
-                            1);
+                            0);
+    Ros_Serial_Init(Serial_Num);
+    this->System_Status_Flag.System_Status = SYSTEM_START;
 }
 
 void lidar_t::Ros_Init()
@@ -116,6 +117,7 @@ void lidar_t::Wifi_Init(const WIFI_Data_t Wifi_Input,const uint16_t Wait_Time)
     delete[] Pass_Word_Temp;
 
     this->System_Status_Flag.Wifi_Work_Flag = true;
+    
 }
 
 void lidar_t::Ros_Serial_Init(int Serial_Num,int Baud)
@@ -149,27 +151,28 @@ void lidar_t::Ros_Serial_Init(int Serial_Num)
      */
     switch(Serial_Num)
     {
-        // case 0:this->Lidar_Serial = &Serial;break;
+        case 0:this->Lidar_Serial = &Serial;break;
         case 1:this->Lidar_Serial = &Serial;break;
         case 2:this->Lidar_Serial = &Serial2;break;
         // default :this->Lidar_Serial = &Serial;break;
     }
     this->Lidar_Serial->begin(230400);
-    this->Lidar_Serial->setPins(15,16,-1,-1);
-    this->Lidar_Serial->setRxBufferSize(58);
-    this->Lidar_Serial->setTxBufferSize(1024);
+    // this->Lidar_Serial->setPins(15,16,-1,-1);
+    // this->Lidar_Serial->setRxBufferSize(58);
+    // this->Lidar_Serial->setTxBufferSize(1024);
     
-
+    this->Lidar_Serial->onReceive(this->Serial_Get_Data());
         //this->Lidar_Serial->onReceive(this->Usart_Callback_,0);
 
     /*
      *设置系统调试串口
      */
-    this->System_Serial = &Serial1;
-    this->System_Serial->begin(115200);
+    // this->System_Serial = &Serial;
+    // this->System_Serial->begin(115200);
 
-    memset((void *)&this->Lidar_Rx_Buffer,0,sizeof(this->Lidar_Rx_Buffer));
+    //memset((void *)&this->Lidar_Rx_Buffer,0,sizeof(this->Lidar_Rx_Buffer));
 
     this->System_Status_Flag.Serial_Work_Flag = true;
 }
+
 

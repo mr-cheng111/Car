@@ -22,6 +22,8 @@ module wireless_lidar {
       uint16 stop_angle;
 
       uint8 sum_data;
+
+      uint32 time;
     };
   };
 };

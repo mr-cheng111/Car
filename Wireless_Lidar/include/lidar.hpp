@@ -4,17 +4,16 @@
 #include <rcl/rcl.h>
 #include <rclc/rclc.h>
 #include <rclc/executor.h>
-#include <std_msgs/msg/int32.h>
 #include <string>
-#include <Ticker.h>
 
 #include "wireless_lidar/msg/lidar_data.h"
+
 #include <micro_ros_utilities/string_utilities.h>
 
 enum SYSTEM_FLAG
 {
     SYSTEM_INIT = 0,
-    SYSTEM_NORMAL,
+    SYSTEM_START,
     SYSTEM_STOP
 };
 
@@ -25,6 +24,7 @@ typedef struct
     bool ROS_Work_Flag;
     bool Sensor_Work_Flag;
     bool Serial_Work_Flag;
+    bool Serial_Get_Data_Flag;
     bool System_Time_Sync;
     rcl_ret_t Rcl_Pub_Flag;
 
@@ -58,52 +58,46 @@ private:
     rcl_publisher_t publisher;           // 声明话题发布者
     wireless_lidar__msg__LidarData pub_msg; // 声明消息文件
 
-    uint8_t Lidar_Rx_Buffer[58*2];
-
     const WIFI_Data_t Wifi_Data;
+    uint8_t Temp_Data[256];
 
 public:
     lidar_t(WIFI_Data_t Wifi_Input,int Serial_Num);
 
     void Micro_Ros_Task()
     {
-        
-        digitalWrite(LED_Pin, HIGH);
         while(true)
         {
-            if (!rmw_uros_epoch_synchronized()) // 判断时间是否同步
+            if(this->System_Status_Flag.Wifi_Work_Flag)
             {
-                this->System_Status_Flag.System_Time_Sync = false;
-                rmw_uros_sync_session(10); //  同步时间
-                continue;
+                if (!rmw_uros_epoch_synchronized()) // 判断时间是否同步
+                {
+                    this->System_Status_Flag.System_Time_Sync = false;
+                    rmw_uros_sync_session(1); //  同步时间
+                    continue;
+                }
+                this->System_Status_Flag.System_Time_Sync = true;
+                rclc_executor_spin_some(&this->executor, RCL_MS_TO_NS(1));
             }
-            this->System_Status_Flag.System_Time_Sync = true;
-            rclc_executor_spin_some(&this->executor, RCL_MS_TO_NS(1));
             vTaskDelay(1);
         }
     }
 
     void Lidar_Data_Task()
     {
+        digitalWrite(LED_Pin, HIGH);
         while(true)
         {
-            // if(this->System_Status_Flag.Wifi_Work_Flag)
-            // {
-            //     if(this->Lidar_Serial->available() > 58)
-            //     {
-            //         this->System_Status_Flag.Sensor_Work_Flag = 1;
-            //         this->Lidar_Serial->read(this->Lidar_Rx_Buffer,58);
-            //             for (int i = 0; i < this->Lidar_Serial->available(); i++) 
-            //             {
-            //                 printf("%x ", this->Lidar_Rx_Buffer+i);
-            //             }
-            //         // this->Lidar_Serial->printf("%");
-            //     }
-            //     printf("%x ", this->Lidar_Rx_Buffer[0]<<8|this->Lidar_Rx_Buffer[1]);
-            //     this->pub_msg.header++;
-            //     this->System_Status_Flag.Rcl_Pub_Flag = rcl_publish(&this->publisher, &this->pub_msg, NULL);
-                
-            // }
+            if(this->System_Status_Flag.Wifi_Work_Flag)
+            {
+                if(this->System_Status_Flag.Serial_Get_Data_Flag = true)
+                {
+                    this->System_Status_Flag.Serial_Get_Data_Flag = false;
+                    this->System_Status_Flag.Rcl_Pub_Flag = rcl_publish(&this->publisher, &this->pub_msg, NULL);
+                    memset((void *)&this->pub_msg,0,58);
+                }
+                // this->pub_msg.header++;
+            }
             vTaskDelay(1);
         }
     }
@@ -127,5 +121,25 @@ public:
     void Ros_Serial_Init(const int Serial_Num);
 
     void Ros_Serial_Init(int Serial_Num,int Baud);
+
+    OnReceiveCb Serial_Get_Data(void)
+    {
+        while(this->Lidar_Serial->available())
+        {
+            uint8_t i = 1;
+            uint8_t Head_Pos = 0;
+            while(Serial.available())
+            {
+                *(this->Temp_Data + i) = this->Lidar_Serial->read();
+                if(*(Temp_Data + i - 1) << 8 | *(Temp_Data + i) == 0xA55A)
+                {
+                    Head_Pos = i - 1;
+                }
+                i++;
+            }
+            memcpy((void *)&this->pub_msg,(void *)(this->Temp_Data + Head_Pos),58);
+            this->System_Status_Flag.Serial_Work_Flag = true;
+        }
+    }
 
 };

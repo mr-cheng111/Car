@@ -72,6 +72,16 @@
             "nested_type_name": ""
           },
           "default_value": ""
+        },
+        {
+          "name": "time",
+          "type": {
+            "type_id": 7,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
         }
       ]
     },
@@ -106,7 +116,7 @@
   "type_hashes": [
     {
       "type_name": "wireless_lidar/msg/LidarData",
-      "hash_string": "RIHS01_0440267252149c8e8bc99e4e5dadd9f2ce88595c1f066d8e777351972fd5657a"
+      "hash_string": "RIHS01_349884f6a939b182540b066770444be58efecd2fba2661d80475d59917af8cd0"
     },
     {
       "type_name": "wireless_lidar/msg/PointData",

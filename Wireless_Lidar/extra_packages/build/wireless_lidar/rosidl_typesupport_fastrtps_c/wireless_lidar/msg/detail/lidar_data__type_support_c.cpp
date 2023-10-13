@@ -109,6 +109,11 @@ static bool _LidarData__cdr_serialize(
     cdr << ros_message->sum_data;
   }
 
+  // Field name: time
+  {
+    cdr << ros_message->time;
+  }
+
   return true;
 }
 
@@ -167,6 +172,11 @@ static bool _LidarData__cdr_deserialize(
   // Field name: sum_data
   {
     cdr >> ros_message->sum_data;
+  }
+
+  // Field name: time
+  {
+    cdr >> ros_message->time;
   }
 
   return true;
@@ -229,6 +239,12 @@ size_t get_serialized_size_wireless_lidar__msg__LidarData(
   // field.name sum_data
   {
     size_t item_size = sizeof(ros_message->sum_data);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name time
+  {
+    size_t item_size = sizeof(ros_message->time);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -313,6 +329,13 @@ size_t max_serialized_size_wireless_lidar__msg__LidarData(
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: time
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   return current_alignment - initial_alignment;

@@ -34,6 +34,7 @@ wireless_lidar__msg__LidarData__init(wireless_lidar__msg__LidarData * msg)
   }
   // stop_angle
   // sum_data
+  // time
   return true;
 }
 
@@ -53,6 +54,7 @@ wireless_lidar__msg__LidarData__fini(wireless_lidar__msg__LidarData * msg)
   }
   // stop_angle
   // sum_data
+  // time
 }
 
 bool
@@ -93,6 +95,10 @@ wireless_lidar__msg__LidarData__are_equal(const wireless_lidar__msg__LidarData *
   if (lhs->sum_data != rhs->sum_data) {
     return false;
   }
+  // time
+  if (lhs->time != rhs->time) {
+    return false;
+  }
   return true;
 }
 
@@ -124,6 +130,8 @@ wireless_lidar__msg__LidarData__copy(
   output->stop_angle = input->stop_angle;
   // sum_data
   output->sum_data = input->sum_data;
+  // time
+  output->time = input->time;
   return true;
 }
 

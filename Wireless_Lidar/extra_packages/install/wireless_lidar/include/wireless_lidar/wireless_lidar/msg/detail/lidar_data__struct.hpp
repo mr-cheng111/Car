@@ -49,6 +49,7 @@ struct LidarData_
       this->data.fill(wireless_lidar::msg::PointData_<ContainerAllocator>{_init});
       this->stop_angle = 0;
       this->sum_data = 0;
+      this->time = 0ul;
     }
   }
 
@@ -65,6 +66,7 @@ struct LidarData_
       this->data.fill(wireless_lidar::msg::PointData_<ContainerAllocator>{_alloc, _init});
       this->stop_angle = 0;
       this->sum_data = 0;
+      this->time = 0ul;
     }
   }
 
@@ -90,6 +92,9 @@ struct LidarData_
   using _sum_data_type =
     uint8_t;
   _sum_data_type sum_data;
+  using _time_type =
+    uint32_t;
+  _time_type time;
 
   // setters for named parameter idiom
   Type & set__header(
@@ -132,6 +137,12 @@ struct LidarData_
     const uint8_t & _arg)
   {
     this->sum_data = _arg;
+    return *this;
+  }
+  Type & set__time(
+    const uint32_t & _arg)
+  {
+    this->time = _arg;
     return *this;
   }
 
@@ -196,6 +207,9 @@ struct LidarData_
       return false;
     }
     if (this->sum_data != other.sum_data) {
+      return false;
+    }
+    if (this->time != other.time) {
       return false;
     }
     return true;
