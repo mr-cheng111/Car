@@ -2,6 +2,7 @@
 
 lidar_t::lidar_t(WIFI_Data_t Wifi_Input,int Serial_Num) : Wifi_Data(Wifi_Input)
 {
+    
     this->System_Status_Flag.System_Status = SYSTEM_INIT;
 
     Wifi_Init(this->Wifi_Data,2000);
@@ -60,15 +61,15 @@ lidar_t::lidar_t(WIFI_Data_t Wifi_Input,int Serial_Num) : Wifi_Data(Wifi_Input)
      * NULL     任务Handle可以为空
      * 0                 内核编号
      */
-    xTaskCreatePinnedToCore([](void*param)->void
-                            {lidar_t *I = static_cast<lidar_t*>(param);
-                             I->System_Monitor_Task();},
-                            "System_Monitor_Task", 
-                            10*1024, 
-                            this, 
-                            1, 
-                            NULL, 
-                            0);
+    // xTaskCreatePinnedToCore([](void*param)->void
+    //                         {lidar_t *I = static_cast<lidar_t*>(param);
+    //                          I->System_Monitor_Task();},
+    //                         "System_Monitor_Task",
+    //                         10*1024,
+    //                         this,
+    //                         1,
+    //                         NULL,
+    //                         0);
     Ros_Serial_Init(Serial_Num);
     this->System_Status_Flag.System_Status = SYSTEM_START;
 }
@@ -86,7 +87,7 @@ void lidar_t::Ros_Init()
         &this->publisher,
         &this->pubnode,
         ROSIDL_GET_MSG_TYPE_SUPPORT(wireless_lidar, msg, LidarData),
-        "/Scan");
+        "/WirelessScan");
 
     // 创建执行器
     rclc_executor_init(&this->executor, &this->support.context, 1, &this->allocator);
@@ -100,12 +101,15 @@ void lidar_t::Wifi_Init(const WIFI_Data_t Wifi_Input,const uint16_t Wait_Time)
 {
     // 设置通过WIFI进行MicroROS通信
     IPAddress agent_ip;
+
     agent_ip.fromString(Wifi_Input.Host_Ip.c_str());
 
     char* Wifi_Data_Temp = new char[Wifi_Input.Wifi_SSID.length() + 1];  // 额外空间用于存储字符串的结束符 '\0'  
+
     strcpy(Wifi_Data_Temp, Wifi_Input.Wifi_SSID.c_str());
     
     char* Pass_Word_Temp = new char[Wifi_Input.Pass_Word.length() + 1];  // 额外空间用于存储字符串的结束符 '\0'  
+
     strcpy(Pass_Word_Temp, Wifi_Input.Pass_Word.c_str());
 
     // 设置wifi名称，密码，电脑IP,端口号
@@ -114,34 +118,11 @@ void lidar_t::Wifi_Init(const WIFI_Data_t Wifi_Input,const uint16_t Wait_Time)
     delay(Wait_Time);
 
     delete[] Wifi_Data_Temp;
+
     delete[] Pass_Word_Temp;
 
     this->System_Status_Flag.Wifi_Work_Flag = true;
     
-}
-
-void lidar_t::Ros_Serial_Init(int Serial_Num,int Baud)
-{
-    switch(Serial_Num)
-    {
-        case 0:this->Lidar_Serial = &Serial1;break;
-        case 1:this->Lidar_Serial = &Serial1;break;
-        case 2:this->Lidar_Serial = &Serial2;break;
-        default :this->Lidar_Serial = &Serial1;break;
-    }
-    this->Lidar_Serial->begin(Baud);
-    this->Lidar_Serial->setPins(15,16,-1,-1);
-    this->Lidar_Serial->setRxBufferSize(58);
-    this->Lidar_Serial->setTxBufferSize(1024);
-    
-
-    /*
-     *设置系统调试串口
-     */
-    this->System_Serial = &Serial1;
-    this->System_Serial->begin(115200);
-
-    this->System_Status_Flag.Serial_Work_Flag = 1;
 }
 
 void lidar_t::Ros_Serial_Init(int Serial_Num)
@@ -152,27 +133,48 @@ void lidar_t::Ros_Serial_Init(int Serial_Num)
     switch(Serial_Num)
     {
         case 0:this->Lidar_Serial = &Serial;break;
+
         case 1:this->Lidar_Serial = &Serial;break;
+
         case 2:this->Lidar_Serial = &Serial2;break;
-        // default :this->Lidar_Serial = &Serial;break;
+
+        default :this->Lidar_Serial = &Serial;break;
     }
     this->Lidar_Serial->begin(230400);
-    // this->Lidar_Serial->setPins(15,16,-1,-1);
-    // this->Lidar_Serial->setRxBufferSize(58);
-    // this->Lidar_Serial->setTxBufferSize(1024);
-    
-    this->Lidar_Serial->onReceive(this->Serial_Get_Data());
-        //this->Lidar_Serial->onReceive(this->Usart_Callback_,0);
 
+    this->Lidar_Serial->onReceive(this->Serial_Get_Data());
     /*
      *设置系统调试串口
      */
-    // this->System_Serial = &Serial;
-    // this->System_Serial->begin(115200);
+    this->System_Serial = &Serial;
 
-    //memset((void *)&this->Lidar_Rx_Buffer,0,sizeof(this->Lidar_Rx_Buffer));
+    this->System_Serial->begin(115200);
 
     this->System_Status_Flag.Serial_Work_Flag = true;
 }
 
 
+OnReceiveCb lidar_t::Serial_Get_Data(void)
+{
+    while(this->Lidar_Serial->available())
+    {
+        uint8_t i = 1;
+
+        uint8_t Head_Pos = 0;
+
+        while(Serial.available())
+        {
+            *(this->Temp_Data + i) = this->Lidar_Serial->read();
+
+            if(*(Temp_Data + i - 1) << 8 | *(Temp_Data + i) == 0xA55A)
+            {
+                Head_Pos = i - 1;
+            }
+            i++;
+        }
+
+        memcpy((void *)&this->pub_msg,(void *)(this->Temp_Data + Head_Pos),58);
+
+        this->System_Status_Flag.Serial_Work_Flag = true;
+    }
+}
