@@ -13,7 +13,7 @@ void setup()
 
   Wifi_Input.Port      = 9999;
 
-  lidar_t *L = new lidar_t(Wifi_Input,0);
+  lidar_t *L = new lidar_t(Wifi_Input,1);
 
 }
 
