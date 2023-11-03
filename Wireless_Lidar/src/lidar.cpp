@@ -1,9 +1,12 @@
 #include "../include/lidar.hpp"
 
+
 lidar_t::lidar_t(WIFI_Data_t Wifi_Input,int Serial_Num) : Wifi_Data(Wifi_Input)
 {
     
     this->System_Status_Flag.System_Status = SYSTEM_INIT;
+
+    Serial.begin(115200);
 
     Wifi_Init(this->Wifi_Data,2000);
     
@@ -46,7 +49,7 @@ lidar_t::lidar_t(WIFI_Data_t Wifi_Input,int Serial_Num) : Wifi_Data(Wifi_Input)
                             {lidar_t *I = static_cast<lidar_t*>(param);
                              I->Lidar_Data_Task();},
                             "Lidar_Data_Task", 
-                            20*1024, 
+                            80*1024, 
                             this, 
                             0, 
                             NULL, 
@@ -70,7 +73,10 @@ lidar_t::lidar_t(WIFI_Data_t Wifi_Input,int Serial_Num) : Wifi_Data(Wifi_Input)
     //                         1,
     //                         NULL,
     //                         0);
-    Ros_Serial_Init(Serial_Num);
+
+    Serial.printf("Start Serial Init!\r\n");
+    Ros_Serial_Init(1);
+
     this->System_Status_Flag.System_Status = SYSTEM_START;
 }
 
@@ -115,6 +121,10 @@ void lidar_t::Wifi_Init(const WIFI_Data_t Wifi_Input,const uint16_t Wait_Time)
     // 设置wifi名称，密码，电脑IP,端口号
     set_microros_wifi_transports(Wifi_Data_Temp, Pass_Word_Temp, agent_ip, Wifi_Input.Port);
 
+    digitalWrite(LED_Pin,HIGH);
+
+    Serial.printf("WiFi connected!\r\n");
+
     delay(Wait_Time);
 
     delete[] Wifi_Data_Temp;
@@ -125,7 +135,7 @@ void lidar_t::Wifi_Init(const WIFI_Data_t Wifi_Input,const uint16_t Wait_Time)
     
 }
 
-void lidar_t::Ros_Serial_Init(int Serial_Num)
+void lidar_t::Ros_Serial_Init(const int Serial_Num)
 {
     /*
      *设置雷达串口
@@ -134,25 +144,27 @@ void lidar_t::Ros_Serial_Init(int Serial_Num)
     {
         case 0:this->Lidar_Serial = &Serial;break;
 
-        case 1:this->Lidar_Serial = &Serial;break;
+        case 1:this->Lidar_Serial = &Serial1;break;
 
         case 2:this->Lidar_Serial = &Serial2;break;
 
         default :this->Lidar_Serial = &Serial;break;
     }
+
     this->Lidar_Serial->begin(230400);
+
+    this->Lidar_Serial->setPins(13,12);
 
     this->Lidar_Serial->onReceive(this->Serial_Get_Data());
     /*
      *设置系统调试串口
      */
-    this->System_Serial = &Serial;
+    // this->System_Serial = &Serial;
 
-    this->System_Serial->begin(115200);
+    // this->System_Serial->begin(115200);
 
     this->System_Status_Flag.Serial_Work_Flag = true;
 }
-
 
 OnReceiveCb lidar_t::Serial_Get_Data(void)
 {
@@ -162,19 +174,18 @@ OnReceiveCb lidar_t::Serial_Get_Data(void)
 
         uint8_t Head_Pos = 0;
 
-        while(Serial.available())
+        // Serial.printf("Get Data from Serial1!\r\n");
+        while(this->Lidar_Serial->available())
         {
             *(this->Temp_Data + i) = this->Lidar_Serial->read();
-
-            if(*(Temp_Data + i - 1) << 8 | *(Temp_Data + i) == 0xA55A)
+            
+            if(*(this->Temp_Data + i - 1) << 8 | *(this->Temp_Data + i) == 0xA55A)
             {
-                Head_Pos = i - 1;
+                Head_Pos = i;
             }
             i++;
         }
-
         memcpy((void *)&this->pub_msg,(void *)(this->Temp_Data + Head_Pos),58);
-
         this->System_Status_Flag.Serial_Work_Flag = true;
     }
 }

@@ -58,7 +58,7 @@ private:
     wireless_lidar__msg__LidarData pub_msg; // 声明消息文件
 
     const WIFI_Data_t Wifi_Data;
-    uint8_t Temp_Data[256];
+    uint8_t Temp_Data[256] = {0};
     uint32_t WiFi_DisCon_Time = 0;
 
 public:
@@ -89,7 +89,6 @@ public:
 
     void Lidar_Data_Task()
     {
-        digitalWrite(LED_Pin, HIGH);
 
         while(true)
         {

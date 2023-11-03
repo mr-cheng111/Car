@@ -1,0 +1,19 @@
+{
+  "package_name": "car_interfaces",
+  "output_dir": "/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/build/car_interfaces/rosidl_typesupport_fastrtps_c/car_interfaces",
+  "template_dir": "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource",
+  "idl_tuples": [
+    "/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/build/car_interfaces/rosidl_adapter/car_interfaces:msg/Car.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/iron/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c",
+    "/opt/ros/iron/lib/python3.10/site-packages/rosidl_typesupport_fastrtps_c/__init__.py",
+    "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource/idl__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource/idl__type_support_c.cpp.em",
+    "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource/msg__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em",
+    "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/iron/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
+    "/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/build/car_interfaces/rosidl_adapter/car_interfaces/msg/Car.idl"
+  ]
+}

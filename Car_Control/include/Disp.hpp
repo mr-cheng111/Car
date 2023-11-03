@@ -76,16 +76,8 @@ public:
         while(1)
         {
             
-            if (xSemaphoreTake(xMutexMPU6050, timeOut) == pdPASS) 
-            {
-                u8g2.clearBuffer();
-                drawFloat(0,10,MPU_Data.temp);
-                xSemaphoreGive(xMutexMPU6050); //释放钥匙
-            } 
-            else 
-            {
-                //Unable to obtain MUTEX
-            }
+            u8g2.clearBuffer();
+            drawFloat(0,10,Imu_Data.temp);
             switch(WiFi.status())
             {
                 case 255 : u8g2.drawStr(0,20,"WL_NO_SHIELD");break;
@@ -96,6 +88,11 @@ public:
                 case 4   : u8g2.drawStr(0,20,"WL_CONNECT_FAILED");break;
                 case 5   : u8g2.drawStr(0,20,"WL_CONNECTION_LOST");break;
                 case 6   : u8g2.drawStr(0,20,"WL_DISCONNECTED");break;
+            }
+
+            switch()
+            {
+                
             }
             u8g2.sendBuffer();
             vTaskDelay(1);

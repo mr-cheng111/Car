@@ -4,8 +4,8 @@
 #include <rcl/rcl.h>
 
 #include <string>
-
-#include "MPU6050_light.h"
+#include "SPI.h"
+#include "BMI088.h"
 #include "search.h"
 
 enum SYSTEM_FLAG
@@ -14,8 +14,6 @@ enum SYSTEM_FLAG
     SYSTEM_START,
     SYSTEM_STOP
 };
-
-
 
 enum ROS_WORK_FLAG
 {
@@ -29,11 +27,11 @@ enum ROS_WORK_FLAG
 
 enum SENSE_FLAG
 {
-    MPU6050_INIT = 0,
-    MPU6050_START_WIRE,
-    MPU6050_CONNT_ERROR,
-    MPU6050_START_WORK,
-    MPU6050_CALC_OFFSET
+    IMU_INIT = 0,
+    IMU_START_SPI,
+    IMU_CONNT_ERROR,
+    IMU_START_WORK,
+    IMU_CALC_OFFSET
 };
 
 enum SERIAL_FLAG
@@ -76,12 +74,13 @@ typedef struct {
   float gyroX;
   float gyroY;
   float gyroZ;
-} MPU6050_t;
+} BMI088_Data_t;
 
-extern SemaphoreHandle_t xMutexMPU6050; //创建信号量Handler
+extern SemaphoreHandle_t xMutexImu; //创建信号量Handler
 extern TickType_t timeOut; //用于获取信号量的Timeout 1 ticks
-extern MPU6050 _Mpu;
-extern MPU6050_t MPU_Data;
-volatile uint32_t System_Work_Flag;
+extern SPIClass Imu_SPI;
+extern Bmi088 Imu;
+extern BMI088_Data_t Imu_Data;
+extern volatile uint32_t System_Work_Flag;
 
 #endif

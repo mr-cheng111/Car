@@ -1,0 +1,7 @@
+{
+  "package_name": "car_interfaces",
+  "output_dir": "/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/build/car_interfaces/rosidl_generator_type_description/car_interfaces",
+  "idl_tuples": [
+    "/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/build/car_interfaces/rosidl_adapter/car_interfaces:msg/Car.idl"
+  ]
+}
