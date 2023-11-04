@@ -1,7 +1,0 @@
-[0.066s] Invoking command in '/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/build/car_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/mr-cheng/Desktop/Car/Car_Control/extra_packages/car_interfaces -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/install/car_interfaces
-[0.101s] [31mCMake Error at CMakeLists.txt:28:
-[0.101s]   Parse error.  Function missing ending ")".  End of file reached.
-[0.101s] 
-[0.102s] [0m
-[0.102s] -- Configuring incomplete, errors occurred!
-[0.107s] Invoked command in '/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/build/car_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/mr-cheng/Desktop/Car/Car_Control/extra_packages/car_interfaces -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/install/car_interfaces
