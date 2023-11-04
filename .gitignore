@@ -3,7 +3,13 @@
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 .vscode/ipch
+Wheel_FOC/MDK-ARM/FOC_TEST_V2
+*.SLDPRT
 Wireless_Lidar/extra_packages/build
 Wireless_Lidar/extra_packages/install
 Wireless_Lidar/extra_packages/log
+
+
+
+
 
