@@ -1,2 +1,0 @@
-Invoking command in '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar -- -j16 -l16
-Invoked command in '/home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Wireless_Lidar/extra_packages/build/wireless_lidar -- -j16 -l16
