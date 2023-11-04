@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from car_interfaces/src/Car.msg
+// generated code does not contain a copyright notice
+
+
+module car_interfaces {
+  module msg {
+    struct Car {
+      float speed;
+
+      float w;
+
+      float x;
+
+      float y;
+    };
+  };
+};

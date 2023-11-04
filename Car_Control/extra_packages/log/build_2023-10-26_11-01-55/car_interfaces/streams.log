@@ -1,0 +1,18 @@
+[0.065s] Invoking command in '/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/build/car_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/mr-cheng/Desktop/Car/Car_Control/extra_packages/car_interfaces -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/install/car_interfaces
+[0.074s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.194s] -- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[0.249s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[0.251s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.280s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.307s] -- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[0.312s] [31mCMake Error at /opt/ros/iron/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[0.312s]   rosidl_generate_interfaces() the passed file 'src/car.msg' doesn't exist
+[0.312s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[0.312s]   '/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/car_interfaces'
+[0.312s] Call Stack (most recent call first):
+[0.312s]   CMakeLists.txt:28 (rosidl_generate_interfaces)
+[0.312s] 
+[0.312s] [0m
+[0.312s] -- Configuring incomplete, errors occurred!
+[0.312s] See also "/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/build/car_interfaces/CMakeFiles/CMakeOutput.log".
+[0.316s] Invoked command in '/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/build/car_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/mr-cheng/Desktop/Car/Car_Control/extra_packages/car_interfaces -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/install/car_interfaces
