@@ -8,7 +8,7 @@ Wheel_FOC/MDK-ARM/FOC_TEST_V2
 Wireless_Lidar/extra_packages/build
 Wireless_Lidar/extra_packages/install
 Wireless_Lidar/extra_packages/log
-
+CMakeLists.txt
 
 
 
