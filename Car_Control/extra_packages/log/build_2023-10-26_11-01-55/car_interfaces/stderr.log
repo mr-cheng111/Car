@@ -1,8 +1,0 @@
-[31mCMake Error at /opt/ros/iron/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
-  rosidl_generate_interfaces() the passed file 'src/car.msg' doesn't exist
-  relative to the CMAKE_CURRENT_SOURCE_DIR
-  '/home/mr-cheng/Desktop/Car/Car_Control/extra_packages/car_interfaces'
-Call Stack (most recent call first):
-  CMakeLists.txt:28 (rosidl_generate_interfaces)
-
-[0m
