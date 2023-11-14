@@ -90,10 +90,10 @@ public:
                 case 6   : u8g2.drawStr(0,20,"WL_DISCONNECTED");break;
             }
 
-            switch()
-            {
+            // switch()
+            // {
                 
-            }
+            // }
             u8g2.sendBuffer();
             vTaskDelay(1);
         }

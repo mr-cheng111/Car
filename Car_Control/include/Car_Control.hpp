@@ -42,15 +42,15 @@ public:
          * NULL     任务Handle可以为空
          * 1                 内核编号
          */
-        xTaskCreatePinnedToCore([](void*param)->void
-                                {Car_t *I = static_cast<Car_t*>(param);
-                                I->Car_Control_Task();},
-                                "Car_Control_Task", 
-                                20*1024, 
-                                this, 
-                                1,
-                                NULL, 
-                                1);
+        // xTaskCreatePinnedToCore([](void*param)->void
+        //                         {Car_t *I = static_cast<Car_t*>(param);
+        //                         I->Car_Control_Task();},
+        //                         "Car_Control_Task", 
+        //                         20*1024, 
+        //                         this, 
+        //                         1,
+        //                         NULL, 
+        //                         1);
         
         /**
          * @brief 创建一个任务在Core 0 上
@@ -69,9 +69,9 @@ public:
                                 20*1024, 
                                 this, 
                                 1,
-                                NULL, 
+                                NULL,
                                 1);
-        Car_Serial_Init(Serial_Num);
+        //Car_Serial_Init(Serial_Num);
         this->System_Status_Flag.System_Status = SYSTEM_START;
     }
 
@@ -88,12 +88,17 @@ public:
     }
     void IMU_Init(void)
     {   
-        Serial.begin(115200);
+        int status = 0;
+        Serial.begin(921600);
         this->System_Status_Flag.Sensor_Work_Flag = IMU_INIT;
 
-        int status = Imu.begin();
+        status = Imu.begin();
         
         this->System_Status_Flag.Sensor_Work_Flag = IMU_START_WORK;
+
+        status = Imu.setRange(Bmi088::ACCEL_RANGE_6G,Bmi088::GYRO_RANGE_500DPS);
+
+        status = Imu.setOdr(Bmi088::ODR_2000HZ);
 
         Serial.printf("Imu status: %d\r\n",status);
 
@@ -101,34 +106,37 @@ public:
         { 
             Serial.printf("connect error\r\n");
             this->System_Status_Flag.Sensor_Work_Flag = IMU_CONNT_ERROR;
-        } // stop Task if could not connect to IMU
+        } 
 
         Serial.println("Done!\n");
     }
     void IMU_Task(void)
     {
         uint32_t Counter3 = 0;
+        LED.LED_Work(LED_COLOR::ORANGE,0.1);
         while(true)
         {
-            if(xSemaphoreTake(xMutexImu,timeOut) == pdPASS)
-            {
+            // if(xSemaphoreTake(xMutexImu,timeOut) == pdPASS)
+            // {
                 BMI->readSensor();
-                Imu_Data.temp = BMI->getTemperature_C();
+                //Imu_Data.temp = BMI->getTemperature_C();
                 Imu_Data.accX = BMI->getAccelX_mss();
                 Imu_Data.accY = BMI->getAccelY_mss();
                 Imu_Data.accZ = BMI->getAccelZ_mss();
                 Imu_Data.gyroX = BMI->getGyroX_rads();
                 Imu_Data.gyroY = BMI->getGyroY_rads();
                 Imu_Data.gyroZ = BMI->getGyroZ_rads();
-                xSemaphoreGive(xMutexImu);
-            }
-            else 
-            {
+                Serial.printf("%f,%f,%f,%f,%f,%f\n",Imu_Data.accX,Imu_Data.accY,Imu_Data.accZ,Imu_Data.gyroX,Imu_Data.gyroY,Imu_Data.gyroZ);
+                
+            //     xSemaphoreGive(xMutexImu);
+            // }
+            // else 
+            // {
 
-            }
-            Counter3++;
-            Serial.printf("Counter3 = %d\r\n",Counter3);
-            vTaskDelay(1);
+            // }
+            // Counter3++;
+            // Serial.printf("Counter3 = %d\r\n",Counter3);
+            vTaskDelay(5);
         }
 
     }
@@ -141,23 +149,23 @@ public:
         */
         switch(Serial_Num>>8 & 0xFF)
         {
-            case 0:this->MOTOR_L_Serial = &Serial;break;
+            //case 0:this->MOTOR_L_Serial = &Serial;break;
 
             case 1:this->MOTOR_L_Serial = &Serial1;break;
 
             case 2:this->MOTOR_L_Serial = &Serial2;break;
 
-            default :this->MOTOR_L_Serial = &Serial;break;
+            //default :this->MOTOR_L_Serial = &Serial;break;
         }
         switch(Serial_Num & 0xFF)
         {
-            case 0:this->MOTOR_R_Serial = &Serial;break;
+            //case 0:this->MOTOR_R_Serial = &Serial;break;
 
             case 1:this->MOTOR_R_Serial = &Serial1;break;
 
             case 2:this->MOTOR_R_Serial = &Serial2;break;
 
-            default :this->MOTOR_R_Serial = &Serial;break;
+            //default :this->MOTOR_R_Serial = &Serial;break;
         }
         this->MOTOR_L_Serial->begin(230400);
         this->MOTOR_L_Serial->setPins(17,18);
@@ -190,6 +198,7 @@ public:
 
         }
     }
+
 };
 
 

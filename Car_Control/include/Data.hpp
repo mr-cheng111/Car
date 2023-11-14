@@ -6,6 +6,7 @@
 #include <string>
 #include "SPI.h"
 #include "BMI088.h"
+#include "LED.h"
 #include "search.h"
 
 enum SYSTEM_FLAG
@@ -82,5 +83,5 @@ extern SPIClass Imu_SPI;
 extern Bmi088 Imu;
 extern BMI088_Data_t Imu_Data;
 extern volatile uint32_t System_Work_Flag;
-
+extern LEDs LED;
 #endif
