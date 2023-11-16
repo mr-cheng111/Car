@@ -11,6 +11,7 @@
 #include <micro_ros_utilities/string_utilities.h>
 
 #include "BMI088.h"
+#include "MahonyAHRS.h"
 #include "Data.hpp"
 
 using namespace std;
@@ -24,6 +25,8 @@ public:
     HardwareSerial *MOTOR_R_Serial;
     System_Status_t System_Status_Flag;
     Bmi088 *BMI;
+private:
+    float q[4] = {1,0,0,0};
 
 public:
     Car_t(uint16_t Serial_Num,Bmi088 *_Mpu = &Imu) : BMI(_Mpu)
@@ -42,15 +45,15 @@ public:
          * NULL     任务Handle可以为空
          * 1                 内核编号
          */
-        // xTaskCreatePinnedToCore([](void*param)->void
-        //                         {Car_t *I = static_cast<Car_t*>(param);
-        //                         I->Car_Control_Task();},
-        //                         "Car_Control_Task", 
-        //                         20*1024, 
-        //                         this, 
-        //                         1,
-        //                         NULL, 
-        //                         1);
+        xTaskCreatePinnedToCore([](void*param)->void
+                                {Car_t *I = static_cast<Car_t*>(param);
+                                I->Car_Control_Task();},
+                                "Car_Control_Task", 
+                                20*1024, 
+                                this, 
+                                1,
+                                NULL, 
+                                0);
         
         /**
          * @brief 创建一个任务在Core 0 上
@@ -70,8 +73,8 @@ public:
                                 this, 
                                 1,
                                 NULL,
-                                1);
-        //Car_Serial_Init(Serial_Num);
+                                0);
+        Car_Serial_Init(Serial_Num);
         this->System_Status_Flag.System_Status = SYSTEM_START;
     }
 
@@ -120,13 +123,15 @@ public:
             // {
                 BMI->readSensor();
                 //Imu_Data.temp = BMI->getTemperature_C();
-                Imu_Data.accX = BMI->getAccelX_mss();
-                Imu_Data.accY = BMI->getAccelY_mss();
+                Imu_Data.accX = BMI->getAccelY_mss();
+                Imu_Data.accY =-BMI->getAccelX_mss();
                 Imu_Data.accZ = BMI->getAccelZ_mss();
-                Imu_Data.gyroX = BMI->getGyroX_rads();
-                Imu_Data.gyroY = BMI->getGyroY_rads();
+                Imu_Data.gyroX = BMI->getGyroY_rads();
+                Imu_Data.gyroY =-BMI->getGyroX_rads();
                 Imu_Data.gyroZ = BMI->getGyroZ_rads();
-                Serial.printf("%f,%f,%f,%f,%f,%f\n",Imu_Data.accX,Imu_Data.accY,Imu_Data.accZ,Imu_Data.gyroX,Imu_Data.gyroY,Imu_Data.gyroZ);
+
+                MahonyAHRSupdateIMU(q,Imu_Data.gyroX,Imu_Data.gyroY,Imu_Data.gyroZ + 0.00521,Imu_Data.accX,Imu_Data.accY,Imu_Data.accZ);
+                //Serial.printf("%f,%f,%f,%f,%f,%f\n",Imu_Data.accX,Imu_Data.accY,Imu_Data.accZ,Imu_Data.gyroX,Imu_Data.gyroY,Imu_Data.gyroZ);
                 
             //     xSemaphoreGive(xMutexImu);
             // }
@@ -136,7 +141,7 @@ public:
             // }
             // Counter3++;
             // Serial.printf("Counter3 = %d\r\n",Counter3);
-            vTaskDelay(5);
+            vTaskDelay(10);
         }
 
     }
@@ -149,23 +154,23 @@ public:
         */
         switch(Serial_Num>>8 & 0xFF)
         {
-            //case 0:this->MOTOR_L_Serial = &Serial;break;
+            case 0:this->MOTOR_L_Serial = &Serial0;break;
 
             case 1:this->MOTOR_L_Serial = &Serial1;break;
 
             case 2:this->MOTOR_L_Serial = &Serial2;break;
 
-            //default :this->MOTOR_L_Serial = &Serial;break;
+            default :this->MOTOR_L_Serial = &Serial0;break;
         }
         switch(Serial_Num & 0xFF)
         {
-            //case 0:this->MOTOR_R_Serial = &Serial;break;
+            case 0:this->MOTOR_R_Serial = &Serial0;break;
 
             case 1:this->MOTOR_R_Serial = &Serial1;break;
 
             case 2:this->MOTOR_R_Serial = &Serial2;break;
 
-            //default :this->MOTOR_R_Serial = &Serial;break;
+            default :this->MOTOR_R_Serial = &Serial0;break;
         }
         this->MOTOR_L_Serial->begin(230400);
         this->MOTOR_L_Serial->setPins(17,18);
