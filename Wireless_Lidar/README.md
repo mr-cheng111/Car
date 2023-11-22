@@ -1,4 +1,4 @@
-# Lidar
+# 无线激光雷达
 
 ## 一、硬件环境
 
@@ -20,7 +20,7 @@
 
     socat -d -d tcp-listen:8080 pty,raw,echo=0
 
-&emsp;&emsp;效果截图：
+&emsp;&emsp;Effects screenshot:
 
 <center>
 
@@ -32,7 +32,7 @@
 
     ros2 launch lslidar_driver lsn10_launch.py
 
-&emsp;&emsp;效果截图：
+&emsp;&emsp;Effects screenshot:
 
 <center>
 
@@ -47,7 +47,7 @@
     ros2 topic hz /scan
     rviz2
 
-&emsp;&emsp;效果截图：
+&emsp;&emsp;Effects screenshot:
 
 <center>
 
@@ -66,3 +66,72 @@
 ## 四、后记
 
 &emsp;&emsp;由于对ESP32S3不熟悉，浪费了些时间。对于其他需求的激光雷达可以更改ESP驱动里面的包长度和Rx回调时间。后续可能会增加cppTcp转Serial的驱动。对于延迟问题，在本地测试的效果应该在几ms以内。由于这个取决于测试环境，故不列举出数据，具体可以在代码里面测试。
+
+# Wireless Lidar
+
+## I. Hardware Environment
+
+&emsp;&emsp;1、ESP32S3-N16R8
+
+&emsp;&emsp;2、镭神N10激光雷达
+
+&emsp;&emsp;3、Xiaomi Router
+
+## II. Usage
+
+&emsp;&emsp; The driver relies on the ROS2 driver from the official website and uses ESP32S3 for data collection. The data is uploaded to the computer via TCP/IP protocol. Then, using socat, the data on the port is received and transferred to the virtual serial port. Finally, the corresponding serial port number is changed to the virtual serial port number under the official ROS2 driver.
+
+## III. Detailed Steps
+    
+&emsp;&emsp;1. Connect ESP32S3 to the computer and open a serial assistant to view the status output.
+
+&emsp;&emsp;2. Open a new command line window and enter the following command:
+
+    socat -d -d tcp-listen:8080 pty,raw,echo=0
+
+&emsp;&emsp;Effects screenshot:
+
+<center>
+
+![socat命令行截图](./img/socat_pic.png "socat输入命令实际效果")
+
+</center>
+
+&emsp;&emsp;3、lslidar driver running screenshot
+
+    ros2 launch lslidar_driver lsn10_launch.py
+
+&emsp;&emsp;Effects screenshot:
+
+<center>
+
+![N10 Driver运行截图](./img/run%20N10.png "N10 Driver运行截图")
+
+</center>
+
+&emsp;&emsp;4.View the topic, frequency, and point cloud in rviz2:
+
+    ros2 node list
+    ros2 topic list
+    ros2 topic hz /scan
+    rviz2
+
+&emsp;&emsp;Effects screenshot:
+
+<center>
+
+![查看话题](./img/频率.png "查看话题")
+
+</center>
+
+&emsp;&emsp;The scanning frequency of the LiDAR is set to 6Hz, and the maximum frequency can reach 12Hz, which has not been tested.
+
+<center>
+
+![查看话题](./img/rviz2.png "查看话题")
+
+</center>
+
+## IV. Postscript
+
+&emsp;&emsp;Because unfamiliar with ESP32S3, it took some time to configure. For other LiDAR requirements, the packet length and Rx callback time in the ESP driver can be changed. A cppTcp-to-Serial driver may be added in the future. As for delay issues, the local test showed a delay of a few milliseconds, which depends on the testing environment and is not listed in the text. You can test it in the code.
