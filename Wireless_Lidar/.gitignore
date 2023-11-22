@@ -1,7 +1,0 @@
-.pio
-.vscode
-test
-extra_packages/build
-extra_packages/install
-extra_packages/log
-extra_packages/CMakeLists.txt
