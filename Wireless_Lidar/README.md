@@ -73,7 +73,7 @@
 
 &emsp;&emsp;1、ESP32S3-N16R8
 
-&emsp;&emsp;2、镭神N10激光雷达
+&emsp;&emsp;2、leishen N10 lidar
 
 &emsp;&emsp;3、Xiaomi Router
 
