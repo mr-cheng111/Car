@@ -131,17 +131,7 @@ public:
                 Imu_Data.gyroZ = BMI->getGyroZ_rads();
 
                 MahonyAHRSupdateIMU(q,Imu_Data.gyroX,Imu_Data.gyroY,Imu_Data.gyroZ + 0.00521,Imu_Data.accX,Imu_Data.accY,Imu_Data.accZ);
-                //Serial.printf("%f,%f,%f,%f,%f,%f\n",Imu_Data.accX,Imu_Data.accY,Imu_Data.accZ,Imu_Data.gyroX,Imu_Data.gyroY,Imu_Data.gyroZ);
-                
-            //     xSemaphoreGive(xMutexImu);
-            // }
-            // else 
-            // {
-
-            // }
-            // Counter3++;
-            // Serial.printf("Counter3 = %d\r\n",Counter3);
-            vTaskDelay(10);
+            vTaskDelay(1);
         }
 
     }

@@ -59,6 +59,8 @@ class Micro_ROS_t
             strcpy(Pass_Word_Temp, Wifi_Input.Pass_Word.c_str());
 
             //设定WiFi的发送功率
+            
+
             WiFi.setTxPower(WIFI_POWER_19_5dBm);
 
             // 设置wifi名称，密码，电脑IP,端口号
@@ -118,10 +120,10 @@ class Micro_ROS_t
                     rmw_uros_sync_session(1); //  同步时间
                     continue;
                 }
-                rclc_executor_spin_some(&this->executor, RCL_MS_TO_NS(1));
-                Serial.printf("Counter1 = %d\r\n",Counter1);
-                Counter1++;
-                vTaskDelay(1);
+                rclc_executor_spin_some(&this->executor, 1);
+                //Serial.printf("Counter1 = %d\r\n",Counter1);
+                //Counter1++;
+                //vTaskDelay(1);
             }
         }
         
