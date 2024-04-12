@@ -18,7 +18,7 @@
 
 &emsp;&emsp;2、打开新的命令行页面,输入如下命令：
 
-    socat -d -d tcp-listen:8080 pty,raw,echo=0
+    socat -d -d udp-listen:8080 /dev/pty/1,raw,echo=0
 
 &emsp;&emsp;Effects screenshot:
 
