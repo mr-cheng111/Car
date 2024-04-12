@@ -5,38 +5,35 @@
 #include <rclc/rclc.h>
 #include <rclc/executor.h>
 #include <string>
+#include <driver/uart.h>
 
 #include "car_interfaces/msg/car.h"
-// #include "std_msgs/msg/int32.h"
 #include <micro_ros_utilities/string_utilities.h>
 
 #include "BMI088.h"
-#include "MahonyAHRS.h"
 #include "Data.hpp"
+#include "ROS.hpp"
+#include "MahonyAHRS.h"
 
 using namespace std;
-
-#define LED_Pin 4
 
 class Car_t
 {
 public:
-    HardwareSerial *MOTOR_L_Serial;
-    HardwareSerial *MOTOR_R_Serial;
+    HardwareSerial *MOTOR_Serial;
     System_Status_t System_Status_Flag;
     Bmi088 *BMI;
-private:
     float q[4] = {1,0,0,0};
+    float Angle[3] = {0,0,0};
 
 public:
     Car_t(uint16_t Serial_Num,Bmi088 *_Mpu = &Imu) : BMI(_Mpu)
     {
         this->System_Status_Flag.System_Status = SYSTEM_INIT;
-
+        
         IMU_Init();
-
         /**
-         * @brief 创建一个任务在Core 0 上
+         * @brief 创建一个任务在Core 1 上
          * Lidar_Data_Task    任务函数
          * "Lidar_Data_Task"  任务名称
          * 1024      任务占用内存大小
@@ -51,12 +48,12 @@ public:
                                 "Car_Control_Task", 
                                 20*1024, 
                                 this, 
-                                1,
+                                configMAX_PRIORITIES - 1,
                                 NULL, 
-                                0);
+                                1);
         
         /**
-         * @brief 创建一个任务在Core 0 上
+         * @brief 创建一个任务在Core 1 上
          * Lidar_Data_Task    任务函数
          * "Lidar_Data_Task"  任务名称
          * 1024      任务占用内存大小
@@ -71,9 +68,10 @@ public:
                                 "IMU_Task", 
                                 20*1024, 
                                 this, 
-                                1,
+                                configMAX_PRIORITIES - 1,
                                 NULL,
-                                0);
+                                1);
+
         Car_Serial_Init(Serial_Num);
         this->System_Status_Flag.System_Status = SYSTEM_START;
     }
@@ -81,11 +79,16 @@ public:
     void Car_Control_Task()
     {
         
-        uint32_t Counter2 = 0;
+        uint64_t Counter2 = 0;
         while(true)
         {
             Counter2++;
-            Serial.printf("Counter2 = %d\r\n",Counter2);
+            Serial.printf("Car Control Task Counter = %lld\r\n",Counter2);
+            if(this->System_Status_Flag.Serial_Work_Flag == true)
+            {
+                this->MOTOR_Serial->printf("Hello\r\n");
+                Serial.printf("RS485 Send Finish\r\n");
+            }
             vTaskDelay(1);
         }
     }
@@ -107,93 +110,82 @@ public:
 
         while(status != 1)
         { 
-            Serial.printf("connect error\r\n");
+            Serial.printf("Imu status: %d\r\n",status);
+            Serial.printf("Imu connect error\r\n");
             this->System_Status_Flag.Sensor_Work_Flag = IMU_CONNT_ERROR;
+            delay(1000);
         } 
-
-        Serial.println("Done!\n");
+        Serial.println("Imu Init Done!\n");
     }
     void IMU_Task(void)
     {
-        uint32_t Counter3 = 0;
+        uint64_t Counter3 = 0;
         LED.LED_Work(LED_COLOR::ORANGE,0.1);
         while(true)
         {
-            // if(xSemaphoreTake(xMutexImu,timeOut) == pdPASS)
-            // {
-                BMI->readSensor();
-                //Imu_Data.temp = BMI->getTemperature_C();
-                Imu_Data.accX = BMI->getAccelY_mss();
-                Imu_Data.accY =-BMI->getAccelX_mss();
-                Imu_Data.accZ = BMI->getAccelZ_mss();
-                Imu_Data.gyroX = BMI->getGyroY_rads();
-                Imu_Data.gyroY =-BMI->getGyroX_rads();
-                Imu_Data.gyroZ = BMI->getGyroZ_rads();
-
-                MahonyAHRSupdateIMU(q,Imu_Data.gyroX,Imu_Data.gyroY,Imu_Data.gyroZ + 0.00521,Imu_Data.accX,Imu_Data.accY,Imu_Data.accZ);
+            Imu.readSensor(&Imu_Data);
+            MahonyAHRSupdateIMU(q,Imu_Data.gyroX,Imu_Data.gyroY,Imu_Data.gyroZ + 0.00520,Imu_Data.accX,Imu_Data.accY,Imu_Data.accZ);
+            get_angle(q,&Angle[0],&Angle[1],&Angle[2]);
+            Imu_msg.header.stamp.sec = rmw_uros_epoch_millis() * 1e-3;
+            Imu_msg.header.stamp.nanosec = rmw_uros_epoch_nanos();
+            Imu_msg.orientation.w = q[0];
+            Imu_msg.orientation.x = q[1];
+            Imu_msg.orientation.y = q[2];
+            Imu_msg.orientation.z = q[3];
+            Imu_msg.angular_velocity.x = Imu_Data.gyroX;
+            Imu_msg.angular_velocity.y = Imu_Data.gyroY;
+            Imu_msg.angular_velocity.z = Imu_Data.gyroZ;
+            Imu_msg.linear_acceleration.x = Imu_Data.accX;
+            Imu_msg.linear_acceleration.y = Imu_Data.accY;
+            Imu_msg.linear_acceleration.z = Imu_Data.accZ;
+            Counter3++;
+            Serial.printf("Imu Task Counter = %lld\r\n",Counter3);
             vTaskDelay(1);
         }
 
     }
 
-                    
     void Car_Serial_Init(const int Serial_Num)
     {
         /*
         *设置电机串口
         */
-        switch(Serial_Num>>8 & 0xFF)
+        switch(Serial_Num)
         {
-            case 0:this->MOTOR_L_Serial = &Serial0;break;
+            case 0:this->MOTOR_Serial = &Serial0;break;
 
-            case 1:this->MOTOR_L_Serial = &Serial1;break;
+            case 1:this->MOTOR_Serial = &Serial1;break;
 
-            case 2:this->MOTOR_L_Serial = &Serial2;break;
+            case 2:this->MOTOR_Serial = &Serial2;break;
 
-            default :this->MOTOR_L_Serial = &Serial0;break;
+            default :this->MOTOR_Serial = &Serial1;break;
         }
-        switch(Serial_Num & 0xFF)
-        {
-            case 0:this->MOTOR_R_Serial = &Serial0;break;
 
-            case 1:this->MOTOR_R_Serial = &Serial1;break;
+        this->MOTOR_Serial->begin(115200);
+        this->MOTOR_Serial->setMode(UART_MODE_RS485_HALF_DUPLEX);
+        this->MOTOR_Serial->setPins(18,8,UART_PIN_NO_CHANGE,17);
 
-            case 2:this->MOTOR_R_Serial = &Serial2;break;
-
-            default :this->MOTOR_R_Serial = &Serial0;break;
-        }
-        this->MOTOR_L_Serial->begin(230400);
-        this->MOTOR_L_Serial->setPins(17,18);
-        this->MOTOR_L_Serial->onReceive(this->Serial_Get_L_Motor_Data());
-        this->MOTOR_R_Serial->begin(230400);
-        this->MOTOR_R_Serial->setPins(15,16);
-        this->MOTOR_R_Serial->onReceive(this->Serial_Get_R_Motor_Data());
+        this->MOTOR_Serial->onReceive(this->Serial_Get_Motor_Data());
         /*
         *设置系统调试串口
         */
-        Serial.begin(115200);
-        this->System_Status_Flag.Serial_Work_Flag = true;
+        
+        
     }
 
     /**
      * @brief 电机串口回调
      * 
      */
-    OnReceiveCb Serial_Get_L_Motor_Data(void)
+    OnReceiveCb IRAM_ATTR Serial_Get_Motor_Data(void)
     {
-        while(this->MOTOR_L_Serial->available())
+        this->System_Status_Flag.Serial_Work_Flag = true;
+        Serial.printf("Serial Init finished\n");
+        while(this->MOTOR_Serial->available())
         {
 
         }
     }
-    OnReceiveCb Serial_Get_R_Motor_Data(void)
-    {
-        while(this->MOTOR_R_Serial->available())
-        {
-
-        }
-    }
-
 };
 
 

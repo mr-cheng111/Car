@@ -7,5 +7,8 @@ Bmi088 Imu(Imu_SPI,39,38);
 BMI088_Data_t Imu_Data;
 volatile uint32_t System_Work_Flag = 0;
 LEDs LED;
-
+WIFI_Data_t Wifi_input;
+sensor_msgs__msg__Imu Imu_msg; // 声明消息文件
+int timeout_ms = 1000;
+uint64_t time_ms = 0;
 

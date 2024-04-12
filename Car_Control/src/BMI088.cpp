@@ -1722,6 +1722,18 @@ void Bmi088::readSensor()
   gyro->readSensor();
 }
 
+void Bmi088::readSensor(BMI088_Data_t *data_buffer)
+{
+  //每次读取都会更新
+  this->readSensor();
+  data_buffer->accX = accel->getAccelY_mss();
+  data_buffer->accY =-accel->getAccelX_mss();
+  data_buffer->accZ = accel->getAccelZ_mss();
+  data_buffer->gyroX= gyro->getGyroY_rads();
+  data_buffer->gyroY=-gyro->getGyroX_rads();
+  data_buffer->gyroZ= gyro->getGyroZ_rads();
+}
+
 void Bmi088::readAccSensor()
 {
   accel->readSensor();

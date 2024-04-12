@@ -25,6 +25,17 @@
 #include "Wire.h"  // I2C library
 #include "SPI.h"   // SPI library
 
+typedef struct {
+  float temperture;
+  uint64_t time;
+  float accX;
+  float accY;
+  float accZ;
+  float gyroX;
+  float gyroY;
+  float gyroZ;
+} BMI088_Data_t;
+
 class Bmi088Accel {
   public:
     enum Range {
@@ -381,7 +392,8 @@ class Bmi088 {
     uint64_t getTime_ps();
     float getGyroX_rads();
     float getGyroY_rads();
-    float getGyroZ_rads();  
+    float getGyroZ_rads();
+    void readSensor(BMI088_Data_t *data_buffer);
   private:
     Bmi088Accel *accel;
     Bmi088Gyro *gyro;

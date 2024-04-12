@@ -4,28 +4,28 @@
 #include "Kalman_IMU.hpp"
 #include "ROS.hpp"
 #include "Data.hpp"
-// put function declarations here:
-WIFI_Data_t Wifi_input;
+
+#include "BMI088.h"
+#include <cstdint>
+
+
+// hw_timer_t * timer = NULL;
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(921600);
-  xMutexImu = xSemaphoreCreateMutex();
-  //Disp_t A;
-  Wifi_input.Wifi_SSID = "Mi10";
-  Wifi_input.Pass_Word = "12345678";
-  Wifi_input.Host_Ip   = "192.168.124.59";
-  Wifi_input.Port      = 8888;
+  Imu.begin();
+  Imu.setRange(Bmi088::ACCEL_RANGE_6G,Bmi088::GYRO_RANGE_500DPS);
+  Imu.setOdr(Bmi088::ODR_2000HZ);
 
-  //Micro_ROS_t *B = new Micro_ROS_t(Wifi_input);
-
-  Car_t *L = new Car_t(1<<8|2);
-  
+  Serial.printf("Setting Microros\r\n");
+  Micro_ROS_t *B = new Micro_ROS_t(Wifi_input);
+  Serial.printf("Setting Cat\r\n");
+  Car_t *C = new Car_t(1,NULL);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-   vTaskDelay(10000);
-  
+void loop() 
+{
+  delay(10000);
 }
 
