@@ -14,6 +14,7 @@
 #include "Data.hpp"
 #include "ROS.hpp"
 #include "MahonyAHRS.h"
+#include "CRC16_Modbus.hpp"
 
 using namespace std;
 
@@ -25,6 +26,19 @@ public:
     Bmi088 *BMI;
     float q[4] = {1,0,0,0};
     float Angle[3] = {0,0,0};
+
+    float Car_D;
+    float Car_R;
+
+    uint8_t Wheel_L_Send_Data_Buffer[13];
+    uint8_t Wheel_R_Send_Data_Buffer[13];
+
+    uint8_t Wheel_L_Get_Speed[13];
+    uint8_t Wheel_R_Get_Speed[13];
+
+    uint8_t Wheel_L_Speed[13];
+    uint8_t Wheel_R_Speed[13];
+
 
 public:
     Car_t(uint16_t Serial_Num,Bmi088 *_Mpu = &Imu) : BMI(_Mpu)
@@ -68,11 +82,12 @@ public:
                                 "IMU_Task", 
                                 20*1024, 
                                 this, 
-                                configMAX_PRIORITIES - 1,
+                                configMAX_PRIORITIES - 2,
                                 NULL,
                                 1);
-
+        //
         Car_Serial_Init(Serial_Num);
+        Motor_Init();
         this->System_Status_Flag.System_Status = SYSTEM_START;
     }
 
@@ -80,18 +95,65 @@ public:
     {
         
         uint64_t Counter2 = 0;
+        
         while(true)
         {
             Counter2++;
-            Serial.printf("Car Control Task Counter = %lld\r\n",Counter2);
+            // Serial.printf("Car Control Task Counter = %lld\r\n",Counter2);
             if(this->System_Status_Flag.Serial_Work_Flag == true)
             {
-                this->MOTOR_Serial->printf("Hello\r\n");
+                
                 Serial.printf("RS485 Send Finish\r\n");
             }
             vTaskDelay(1);
         }
     }
+    void IMU_Task(void)
+    {
+        uint64_t Counter3 = 0;
+        LED.LED_Work(LED_COLOR::ORANGE,0.1);
+        while(true)
+        {
+            Imu.readSensor(&Imu_Data);
+            MahonyAHRSupdateIMU(q,Imu_Data.gyroX,Imu_Data.gyroY,Imu_Data.gyroZ + 0.00520,Imu_Data.accX,Imu_Data.accY,Imu_Data.accZ);
+            get_angle(q,&Angle[0],&Angle[1],&Angle[2]);
+            Imu_msg.header.stamp.sec = rmw_uros_epoch_millis() * 1e-3;
+            Imu_msg.header.stamp.nanosec = rmw_uros_epoch_nanos();
+            Imu_msg.orientation.w = q[0];
+            Imu_msg.orientation.x = q[1];
+            Imu_msg.orientation.y = q[2];
+            Imu_msg.orientation.z = q[3];
+            Imu_msg.angular_velocity.x = Imu_Data.gyroX;
+            Imu_msg.angular_velocity.y = Imu_Data.gyroY;
+            Imu_msg.angular_velocity.z = Imu_Data.gyroZ;
+            Counter3++;
+            // Serial.printf("Imu Task Counter = %lld\r\n",Counter3);
+            vTaskDelay(1);
+        }
+
+    }
+
+    void Car_Serial_Init(const int Serial_Num)
+    {
+        /*
+        *设置电机串口
+        */
+        switch(Serial_Num)
+        {
+            case 0:this->MOTOR_Serial = &Serial0;break;
+
+            case 1:this->MOTOR_Serial = &Serial1;break;
+
+            case 2:this->MOTOR_Serial = &Serial2;break;
+
+            default :this->MOTOR_Serial = &Serial1;break;
+        }
+
+        this->MOTOR_Serial->begin(115200);
+        this->MOTOR_Serial->setMode(UART_MODE_RS485_HALF_DUPLEX);
+        this->MOTOR_Serial->setPins(18,8,UART_PIN_NO_CHANGE,17);
+    }
+
     void IMU_Init(void)
     {   
         int status = 0;
@@ -117,62 +179,38 @@ public:
         } 
         Serial.println("Imu Init Done!\n");
     }
-    void IMU_Task(void)
+
+    void Motor_Init(void)
     {
-        uint64_t Counter3 = 0;
-        LED.LED_Work(LED_COLOR::ORANGE,0.1);
-        while(true)
-        {
-            Imu.readSensor(&Imu_Data);
-            MahonyAHRSupdateIMU(q,Imu_Data.gyroX,Imu_Data.gyroY,Imu_Data.gyroZ + 0.00520,Imu_Data.accX,Imu_Data.accY,Imu_Data.accZ);
-            get_angle(q,&Angle[0],&Angle[1],&Angle[2]);
-            Imu_msg.header.stamp.sec = rmw_uros_epoch_millis() * 1e-3;
-            Imu_msg.header.stamp.nanosec = rmw_uros_epoch_nanos();
-            Imu_msg.orientation.w = q[0];
-            Imu_msg.orientation.x = q[1];
-            Imu_msg.orientation.y = q[2];
-            Imu_msg.orientation.z = q[3];
-            Imu_msg.angular_velocity.x = Imu_Data.gyroX;
-            Imu_msg.angular_velocity.y = Imu_Data.gyroY;
-            Imu_msg.angular_velocity.z = Imu_Data.gyroZ;
-            Imu_msg.linear_acceleration.x = Imu_Data.accX;
-            Imu_msg.linear_acceleration.y = Imu_Data.accY;
-            Imu_msg.linear_acceleration.z = Imu_Data.accZ;
-            Counter3++;
-            Serial.printf("Imu Task Counter = %lld\r\n",Counter3);
-            vTaskDelay(1);
-        }
+        uint8_t Temp_Data1[13] = {0x3E,0x01,0x08,0x70,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+        uint16_t Temp_CRC = 0;
+        Temp_CRC = crc16tablefast(Temp_Data1,11);
 
-    }
+        Temp_Data1[11] = Temp_CRC;
+        Temp_Data1[12] = Temp_CRC>>8;
+        this->MOTOR_Serial->write((char *)Temp_Data1,13);
+        Serial.write((char *)Temp_Data1);
 
-    void Car_Serial_Init(const int Serial_Num)
-    {
-        /*
-        *设置电机串口
-        */
-        switch(Serial_Num)
-        {
-            case 0:this->MOTOR_Serial = &Serial0;break;
+        delay(100);
+        uint8_t Temp_Data2[13] = {0x3E,0x02,0x08,0x70,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+        Temp_CRC = crc16tablefast(Temp_Data2,11);
 
-            case 1:this->MOTOR_Serial = &Serial1;break;
-
-            case 2:this->MOTOR_Serial = &Serial2;break;
-
-            default :this->MOTOR_Serial = &Serial1;break;
-        }
-
-        this->MOTOR_Serial->begin(115200);
-        this->MOTOR_Serial->setMode(UART_MODE_RS485_HALF_DUPLEX);
-        this->MOTOR_Serial->setPins(18,8,UART_PIN_NO_CHANGE,17);
+        Temp_Data2[11] = Temp_CRC;
+        Temp_Data2[12] = Temp_CRC>>8;
+        this->MOTOR_Serial->write((char *)Temp_Data2,13);
+        Serial.write((char *)Temp_Data2);
 
         this->MOTOR_Serial->onReceive(this->Serial_Get_Motor_Data());
-        /*
-        *设置系统调试串口
-        */
-        
-        
+
     }
 
+    void Set_Motor_Speed(Car_control_t Control_Data)
+    {
+        float Weel_L_Speed = Control_Data.Forward_Speed;
+        float Weel_R_Speed = Control_Data.Forward_Speed;
+        Weel_L_Speed -= Control_Data.Forward_Speed;
+        Weel_R_Speed += Control_Data.Forward_Speed;
+    }
     /**
      * @brief 电机串口回调
      * 

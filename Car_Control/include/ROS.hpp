@@ -7,8 +7,9 @@
 #include <rclc/rclc.h>
 #include <rclc/executor.h>
 #include <string>
-
+#include <geometry_msgs/msg/twist.h>
 #include <sensor_msgs/msg/imu.h>
+#include <nav_msgs/msg/odometry.h>
 
 #include <micro_ros_utilities/string_utilities.h>
 
@@ -39,7 +40,7 @@ class Micro_ROS_t
                                     "Micro_Ros_Task", 
                                     100*1024, 
                                     this, 
-                                    1, 
+                                    20, 
                                     NULL, 
                                     0);
         }
@@ -86,29 +87,34 @@ class Micro_ROS_t
             rclc_subscription_init_default(
             &this->subscriber,
             &this->node,
-            ROSIDL_GET_MSG_TYPE_SUPPORT(car_interfaces, msg, Car),
-            "Car_Control");
+            ROSIDL_GET_MSG_TYPE_SUPPORT(geometry_msgs, msg, Twist),
+            "cmd_vel");
      
-            // 为添加一个发布者
+            // 添加Imu数据发布者
             rclc_publisher_init_best_effort(
-            &this->publisher,
+            &this->publisher_Imu,
             &this->node,
             ROSIDL_GET_MSG_TYPE_SUPPORT(sensor_msgs, msg, Imu),
-            "Imu_Raw_Data");
+            "imu");
 
-            // 为添加一个发布者
+            // 添加轮式编码器节点
             rclc_publisher_init_best_effort(
-            &this->publisher,
+            &this->publisher_Odom,
             &this->node,
-            ROSIDL_GET_MSG_TYPE_SUPPORT(sensor_msgs, msg, Imu),
-            "Imu_Raw_Data");
+            ROSIDL_GET_MSG_TYPE_SUPPORT(nav_msgs, msg, Odometry),
+            "odom");
 
             // 创建执行器
             rclc_executor_init(&this->executor, &this->support.context, 1, &this->allocator);
             rclc_executor_add_subscription(&this->executor, &this->subscriber, &this->sub_msg, &Micro_ROS_t::callback_subscription_, ON_NEW_DATA);
 
-            // 初始化LED
-            Imu_msg.header.frame_id = micro_ros_string_utilities_set(Imu_msg.header.frame_id, "Imu"); // 初始化消息内容
+            // 初始化Imu数据
+            Imu_msg.header.frame_id = micro_ros_string_utilities_set(Imu_msg.header.frame_id, "base_link"); // 初始化消息内容
+            Imu_msg.angular_velocity_covariance[0] = 1029.40872336;
+            Imu_msg.angular_velocity_covariance[4] = 764.94836929;
+            Imu_msg.angular_velocity_covariance[8] = 1146.0459208899997;
+
+            Odom_msg.header.frame_id = micro_ros_string_utilities_set(Odom_msg.header.frame_id, "base_link"); // 初始化消息内容
         }
         /*
         * @brief  ROS回调函数
@@ -117,7 +123,9 @@ class Micro_ROS_t
         */
         static void callback_subscription_(const void *msgin)
         {
-            const car_interfaces__msg__Car *msg = (const car_interfaces__msg__Car *)msgin;
+            const geometry_msgs__msg__Twist *msg = (const geometry_msgs__msg__Twist *)msgin;
+            Car_control.Forward_Speed = msg->linear.x;
+            Car_control.Spinning_Speed = msg->angular.z;
         }
 
         void Micro_Ros_Task()
@@ -133,7 +141,8 @@ class Micro_ROS_t
                     rmw_uros_sync_session(1); //  同步时间
                     continue;
                 }
-                rcl_ret = rcl_publish(&this->publisher, &Imu_msg, NULL);
+                rcl_ret = rcl_publish(&this->publisher_Imu, &Imu_msg, NULL);
+                rcl_ret = rcl_publish(&this->publisher_Odom, &Odom_msg, NULL);
                 rclc_executor_spin_some(&this->executor, 1);
                 Serial.printf("Micro_Ros_Task Counter = %lld\r\n",Counter1);
             }
@@ -147,7 +156,7 @@ class Micro_ROS_t
         // 声明话题订阅者
         rcl_subscription_t subscriber;
         rcl_publisher_t publisher_Imu; // 定义Imu话题发布者
-        rcl_publisher_t publisher_;     // 声明话题发布者
+        rcl_publisher_t publisher_Odom;// 声明话题发布者
         rcl_ret_t rcl_ret;
         // 声明消息文件
         car_interfaces__msg__Car sub_msg;

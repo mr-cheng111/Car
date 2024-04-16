@@ -3,6 +3,8 @@
 #include <Arduino.h>
 #include <rcl/rcl.h>
 #include <sensor_msgs/msg/imu.h>
+#include <sensor_msgs/msg/imu.h>
+#include <nav_msgs/msg/odometry.h>
 #include <string>
 #include "SPI.h"
 #include "BMI088.h"
@@ -67,6 +69,13 @@ typedef struct
     
 }WIFI_Data_t;
 
+typedef struct 
+{
+    float Forward_Speed;
+    float Spinning_Speed;
+    
+}Car_control_t;
+
 extern SemaphoreHandle_t xMutexImu; //创建信号量Handler
 extern TickType_t timeOut; //用于获取信号量的Timeout 1 ticks
 extern SPIClass Imu_SPI;
@@ -76,8 +85,10 @@ extern volatile uint32_t System_Work_Flag;
 extern LEDs LED;
 extern WIFI_Data_t Wifi_input;
 extern sensor_msgs__msg__Imu Imu_msg;
+extern nav_msgs__msg__Odometry Odom_msg;
 extern int timeout_ms;
 extern uint64_t time_ms;
+extern Car_control_t Car_control;//机器人控制数据
 
 
 #endif
