@@ -1,0 +1,28 @@
+[0.016s] Invoking command in '/home/mr-cheng/Documents/ROS2/Car/build/car_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Documents/ROS2/Car/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Documents/ROS2/Car/build/car_nav2 -- -j16 -l16
+[0.234s] Invoked command in '/home/mr-cheng/Documents/ROS2/Car/build/car_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Documents/ROS2/Car/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Documents/ROS2/Car/build/car_nav2 -- -j16 -l16
+[0.260s] Invoking command in '/home/mr-cheng/Documents/ROS2/Car/build/car_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Documents/ROS2/Car/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Documents/ROS2/Car/build/car_nav2
+[0.266s] -- Install configuration: ""
+[0.266s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/launch
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/launch/car_nav2.launch.py
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/param
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/param/car_nav2.yaml
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/maps
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/maps/Sim_Map
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/maps/Sim_Map/sim_map.pgm
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/maps/Sim_Map/sim_map.yaml
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/ament_index/resource_index/package_run_dependencies/car_nav2
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/ament_index/resource_index/parent_prefix_path/car_nav2
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/environment/ament_prefix_path.sh
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/environment/ament_prefix_path.dsv
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/environment/path.sh
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/environment/path.dsv
+[0.267s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/local_setup.bash
+[0.268s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/local_setup.sh
+[0.268s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/local_setup.zsh
+[0.268s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/local_setup.dsv
+[0.268s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/package.dsv
+[0.268s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/ament_index/resource_index/packages/car_nav2
+[0.268s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/cmake/car_nav2Config.cmake
+[0.268s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/cmake/car_nav2Config-version.cmake
+[0.269s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/car_nav2/share/car_nav2/package.xml
+[0.274s] Invoked command in '/home/mr-cheng/Documents/ROS2/Car/build/car_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Documents/ROS2/Car/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Documents/ROS2/Car/build/car_nav2

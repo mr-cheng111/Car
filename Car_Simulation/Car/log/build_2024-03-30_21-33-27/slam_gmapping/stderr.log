@@ -1,0 +1,19 @@
+[0m -fuse-ld=lld -Wl,--disable-new-dtags[0m
+[31mCMake Error at CMakeLists.txt:30 (find_package):
+  By not providing "Findopenslam_gmapping.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "openslam_gmapping", but CMake did not find one.
+
+  Could not find a package configuration file provided by "openslam_gmapping"
+  with any of the following names:
+
+    openslam_gmappingConfig.cmake
+    openslam_gmapping-config.cmake
+
+  Add the installation prefix of "openslam_gmapping" to CMAKE_PREFIX_PATH or
+  set "openslam_gmapping_DIR" to a directory containing one of the above
+  files.  If "openslam_gmapping" provides a separate development package or
+  SDK, be sure it has been installed.
+
+[0m
+gmake: *** [Makefile:267: cmake_check_build_system] Error 1

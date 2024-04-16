@@ -1,0 +1,24 @@
+[0.009s] Invoking command in '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/car_nav2:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/home/mr-cheng/Documents/ROS2/Car/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping -- -j16 -l16
+[0.057s] [100%] Built target slam_gmapping
+[0.066s] Invoked command in '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/car_nav2:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/home/mr-cheng/Documents/ROS2/Car/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping -- -j16 -l16
+[0.087s] Invoking command in '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/car_nav2:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/home/mr-cheng/Documents/ROS2/Car/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping
+[0.093s] -- Install configuration: ""
+[0.093s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/lib/slam_gmapping/slam_gmapping
+[0.093s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/launch
+[0.094s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/launch/slam_gmapping.launch.py
+[0.094s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping
+[0.094s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping
+[0.094s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh
+[0.094s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv
+[0.094s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/environment/path.sh
+[0.094s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/environment/path.dsv
+[0.095s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/local_setup.bash
+[0.095s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/local_setup.sh
+[0.095s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/local_setup.zsh
+[0.096s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/local_setup.dsv
+[0.096s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/package.dsv
+[0.097s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping
+[0.097s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake
+[0.097s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake
+[0.097s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/package.xml
+[0.097s] Invoked command in '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/car_nav2:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/home/mr-cheng/Documents/ROS2/Car/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping

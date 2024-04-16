@@ -1,0 +1,120 @@
+[0.177s] Invoking command in '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr-cheng/Documents/ROS2/Car/src/slam_gmapping/openslam_gmapping -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping
+[0.317s] -- The C compiler identification is GNU 11.4.0
+[0.419s] -- The CXX compiler identification is GNU 11.4.0
+[0.436s] -- Detecting C compiler ABI info
+[0.498s] -- Detecting C compiler ABI info - done
+[0.506s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.506s] -- Detecting C compile features
+[0.507s] -- Detecting C compile features - done
+[0.510s] -- Detecting CXX compiler ABI info
+[0.580s] -- Detecting CXX compiler ABI info - done
+[0.587s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.588s] -- Detecting CXX compile features
+[0.588s] -- Detecting CXX compile features - done
+[0.592s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.756s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.948s] -- Configuring done
+[0.961s] -- Generating done
+[0.962s] -- Build files have been written to: /home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping
+[0.968s] Invoked command in '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr-cheng/Documents/ROS2/Car/src/slam_gmapping/openslam_gmapping -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping
+[0.969s] Invoking command in '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping -- -j16 -l16
+[1.008s] [ 18%] [32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o[0m
+[1.009s] [ 18%] [32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o[0m
+[1.009s] [ 18%] [32mBuilding CXX object utils/CMakeFiles/utils.dir/movement.cpp.o[0m
+[1.009s] [ 18%] [32mBuilding CXX object utils/CMakeFiles/utils.dir/stat.cpp.o[0m
+[1.271s] [ 22%] [32m[1mLinking CXX static library libsensor_base.a[0m
+[1.364s] [ 27%] [32m[1mLinking CXX static library libutils.a[0m
+[1.531s] [ 27%] Built target sensor_base
+[1.532s] [ 27%] Built target utils
+[1.549s] [ 40%] [32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o[0m
+[1.549s] [ 40%] [32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o[0m
+[1.549s] [ 45%] [32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometrysensor.cpp.o[0m
+[1.549s] [ 45%] [32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o[0m
+[1.831s] [ 50%] [32m[1mLinking CXX static library libsensor_odometry.a[0m
+[1.881s] [ 50%] Built target sensor_odometry
+[1.981s] [ 54%] [32m[1mLinking CXX static library libsensor_range.a[0m
+[2.031s] [ 54%] Built target sensor_range
+[2.048s] [ 68%] [32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.o[0m
+[2.048s] [ 68%] [32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.o[0m
+[2.048s] [ 68%] [32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.o[0m
+[2.048s] [ 72%] [32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.o[0m
+[3.197s] [ 77%] [32m[1mLinking CXX static library libscanmatcher.a[0m
+[3.248s] [ 77%] Built target scanmatcher
+[3.265s] [ 86%] [32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o[0m
+[3.265s] [ 81%] [32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o[0m
+[3.265s] [ 90%] [32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o[0m
+[3.265s] [ 95%] [32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o[0m
+[4.588s] [100%] [32m[1mLinking CXX static library libgridfastslam.a[0m
+[4.639s] [100%] Built target gridfastslam
+[4.648s] Invoked command in '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping -- -j16 -l16
+[4.676s] Invoking command in '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping
+[4.683s] -- Install configuration: ""
+[4.683s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[4.683s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[4.683s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include/
+[4.683s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping
+[4.683s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils
+[4.684s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils/point.h
+[4.684s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils/stat.h
+[4.684s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils/autoptr.h
+[4.684s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils/commandline.h
+[4.684s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils/gvalues.h
+[4.684s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils/macro_params.h
+[4.684s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/particlefilter
+[4.684s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/particlefilter/particlefilter.h
+[4.684s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/log
+[4.684s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/log/sensorlog.h
+[4.684s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/log/configuration.h
+[4.684s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/scanmatcher
+[4.685s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/scanmatcher/smmap.h
+[4.685s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/scanmatcher/icp.h
+[4.685s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/scanmatcher/scanmatcher.h
+[4.685s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/grid
+[4.685s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/grid/accessstate.h
+[4.685s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/grid/harray2d.h
+[4.685s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/grid/array2d.h
+[4.685s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/grid/map.h
+[4.685s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor
+[4.685s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_range
+[4.685s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangereading.h
+[4.685s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangesensor.h
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_base
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensorreading.h
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensor.h
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometryreading.h
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometrysensor.h
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/gridfastslam
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.h
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.hxx
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/gridfastslam/motionmodel.h
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/ament_index/resource_index/package_run_dependencies/openslam_gmapping
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/ament_index/resource_index/parent_prefix_path/openslam_gmapping
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.sh
+[4.686s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.dsv
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/path.sh
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/path.dsv
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/local_setup.bash
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/local_setup.sh
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/local_setup.zsh
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/local_setup.dsv
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/package.dsv
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/ament_index/resource_index/packages/openslam_gmapping
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_libraries-extras.cmake
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig.cmake
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig-version.cmake
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/package.xml
+[4.687s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib/libgridfastslam.a
+[4.688s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib/libscanmatcher.a
+[4.688s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[4.688s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[4.688s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib/libsensor_base.a
+[4.688s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[4.688s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[4.688s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib/libsensor_odometry.a
+[4.689s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib/libsensor_range.a
+[4.689s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib/libutils.a
+[4.689s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[4.689s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[4.690s] Invoked command in '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping

@@ -1,0 +1,21 @@
+[0.639s] Invoking command in '/home/mr-cheng/Documents/ROS2/Car/src/robot_description': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/mr-cheng/Documents/ROS2/Car/build/robot_description/prefix_override:/home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mr-cheng/Documents/ROS2/Car/build/robot_description/build install --record /home/mr-cheng/Documents/ROS2/Car/build/robot_description/install.log --single-version-externally-managed install_data
+[0.883s] running egg_info
+[0.884s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[0.884s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[0.884s] writing entry points to ../../build/robot_description/robot_description.egg-info/entry_points.txt
+[0.885s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[0.885s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[0.886s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[0.887s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[0.887s] running build
+[0.887s] running build_py
+[0.887s] running install
+[0.888s] running install_lib
+[0.889s] running install_data
+[0.889s] copying launch/gazebo.launch.py -> /home/mr-cheng/Documents/ROS2/Car/install/robot_description/share/robot_description/launch
+[0.889s] running install_egg_info
+[0.890s] removing '/home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info' (and everything under it)
+[0.891s] Copying ../../build/robot_description/robot_description.egg-info to /home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info
+[0.892s] running install_scripts
+[0.909s] writing list of installed files to '/home/mr-cheng/Documents/ROS2/Car/build/robot_description/install.log'
+[0.927s] Invoked command in '/home/mr-cheng/Documents/ROS2/Car/src/robot_description' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/mr-cheng/Documents/ROS2/Car/build/robot_description/prefix_override:/home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mr-cheng/Documents/ROS2/Car/build/robot_description/build install --record /home/mr-cheng/Documents/ROS2/Car/build/robot_description/install.log --single-version-externally-managed install_data

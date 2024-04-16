@@ -1,0 +1,67 @@
+[0.169s] Invoking command in '/home/mr-cheng/Documents/ROS2/Car/build/car_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr-cheng/Documents/ROS2/Car/src/car_sim -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Documents/ROS2/Car/install/car_sim
+[0.179s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.305s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.332s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.334s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.340s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.350s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.365s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.421s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.423s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.535s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.697s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.832s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.859s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.120s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.125s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.125s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[1.261s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.266s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.272s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.399s] -- Found Qhull version 8.0.2
+[1.535s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.660s] -- looking for PCL_COMMON
+[1.660s] -- looking for PCL_KDTREE
+[1.661s] -- looking for PCL_OCTREE
+[1.661s] -- looking for PCL_SEARCH
+[1.661s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.662s] -- looking for PCL_FILTERS
+[1.663s] -- looking for PCL_2D
+[1.663s] -- looking for PCL_GEOMETRY
+[1.663s] -- looking for PCL_IO
+[1.664s] -- looking for PCL_FEATURES
+[1.664s] -- looking for PCL_ML
+[1.664s] -- looking for PCL_SEGMENTATION
+[1.665s] -- looking for PCL_VISUALIZATION
+[1.665s] -- looking for PCL_SURFACE
+[1.666s] -- looking for PCL_REGISTRATION
+[1.667s] -- looking for PCL_KEYPOINTS
+[1.667s] -- looking for PCL_TRACKING
+[1.667s] -- looking for PCL_RECOGNITION
+[1.668s] -- looking for PCL_STEREO
+[1.668s] -- looking for PCL_APPS
+[1.669s] -- looking for PCL_IN_HAND_SCANNER
+[1.669s] -- looking for PCL_MODELER
+[1.670s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.670s] -- looking for PCL_OUTOFCORE
+[1.670s] -- looking for PCL_PEOPLE
+[1.672s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.805s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.864s] -- Added test 'lint_cmake' to check CMake code style
+[1.865s] -- Added test 'xmllint' to check XML markup files
+[1.866s] -- Configuring done
+[1.871s] [31mCMake Error at CMakeLists.txt:29 (add_executable):
+[1.871s]   Cannot find source file:
+[1.871s] 
+[1.871s]     src/car_sim.cpp
+[1.871s] 
+[1.871s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[1.871s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[1.871s] 
+[1.871s] [0m
+[1.872s] [31mCMake Error at CMakeLists.txt:29 (add_executable):
+[1.872s]   No SOURCES given to target: car_sim
+[1.872s] 
+[1.872s] [0m
+[1.872s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[1.882s] Invoked command in '/home/mr-cheng/Documents/ROS2/Car/build/car_sim' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr-cheng/Documents/ROS2/Car/src/car_sim -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Documents/ROS2/Car/install/car_sim

@@ -1,0 +1,22 @@
+[0.745s] Invoking command in '/home/mr-cheng/Documents/ROS2/Car/src/robot_description': PYTHONPATH=/home/mr-cheng/Documents/ROS2/Car/build/robot_description/prefix_override:/home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mr-cheng/Documents/ROS2/Car/build/robot_description/build install --record /home/mr-cheng/Documents/ROS2/Car/build/robot_description/install.log --single-version-externally-managed
+[0.977s] running egg_info
+[0.978s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[0.978s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[0.978s] writing entry points to ../../build/robot_description/robot_description.egg-info/entry_points.txt
+[0.978s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[0.978s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[0.980s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[0.981s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[0.981s] running build
+[0.981s] running build_py
+[0.981s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.981s]   warnings.warn(
+[0.981s] running install
+[0.981s] running install_lib
+[0.982s] running install_data
+[0.982s] running install_egg_info
+[0.984s] removing '/home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info' (and everything under it)
+[0.984s] Copying ../../build/robot_description/robot_description.egg-info to /home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info
+[0.985s] running install_scripts
+[1.002s] writing list of installed files to '/home/mr-cheng/Documents/ROS2/Car/build/robot_description/install.log'
+[1.018s] Invoked command in '/home/mr-cheng/Documents/ROS2/Car/src/robot_description' returned '0': PYTHONPATH=/home/mr-cheng/Documents/ROS2/Car/build/robot_description/prefix_override:/home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mr-cheng/Documents/ROS2/Car/build/robot_description/build install --record /home/mr-cheng/Documents/ROS2/Car/build/robot_description/install.log --single-version-externally-managed

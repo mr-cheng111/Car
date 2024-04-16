@@ -1,0 +1,33 @@
+running egg_info
+creating ../../build/gmapping/gmapping.egg-info
+writing ../../build/gmapping/gmapping.egg-info/PKG-INFO
+writing dependency_links to ../../build/gmapping/gmapping.egg-info/dependency_links.txt
+writing entry points to ../../build/gmapping/gmapping.egg-info/entry_points.txt
+writing requirements to ../../build/gmapping/gmapping.egg-info/requires.txt
+writing top-level names to ../../build/gmapping/gmapping.egg-info/top_level.txt
+writing manifest file '../../build/gmapping/gmapping.egg-info/SOURCES.txt'
+reading manifest file '../../build/gmapping/gmapping.egg-info/SOURCES.txt'
+writing manifest file '../../build/gmapping/gmapping.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/mr-cheng/Documents/ROS2/Car/build/gmapping/build
+creating /home/mr-cheng/Documents/ROS2/Car/build/gmapping/build/lib
+creating /home/mr-cheng/Documents/ROS2/Car/build/gmapping/build/lib/gmapping
+copying gmapping/__init__.py -> /home/mr-cheng/Documents/ROS2/Car/build/gmapping/build/lib/gmapping
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/mr-cheng/Documents/ROS2/Car/install/gmapping/lib/python3.10/site-packages/gmapping
+copying /home/mr-cheng/Documents/ROS2/Car/build/gmapping/build/lib/gmapping/__init__.py -> /home/mr-cheng/Documents/ROS2/Car/install/gmapping/lib/python3.10/site-packages/gmapping
+byte-compiling /home/mr-cheng/Documents/ROS2/Car/install/gmapping/lib/python3.10/site-packages/gmapping/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/mr-cheng/Documents/ROS2/Car/install/gmapping/share/ament_index
+creating /home/mr-cheng/Documents/ROS2/Car/install/gmapping/share/ament_index/resource_index
+creating /home/mr-cheng/Documents/ROS2/Car/install/gmapping/share/ament_index/resource_index/packages
+copying resource/gmapping -> /home/mr-cheng/Documents/ROS2/Car/install/gmapping/share/ament_index/resource_index/packages
+copying package.xml -> /home/mr-cheng/Documents/ROS2/Car/install/gmapping/share/gmapping
+running install_egg_info
+Copying ../../build/gmapping/gmapping.egg-info to /home/mr-cheng/Documents/ROS2/Car/install/gmapping/lib/python3.10/site-packages/gmapping-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/mr-cheng/Documents/ROS2/Car/build/gmapping/install.log'

@@ -1,0 +1,2 @@
+Invoking command in '/home/mr-cheng/Documents/ROS2/Car/build/car_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr-cheng/Documents/ROS2/Car/src/car_sim -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Documents/ROS2/Car/install/car_sim
+Invoked command in '/home/mr-cheng/Documents/ROS2/Car/build/car_sim' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr-cheng/Documents/ROS2/Car/src/car_sim -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Documents/ROS2/Car/install/car_sim

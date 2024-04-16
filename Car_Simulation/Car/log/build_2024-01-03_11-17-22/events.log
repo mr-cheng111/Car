@@ -1,0 +1,198 @@
+[0.000000] (-) TimerEvent: {}
+[0.000104] (car_sim) JobQueued: {'identifier': 'car_sim', 'dependencies': OrderedDict()}
+[0.000156] (robot_description) JobQueued: {'identifier': 'robot_description', 'dependencies': OrderedDict()}
+[0.000238] (car_sim) JobStarted: {'identifier': 'car_sim'}
+[0.079682] (robot_description) JobStarted: {'identifier': 'robot_description'}
+[0.099582] (-) TimerEvent: {}
+[0.176722] (car_sim) JobProgress: {'identifier': 'car_sim', 'progress': 'cmake'}
+[0.176924] (car_sim) Command: {'cmd': ['/usr/bin/cmake', '/home/mr-cheng/Documents/ROS2/Car/src/car_sim', '-DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Documents/ROS2/Car/install/car_sim'], 'cwd': '/home/mr-cheng/Documents/ROS2/Car/build/car_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', ''), ('USER', 'mr-cheng'), ('LC_TIME', 'en_US.UTF-8'), ('DDSGEN', '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib'), ('HOME', '/home/mr-cheng'), ('OLDPWD', '/home/mr-cheng/Documents/ROS2/Car/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/mr-cheng/Bag/fastdds/gradle-6.4'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1474'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2de89b3b10f5f44ca8aca72a6594cdce'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install'), ('INFOPATH', '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mr-cheng'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mr-cheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/'), ('SESSION_MANAGER', 'local/mrcheng-ROG:@/tmp/.ICE-unix/1474,unix/mrcheng-ROG:/tmp/.ICE-unix/1474'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/90b6e86e_cc3e_4527_a3d4_8238dfef3aaf'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BQQSG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.125'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/mr-cheng/Documents/ROS2/Car/build/car_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2de89b3b10f5f44ca8aca72a6594cdce'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/opt/ros/humble')]), 'shell': False}
+[0.199662] (-) TimerEvent: {}
+[0.299878] (-) TimerEvent: {}
+[0.316782] (car_sim) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.399964] (-) TimerEvent: {}
+[0.415987] (car_sim) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.431974] (car_sim) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.454883] (robot_description) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 51, in build\n    setup_py_data = get_setup_data(self.context.pkg, env)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/__init__.py", line 20, in get_setup_data\n    return dict(pkg.metadata[key](env))\n  File "/usr/lib/python3/dist-packages/colcon_ros/package_augmentation/ros_ament_python.py", line 57, in getter\n    return get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 241, in get_setup_information\n    _setup_information_cache[hashable_env] = _get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 288, in _get_setup_information\n    result = subprocess.run(\n  File "/usr/lib/python3.10/subprocess.py", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command \'[\'/usr/bin/python3\', \'-c\', \'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \\\'setup.py\\\', script_args=(\\\'--dry-run\\\',), stop_after=\\\'config\\\');skip_keys = (\\\'cmdclass\\\', \\\'distclass\\\', \\\'ext_modules\\\', \\\'metadata\\\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\\\'_\\\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\\\'metadata\\\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\\\'license_files\\\', \\\'provides_extras\\\')};sys.stdout.buffer.write(repr(data).encode(\\\'utf-8\\\'))\']\' returned non-zero exit status 1.\n'}
+[0.455257] (robot_description) JobEnded: {'identifier': 'robot_description', 'rc': 1}
+[0.492810] (car_sim) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.499891] (car_sim) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.499993] (-) TimerEvent: {}
+[0.500342] (car_sim) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.501004] (car_sim) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.504231] (car_sim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.574919] (car_sim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.582272] (car_sim) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.582534] (car_sim) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.582956] (car_sim) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.588691] (car_sim) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600067] (-) TimerEvent: {}
+[0.700258] (-) TimerEvent: {}
+[0.739951] (car_sim) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.800343] (-) TimerEvent: {}
+[0.851756] (car_sim) StdoutLine: {'line': b'-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.900433] (-) TimerEvent: {}
+[0.932724] (car_sim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.938779] (car_sim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.950044] (car_sim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.967917] (car_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.991347] (car_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.000502] (-) TimerEvent: {}
+[1.073009] (car_sim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.076576] (car_sim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.100575] (-) TimerEvent: {}
+[1.169886] (car_sim) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.195614] (car_sim) StdoutLine: {'line': b'-- Found FastRTPS: /home/mr-cheng/Bag/fastdds/install/fastrtps/include  \n'}
+[1.200647] (-) TimerEvent: {}
+[1.239174] (car_sim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.251825] (car_sim) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.300758] (-) TimerEvent: {}
+[1.323999] (car_sim) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.324334] (car_sim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.382223] (car_sim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.383203] (car_sim) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.400822] (-) TimerEvent: {}
+[1.501063] (-) TimerEvent: {}
+[1.565864] (car_sim) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.601133] (-) TimerEvent: {}
+[1.701324] (-) TimerEvent: {}
+[1.718386] (car_sim) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.727600] (car_sim) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.752314] (car_sim) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.752468] (car_sim) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.778011] (car_sim) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[1.793083] (car_sim) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.801389] (-) TimerEvent: {}
+[1.802346] (car_sim) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.830597] (car_sim) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.830726] (car_sim) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.868622] (car_sim) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[1.874890] (car_sim) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[1.901480] (-) TimerEvent: {}
+[2.001700] (-) TimerEvent: {}
+[2.006240] (car_sim) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[2.006510] (car_sim) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[2.009327] (car_sim) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[2.017771] (car_sim) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[2.033928] (car_sim) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[2.055119] (car_sim) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[2.101789] (-) TimerEvent: {}
+[2.133794] (car_sim) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[2.134348] (car_sim) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[2.193186] (car_sim) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[2.193436] (car_sim) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[2.201856] (-) TimerEvent: {}
+[2.247682] (car_sim) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[2.247861] (car_sim) StdoutLine: {'line': b'-- Looking for connect\n'}
+[2.301904] (car_sim) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[2.302049] (-) TimerEvent: {}
+[2.302224] (car_sim) StdoutLine: {'line': b'-- Looking for remove\n'}
+[2.360972] (car_sim) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[2.361142] (car_sim) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[2.402162] (-) TimerEvent: {}
+[2.426201] (car_sim) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[2.426507] (car_sim) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[2.487478] (car_sim) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[2.502229] (-) TimerEvent: {}
+[2.550944] (car_sim) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[2.553071] (car_sim) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[2.555364] (car_sim) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[2.557197] (car_sim) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[2.602301] (-) TimerEvent: {}
+[2.602839] (car_sim) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[2.607643] (car_sim) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[2.611226] (car_sim) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[2.617129] (car_sim) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[2.682438] (car_sim) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.692437] (car_sim) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.702373] (-) TimerEvent: {}
+[2.717450] (car_sim) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.718486] (car_sim) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[2.718701] (car_sim) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.758620] (car_sim) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[2.758856] (car_sim) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.758936] (car_sim) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[2.802448] (-) TimerEvent: {}
+[2.892204] (car_sim) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.897041] (car_sim) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.901965] (car_sim) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.902509] (-) TimerEvent: {}
+[3.002687] (-) TimerEvent: {}
+[3.030358] (car_sim) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.102778] (-) TimerEvent: {}
+[3.160471] (car_sim) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.202850] (-) TimerEvent: {}
+[3.286189] (car_sim) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[3.286969] (car_sim) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[3.287198] (car_sim) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[3.288349] (car_sim) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.288501] (car_sim) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[3.289539] (car_sim) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[3.289713] (car_sim) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[3.290446] (car_sim) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[3.290653] (car_sim) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[3.291266] (car_sim) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.291404] (car_sim) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[3.292186] (car_sim) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[3.292485] (car_sim) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[3.292661] (car_sim) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[3.292823] (car_sim) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[3.293142] (car_sim) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[3.293356] (car_sim) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[3.294061] (car_sim) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[3.294244] (car_sim) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[3.295001] (car_sim) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[3.295178] (car_sim) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[3.295915] (car_sim) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[3.296153] (car_sim) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[3.296789] (car_sim) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.297135] (car_sim) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[3.297864] (car_sim) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[3.298105] (car_sim) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[3.298750] (car_sim) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[3.298955] (car_sim) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[3.299697] (car_sim) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[3.299928] (car_sim) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[3.300759] (car_sim) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.300884] (car_sim) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[3.301685] (car_sim) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[3.301873] (car_sim) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[3.302579] (car_sim) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[3.302771] (car_sim) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[3.302910] (-) TimerEvent: {}
+[3.303497] (car_sim) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[3.303653] (car_sim) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[3.304351] (car_sim) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[3.305109] (car_sim) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[3.305348] (car_sim) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[3.305461] (car_sim) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[3.305711] (car_sim) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[3.305794] (car_sim) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[3.306297] (car_sim) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[3.306411] (car_sim) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[3.307154] (car_sim) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.307351] (car_sim) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[3.308064] (car_sim) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[3.308835] (car_sim) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[3.310894] (car_sim) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[3.403034] (-) TimerEvent: {}
+[3.478331] (car_sim) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.503113] (-) TimerEvent: {}
+[3.555016] (car_sim) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.556305] (car_sim) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.558558] (car_sim) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.563565] (car_sim) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:29 (add_executable):\n'}
+[3.563672] (car_sim) StderrLine: {'line': b'  Cannot find source file:\n'}
+[3.563739] (car_sim) StderrLine: {'line': b'\n'}
+[3.563800] (car_sim) StderrLine: {'line': b'    src/car_sim.cpp\n'}
+[3.563863] (car_sim) StderrLine: {'line': b'\n'}
+[3.563922] (car_sim) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h\n'}
+[3.563981] (car_sim) StderrLine: {'line': b'  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc\n'}
+[3.564039] (car_sim) StderrLine: {'line': b'\n'}
+[3.564097] (car_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[3.564524] (car_sim) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:29 (add_executable):\n'}
+[3.564618] (car_sim) StderrLine: {'line': b'  No SOURCES given to target: car_sim\n'}
+[3.564685] (car_sim) StderrLine: {'line': b'\n'}
+[3.564746] (car_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[3.564807] (car_sim) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[3.577171] (car_sim) JobEnded: {'identifier': 'car_sim', 'rc': 'SIGINT'}
+[3.587615] (-) EventReactorShutdown: {}

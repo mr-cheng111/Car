@@ -1,0 +1,446 @@
+[0.000000] (-) TimerEvent: {}
+[0.000105] (openslam_gmapping) JobQueued: {'identifier': 'openslam_gmapping', 'dependencies': OrderedDict()}
+[0.000135] (robot_description) JobQueued: {'identifier': 'robot_description', 'dependencies': OrderedDict()}
+[0.000179] (slam_gmapping) JobQueued: {'identifier': 'slam_gmapping', 'dependencies': OrderedDict([('openslam_gmapping', '/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping')])}
+[0.000260] (openslam_gmapping) JobStarted: {'identifier': 'openslam_gmapping'}
+[0.077367] (robot_description) JobStarted: {'identifier': 'robot_description'}
+[0.099580] (-) TimerEvent: {}
+[0.174929] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'cmake'}
+[0.174989] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '/home/mr-cheng/Documents/ROS2/Car/src/slam_gmapping/openslam_gmapping', '-DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping'], 'cwd': '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', ''), ('USER', 'mr-cheng'), ('LC_TIME', 'en_US.UTF-8'), ('DDSGEN', '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib'), ('HOME', '/home/mr-cheng'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/mr-cheng/Bag/fastdds/gradle-6.4'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1458'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install'), ('INFOPATH', '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mr-cheng'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mr-cheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/'), ('SESSION_MANAGER', 'local/mrcheng-ROG:@/tmp/.ICE-unix/1458,unix/mrcheng-ROG:/tmp/.ICE-unix/1458'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0992ce8_7f17_4238_b32f_832e7bb1680b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1023G2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.155'), ('CSROOT', '/home/mr-cheng/commands'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/opt/ros/humble')]), 'shell': False}
+[0.199673] (-) TimerEvent: {}
+[0.299889] (-) TimerEvent: {}
+[0.316659] (openslam_gmapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.399984] (-) TimerEvent: {}
+[0.418874] (openslam_gmapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.435871] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.498662] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.500074] (-) TimerEvent: {}
+[0.505917] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.506275] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.506863] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.510504] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.580015] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.587517] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.587754] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.588171] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.592074] (openslam_gmapping) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600150] (-) TimerEvent: {}
+[0.700361] (-) TimerEvent: {}
+[0.756509] (openslam_gmapping) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.800440] (-) TimerEvent: {}
+[0.900690] (-) TimerEvent: {}
+[0.905166] (robot_description) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_description', 'build', '--build-base', '/home/mr-cheng/Documents/ROS2/Car/build/robot_description/build', 'install', '--record', '/home/mr-cheng/Documents/ROS2/Car/build/robot_description/install.log', '--single-version-externally-managed'], 'cwd': '/home/mr-cheng/Documents/ROS2/Car/src/robot_description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'HTTPS_PROXY': 'http://127.0.0.1:7890/', 'no_proxy': '', 'USER': 'mr-cheng', 'LC_TIME': 'en_US.UTF-8', 'DDSGEN': '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib', 'HOME': '/home/mr-cheng', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': '', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GRADLE_HOME': '/home/mr-cheng/Bag/fastdds/gradle-6.4', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'en_US.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1458', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'https_proxy': 'http://127.0.0.1:7890/', 'COLCON_PREFIX_PATH': '/home/mr-cheng/Bag/fastdds/install', 'INFOPATH': '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:', 'ROS_DISTRO': 'humble', 'LOGNAME': 'mr-cheng', 'http_proxy': 'http://127.0.0.1:7890/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mr-cheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/', 'SESSION_MANAGER': 'local/mrcheng-ROG:@/tmp/.ICE-unix/1458,unix/mrcheng-ROG:/tmp/.ICE-unix/1458', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c0992ce8_7f17_4238_b32f_832e7bb1680b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.1023G2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.155', 'CSROOT': '/home/mr-cheng/commands', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'ROSDISTRO_INDEX_URL': 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'QT_IM_MODULE': 'ibus', 'JAVA_HOME': '/usr/lib/jvm/java-11-openjdk-amd64', 'PWD': '/home/mr-cheng/Documents/ROS2/Car/build/robot_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mr-cheng/Documents/ROS2/Car/build/robot_description/prefix_override:/home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'HTTP_PROXY': 'http://127.0.0.1:7890/', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'MANPATH': ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr'}, 'shell': False}
+[0.947741] (openslam_gmapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.960968] (openslam_gmapping) StdoutLine: {'line': b'-- Generating done\n'}
+[0.962559] (openslam_gmapping) StdoutLine: {'line': b'-- Build files have been written to: /home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping\n'}
+[0.966740] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[0.969055] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'build'}
+[0.969124] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping', '--', '-j16', '-l16'], 'cwd': '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', ''), ('USER', 'mr-cheng'), ('LC_TIME', 'en_US.UTF-8'), ('DDSGEN', '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib'), ('HOME', '/home/mr-cheng'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/mr-cheng/Bag/fastdds/gradle-6.4'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1458'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install'), ('INFOPATH', '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mr-cheng'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mr-cheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/'), ('SESSION_MANAGER', 'local/mrcheng-ROG:@/tmp/.ICE-unix/1458,unix/mrcheng-ROG:/tmp/.ICE-unix/1458'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0992ce8_7f17_4238_b32f_832e7bb1680b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1023G2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.155'), ('CSROOT', '/home/mr-cheng/commands'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/opt/ros/humble')]), 'shell': False}
+[1.000787] (-) TimerEvent: {}
+[1.008601] (openslam_gmapping) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o\x1b[0m\n'}
+[1.008809] (openslam_gmapping) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o\x1b[0m\n'}
+[1.008927] (openslam_gmapping) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object utils/CMakeFiles/utils.dir/movement.cpp.o\x1b[0m\n'}
+[1.009030] (openslam_gmapping) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object utils/CMakeFiles/utils.dir/stat.cpp.o\x1b[0m\n'}
+[1.100875] (-) TimerEvent: {}
+[1.174460] (robot_description) StdoutLine: {'line': b'running egg_info\n'}
+[1.175188] (robot_description) StdoutLine: {'line': b'writing ../../build/robot_description/robot_description.egg-info/PKG-INFO\n'}
+[1.175385] (robot_description) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt\n'}
+[1.175519] (robot_description) StdoutLine: {'line': b'writing entry points to ../../build/robot_description/robot_description.egg-info/entry_points.txt\n'}
+[1.175633] (robot_description) StdoutLine: {'line': b'writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt\n'}
+[1.175722] (robot_description) StdoutLine: {'line': b'writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt\n'}
+[1.177331] (robot_description) StdoutLine: {'line': b"reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'\n"}
+[1.178302] (robot_description) StdoutLine: {'line': b"writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'\n"}
+[1.178416] (robot_description) StdoutLine: {'line': b'running build\n'}
+[1.178519] (robot_description) StdoutLine: {'line': b'running build_py\n'}
+[1.178633] (robot_description) StdoutLine: {'line': b'running install\n'}
+[1.178767] (robot_description) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.178852] (robot_description) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.179056] (robot_description) StdoutLine: {'line': b'running install_lib\n'}
+[1.180063] (robot_description) StdoutLine: {'line': b'running install_data\n'}
+[1.180704] (robot_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.182332] (robot_description) StdoutLine: {'line': b"removing '/home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.182617] (robot_description) StdoutLine: {'line': b'Copying ../../build/robot_description/robot_description.egg-info to /home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info\n'}
+[1.183357] (robot_description) StdoutLine: {'line': b'running install_scripts\n'}
+[1.200966] (-) TimerEvent: {}
+[1.204464] (robot_description) StdoutLine: {'line': b"writing list of installed files to '/home/mr-cheng/Documents/ROS2/Car/build/robot_description/install.log'\n"}
+[1.232150] (robot_description) CommandEnded: {'returncode': 0}
+[1.271156] (openslam_gmapping) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX static library libsensor_base.a\x1b[0m\n'}
+[1.301098] (-) TimerEvent: {}
+[1.313283] (robot_description) JobEnded: {'identifier': 'robot_description', 'rc': 0}
+[1.364486] (openslam_gmapping) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking CXX static library libutils.a\x1b[0m\n'}
+[1.401192] (-) TimerEvent: {}
+[1.501427] (-) TimerEvent: {}
+[1.531550] (openslam_gmapping) StdoutLine: {'line': b'[ 27%] Built target sensor_base\n'}
+[1.531736] (openslam_gmapping) StdoutLine: {'line': b'[ 27%] Built target utils\n'}
+[1.548761] (openslam_gmapping) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o\x1b[0m\n'}
+[1.548952] (openslam_gmapping) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o\x1b[0m\n'}
+[1.549045] (openslam_gmapping) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometrysensor.cpp.o\x1b[0m\n'}
+[1.549129] (openslam_gmapping) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o\x1b[0m\n'}
+[1.601531] (-) TimerEvent: {}
+[1.701978] (-) TimerEvent: {}
+[1.802433] (-) TimerEvent: {}
+[1.831392] (openslam_gmapping) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libsensor_odometry.a\x1b[0m\n'}
+[1.881476] (openslam_gmapping) StdoutLine: {'line': b'[ 50%] Built target sensor_odometry\n'}
+[1.902532] (-) TimerEvent: {}
+[1.981421] (openslam_gmapping) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX static library libsensor_range.a\x1b[0m\n'}
+[2.002634] (-) TimerEvent: {}
+[2.030859] (openslam_gmapping) StdoutLine: {'line': b'[ 54%] Built target sensor_range\n'}
+[2.047670] (openslam_gmapping) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.o\x1b[0m\n'}
+[2.047910] (openslam_gmapping) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.o\x1b[0m\n'}
+[2.048040] (openslam_gmapping) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.o\x1b[0m\n'}
+[2.048154] (openslam_gmapping) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.o\x1b[0m\n'}
+[2.102737] (-) TimerEvent: {}
+[2.203074] (-) TimerEvent: {}
+[2.303319] (-) TimerEvent: {}
+[2.403557] (-) TimerEvent: {}
+[2.503802] (-) TimerEvent: {}
+[2.604057] (-) TimerEvent: {}
+[2.704303] (-) TimerEvent: {}
+[2.804540] (-) TimerEvent: {}
+[2.904764] (-) TimerEvent: {}
+[3.004989] (-) TimerEvent: {}
+[3.105226] (-) TimerEvent: {}
+[3.196819] (openslam_gmapping) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX static library libscanmatcher.a\x1b[0m\n'}
+[3.205299] (-) TimerEvent: {}
+[3.248099] (openslam_gmapping) StdoutLine: {'line': b'[ 77%] Built target scanmatcher\n'}
+[3.265081] (openslam_gmapping) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o\x1b[0m\n'}
+[3.265304] (openslam_gmapping) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o\x1b[0m\n'}
+[3.265417] (openslam_gmapping) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o\x1b[0m\n'}
+[3.265558] (openslam_gmapping) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o\x1b[0m\n'}
+[3.305484] (-) TimerEvent: {}
+[3.406088] (-) TimerEvent: {}
+[3.506322] (-) TimerEvent: {}
+[3.606559] (-) TimerEvent: {}
+[3.706786] (-) TimerEvent: {}
+[3.807019] (-) TimerEvent: {}
+[3.907248] (-) TimerEvent: {}
+[4.007476] (-) TimerEvent: {}
+[4.107698] (-) TimerEvent: {}
+[4.207931] (-) TimerEvent: {}
+[4.308150] (-) TimerEvent: {}
+[4.408370] (-) TimerEvent: {}
+[4.508598] (-) TimerEvent: {}
+[4.588201] (openslam_gmapping) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libgridfastslam.a\x1b[0m\n'}
+[4.608694] (-) TimerEvent: {}
+[4.639431] (openslam_gmapping) StdoutLine: {'line': b'[100%] Built target gridfastslam\n'}
+[4.648539] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[4.669312] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'install'}
+[4.676303] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping'], 'cwd': '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', ''), ('USER', 'mr-cheng'), ('LC_TIME', 'en_US.UTF-8'), ('DDSGEN', '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib'), ('HOME', '/home/mr-cheng'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/mr-cheng/Bag/fastdds/gradle-6.4'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1458'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install'), ('INFOPATH', '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mr-cheng'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mr-cheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/'), ('SESSION_MANAGER', 'local/mrcheng-ROG:@/tmp/.ICE-unix/1458,unix/mrcheng-ROG:/tmp/.ICE-unix/1458'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0992ce8_7f17_4238_b32f_832e7bb1680b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1023G2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.155'), ('CSROOT', '/home/mr-cheng/commands'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/mr-cheng/Documents/ROS2/Car/build/openslam_gmapping'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/opt/ros/humble')]), 'shell': False}
+[4.682777] (openslam_gmapping) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.682950] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[4.683136] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[4.683327] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include/\n'}
+[4.683512] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping\n'}
+[4.683610] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils\n'}
+[4.683707] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils/point.h\n'}
+[4.683799] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils/stat.h\n'}
+[4.683890] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils/autoptr.h\n'}
+[4.683971] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils/commandline.h\n'}
+[4.684050] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils/gvalues.h\n'}
+[4.684143] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/utils/macro_params.h\n'}
+[4.684246] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/particlefilter\n'}
+[4.684327] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/particlefilter/particlefilter.h\n'}
+[4.684407] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/log\n'}
+[4.684497] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/log/sensorlog.h\n'}
+[4.684579] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/log/configuration.h\n'}
+[4.684657] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/scanmatcher\n'}
+[4.684735] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/scanmatcher/smmap.h\n'}
+[4.684825] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/scanmatcher/icp.h\n'}
+[4.684903] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/scanmatcher/scanmatcher.h\n'}
+[4.684992] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/grid\n'}
+[4.685070] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/grid/accessstate.h\n'}
+[4.685150] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/grid/harray2d.h\n'}
+[4.685240] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/grid/array2d.h\n'}
+[4.685319] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/grid/map.h\n'}
+[4.685396] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor\n'}
+[4.685502] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_range\n'}
+[4.685568] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangereading.h\n'}
+[4.685629] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangesensor.h\n'}
+[4.685718] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_base\n'}
+[4.685809] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensorreading.h\n'}
+[4.685871] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensor.h\n'}
+[4.685948] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry\n'}
+[4.686026] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometryreading.h\n'}
+[4.686105] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometrysensor.h\n'}
+[4.686179] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/gridfastslam\n'}
+[4.686242] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.h\n'}
+[4.686317] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.hxx\n'}
+[4.686396] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include//gmapping/gridfastslam/motionmodel.h\n'}
+[4.686466] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/ament_index/resource_index/package_run_dependencies/openslam_gmapping\n'}
+[4.686529] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/ament_index/resource_index/parent_prefix_path/openslam_gmapping\n'}
+[4.686607] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.sh\n'}
+[4.686686] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.dsv\n'}
+[4.686747] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/path.sh\n'}
+[4.686824] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/path.dsv\n'}
+[4.686906] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/local_setup.bash\n'}
+[4.686993] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/local_setup.sh\n'}
+[4.687057] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/local_setup.zsh\n'}
+[4.687134] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/local_setup.dsv\n'}
+[4.687211] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/package.dsv\n'}
+[4.687289] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/ament_index/resource_index/packages/openslam_gmapping\n'}
+[4.687350] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.687412] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.687499] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig.cmake\n'}
+[4.687562] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig-version.cmake\n'}
+[4.687624] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/package.xml\n'}
+[4.687685] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib/libgridfastslam.a\n'}
+[4.687795] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib/libscanmatcher.a\n'}
+[4.688077] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[4.688159] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[4.688249] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib/libsensor_base.a\n'}
+[4.688371] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[4.688450] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[4.688540] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib/libsensor_odometry.a\n'}
+[4.688732] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib/libsensor_range.a\n'}
+[4.688947] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib/libutils.a\n'}
+[4.689059] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[4.689139] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[4.690353] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[4.710011] (-) TimerEvent: {}
+[4.810330] (-) TimerEvent: {}
+[4.852533] (openslam_gmapping) JobEnded: {'identifier': 'openslam_gmapping', 'rc': 0}
+[4.853222] (slam_gmapping) JobStarted: {'identifier': 'slam_gmapping'}
+[4.910602] (-) TimerEvent: {}
+[4.929820] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'cmake'}
+[4.930342] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '/home/mr-cheng/Documents/ROS2/Car/src/slam_gmapping/slam_gmapping', '-DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping'], 'cwd': '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', ''), ('USER', 'mr-cheng'), ('LC_TIME', 'en_US.UTF-8'), ('DDSGEN', '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib'), ('HOME', '/home/mr-cheng'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/mr-cheng/Bag/fastdds/gradle-6.4'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1458'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install'), ('INFOPATH', '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mr-cheng'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mr-cheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/'), ('SESSION_MANAGER', 'local/mrcheng-ROG:@/tmp/.ICE-unix/1458,unix/mrcheng-ROG:/tmp/.ICE-unix/1458'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0992ce8_7f17_4238_b32f_832e7bb1680b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1023G2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.155'), ('CSROOT', '/home/mr-cheng/commands'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/opt/ros/humble')]), 'shell': False}
+[4.974621] (slam_gmapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.010692] (-) TimerEvent: {}
+[5.022413] (slam_gmapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.028576] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.084147] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.091374] (slam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.091570] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.091943] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.094884] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.110795] (-) TimerEvent: {}
+[5.160340] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.167709] (slam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.167955] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.168363] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.168834] (slam_gmapping) StderrLine: {'line': b'\x1b[0m -fuse-ld=lld -Wl,--disable-new-dtags\x1b[0m\n'}
+[5.170730] (slam_gmapping) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.210868] (-) TimerEvent: {}
+[5.311077] (-) TimerEvent: {}
+[5.321359] (slam_gmapping) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[5.405085] (slam_gmapping) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[5.411146] (-) TimerEvent: {}
+[5.463902] (slam_gmapping) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.469968] (slam_gmapping) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.481545] (slam_gmapping) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.499889] (slam_gmapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.511252] (-) TimerEvent: {}
+[5.526750] (slam_gmapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.600599] (slam_gmapping) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[5.611343] (-) TimerEvent: {}
+[5.711581] (-) TimerEvent: {}
+[5.741177] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)\n'}
+[5.759115] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.5 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[5.811668] (-) TimerEvent: {}
+[5.900409] (slam_gmapping) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.903810] (slam_gmapping) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.911808] (-) TimerEvent: {}
+[5.998577] (slam_gmapping) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.011862] (-) TimerEvent: {}
+[6.025681] (slam_gmapping) StdoutLine: {'line': b'-- Found FastRTPS: /home/mr-cheng/Bag/fastdds/install/fastrtps/include  \n'}
+[6.070984] (slam_gmapping) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.084060] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.112001] (-) TimerEvent: {}
+[6.143157] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.143422] (slam_gmapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.205459] (slam_gmapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.206430] (slam_gmapping) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.212066] (-) TimerEvent: {}
+[6.312257] (-) TimerEvent: {}
+[6.412493] (-) TimerEvent: {}
+[6.512715] (-) TimerEvent: {}
+[6.612963] (-) TimerEvent: {}
+[6.665680] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.5 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[6.684667] (slam_gmapping) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[6.686121] (slam_gmapping) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[6.686346] (slam_gmapping) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[6.698347] (slam_gmapping) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[6.713052] (-) TimerEvent: {}
+[6.791217] (slam_gmapping) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[6.813125] (-) TimerEvent: {}
+[6.913321] (-) TimerEvent: {}
+[6.925443] (slam_gmapping) StdoutLine: {'line': b'-- Found openslam_gmapping: 0.1.2 (/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/share/openslam_gmapping/cmake)\n'}
+[6.928553] (slam_gmapping) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.012870] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.013089] (slam_gmapping) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/mr-cheng/Documents/ROS2/Car/src/slam_gmapping/slam_gmapping/include\n'}
+[7.013186] (slam_gmapping) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.013379] (-) TimerEvent: {}
+[7.013678] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.014325] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.014911] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[7.015775] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.015875] (slam_gmapping) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.016389] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.017531] (slam_gmapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.031672] (slam_gmapping) StdoutLine: {'line': b'-- Generating done\n'}
+[7.033322] (slam_gmapping) StdoutLine: {'line': b'-- Build files have been written to: /home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping\n'}
+[7.041759] (slam_gmapping) CommandEnded: {'returncode': 0}
+[7.042325] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'build'}
+[7.042686] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping', '--', '-j16', '-l16'], 'cwd': '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', ''), ('USER', 'mr-cheng'), ('LC_TIME', 'en_US.UTF-8'), ('DDSGEN', '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib'), ('HOME', '/home/mr-cheng'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/mr-cheng/Bag/fastdds/gradle-6.4'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1458'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install'), ('INFOPATH', '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mr-cheng'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mr-cheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/'), ('SESSION_MANAGER', 'local/mrcheng-ROG:@/tmp/.ICE-unix/1458,unix/mrcheng-ROG:/tmp/.ICE-unix/1458'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0992ce8_7f17_4238_b32f_832e7bb1680b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1023G2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.155'), ('CSROOT', '/home/mr-cheng/commands'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/opt/ros/humble')]), 'shell': False}
+[7.085769] (slam_gmapping) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/slam_gmapping.dir/src/slam_gmapping.cpp.o\x1b[0m\n'}
+[7.113524] (-) TimerEvent: {}
+[7.213765] (-) TimerEvent: {}
+[7.314019] (-) TimerEvent: {}
+[7.414260] (-) TimerEvent: {}
+[7.421604] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/mr-cheng/Documents/ROS2/Car/src/slam_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:38\x1b[m\x1b[K,\n'}
+[7.421775] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mr-cheng/Documents/ROS2/Car/src/slam_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[7.421847] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.421912] (slam_gmapping) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[7.422010] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.514360] (-) TimerEvent: {}
+[7.614634] (-) TimerEvent: {}
+[7.714899] (-) TimerEvent: {}
+[7.815133] (-) TimerEvent: {}
+[7.915398] (-) TimerEvent: {}
+[8.015652] (-) TimerEvent: {}
+[8.115892] (-) TimerEvent: {}
+[8.216120] (-) TimerEvent: {}
+[8.316347] (-) TimerEvent: {}
+[8.416603] (-) TimerEvent: {}
+[8.516841] (-) TimerEvent: {}
+[8.617087] (-) TimerEvent: {}
+[8.717337] (-) TimerEvent: {}
+[8.817564] (-) TimerEvent: {}
+[8.917792] (-) TimerEvent: {}
+[9.018014] (-) TimerEvent: {}
+[9.118244] (-) TimerEvent: {}
+[9.218479] (-) TimerEvent: {}
+[9.318714] (-) TimerEvent: {}
+[9.418969] (-) TimerEvent: {}
+[9.519221] (-) TimerEvent: {}
+[9.619453] (-) TimerEvent: {}
+[9.719693] (-) TimerEvent: {}
+[9.760497] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:9\x1b[m\x1b[K,\n'}
+[9.760647] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mr-cheng/Documents/ROS2/Car/src/slam_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[9.760718] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mr-cheng/Documents/ROS2/Car/src/slam_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[9.760784] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid rle(OutputIterator&, const Iterator&, const Iterator&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.760852] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:140:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 clause does not guard... [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation\x07-Wmisleading-indentation\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.760919] (slam_gmapping) StderrLine: {'line': b'  140 |         \x1b[01;35m\x1b[Kif\x1b[m\x1b[K (count>0)\n'}
+[9.760981] (slam_gmapping) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[9.761042] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:142:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K...this statement, but the latter is misleadingly indented as if it were guarded by the \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.761106] (slam_gmapping) StderrLine: {'line': b'  142 |                 \x1b[01;36m\x1b[Kout\x1b[m\x1b[K++;\n'}
+[9.761177] (slam_gmapping) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[9.819793] (-) TimerEvent: {}
+[9.920043] (-) TimerEvent: {}
+[10.020267] (-) TimerEvent: {}
+[10.120496] (-) TimerEvent: {}
+[10.220721] (-) TimerEvent: {}
+[10.320945] (-) TimerEvent: {}
+[10.421180] (-) TimerEvent: {}
+[10.521409] (-) TimerEvent: {}
+[10.621639] (-) TimerEvent: {}
+[10.721873] (-) TimerEvent: {}
+[10.822110] (-) TimerEvent: {}
+[10.922379] (-) TimerEvent: {}
+[11.022626] (-) TimerEvent: {}
+[11.122870] (-) TimerEvent: {}
+[11.223117] (-) TimerEvent: {}
+[11.323366] (-) TimerEvent: {}
+[11.423593] (-) TimerEvent: {}
+[11.523831] (-) TimerEvent: {}
+[11.624068] (-) TimerEvent: {}
+[11.724320] (-) TimerEvent: {}
+[11.824553] (-) TimerEvent: {}
+[11.924784] (-) TimerEvent: {}
+[12.025011] (-) TimerEvent: {}
+[12.125253] (-) TimerEvent: {}
+[12.225500] (-) TimerEvent: {}
+[12.325733] (-) TimerEvent: {}
+[12.425967] (-) TimerEvent: {}
+[12.526219] (-) TimerEvent: {}
+[12.626449] (-) TimerEvent: {}
+[12.726677] (-) TimerEvent: {}
+[12.826917] (-) TimerEvent: {}
+[12.927177] (-) TimerEvent: {}
+[13.027427] (-) TimerEvent: {}
+[13.127675] (-) TimerEvent: {}
+[13.227940] (-) TimerEvent: {}
+[13.328194] (-) TimerEvent: {}
+[13.428453] (-) TimerEvent: {}
+[13.528680] (-) TimerEvent: {}
+[13.628924] (-) TimerEvent: {}
+[13.729252] (-) TimerEvent: {}
+[13.829482] (-) TimerEvent: {}
+[13.929718] (-) TimerEvent: {}
+[14.029952] (-) TimerEvent: {}
+[14.130175] (-) TimerEvent: {}
+[14.230395] (-) TimerEvent: {}
+[14.330614] (-) TimerEvent: {}
+[14.430833] (-) TimerEvent: {}
+[14.531050] (-) TimerEvent: {}
+[14.631264] (-) TimerEvent: {}
+[14.731480] (-) TimerEvent: {}
+[14.831694] (-) TimerEvent: {}
+[14.931911] (-) TimerEvent: {}
+[15.032129] (-) TimerEvent: {}
+[15.132351] (-) TimerEvent: {}
+[15.232567] (-) TimerEvent: {}
+[15.332785] (-) TimerEvent: {}
+[15.433020] (-) TimerEvent: {}
+[15.533241] (-) TimerEvent: {}
+[15.633464] (-) TimerEvent: {}
+[15.733716] (-) TimerEvent: {}
+[15.833958] (-) TimerEvent: {}
+[15.934209] (-) TimerEvent: {}
+[16.034465] (-) TimerEvent: {}
+[16.134718] (-) TimerEvent: {}
+[16.234950] (-) TimerEvent: {}
+[16.335201] (-) TimerEvent: {}
+[16.435440] (-) TimerEvent: {}
+[16.535662] (-) TimerEvent: {}
+[16.635890] (-) TimerEvent: {}
+[16.736142] (-) TimerEvent: {}
+[16.836372] (-) TimerEvent: {}
+[16.936593] (-) TimerEvent: {}
+[17.036820] (-) TimerEvent: {}
+[17.137048] (-) TimerEvent: {}
+[17.237273] (-) TimerEvent: {}
+[17.337496] (-) TimerEvent: {}
+[17.437747] (-) TimerEvent: {}
+[17.537979] (-) TimerEvent: {}
+[17.638266] (-) TimerEvent: {}
+[17.738559] (-) TimerEvent: {}
+[17.838813] (-) TimerEvent: {}
+[17.939076] (-) TimerEvent: {}
+[18.039379] (-) TimerEvent: {}
+[18.139621] (-) TimerEvent: {}
+[18.164771] (slam_gmapping) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable slam_gmapping\x1b[0m\n'}
+[18.239780] (-) TimerEvent: {}
+[18.340125] (-) TimerEvent: {}
+[18.440612] (-) TimerEvent: {}
+[18.540840] (-) TimerEvent: {}
+[18.641100] (-) TimerEvent: {}
+[18.741350] (-) TimerEvent: {}
+[18.745931] (slam_gmapping) StdoutLine: {'line': b'[100%] Built target slam_gmapping\n'}
+[18.754488] (slam_gmapping) CommandEnded: {'returncode': 0}
+[18.773003] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'install'}
+[18.773362] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping'], 'cwd': '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', ''), ('USER', 'mr-cheng'), ('LC_TIME', 'en_US.UTF-8'), ('DDSGEN', '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib'), ('HOME', '/home/mr-cheng'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/mr-cheng/Bag/fastdds/gradle-6.4'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1458'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install'), ('INFOPATH', '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mr-cheng'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mr-cheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/'), ('SESSION_MANAGER', 'local/mrcheng-ROG:@/tmp/.ICE-unix/1458,unix/mrcheng-ROG:/tmp/.ICE-unix/1458'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0992ce8_7f17_4238_b32f_832e7bb1680b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1023G2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.155'), ('CSROOT', '/home/mr-cheng/commands'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e7a746ec9ae692d76b1076b0659617f2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/opt/ros/humble')]), 'shell': False}
+[18.779982] (slam_gmapping) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.780141] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/lib/slam_gmapping/slam_gmapping\n'}
+[18.783983] (slam_gmapping) StdoutLine: {'line': b'-- Set runtime path of "/home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/lib/slam_gmapping/slam_gmapping" to ""\n'}
+[18.784121] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/launch\n'}
+[18.784197] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/launch/slam_gmapping.launch.py\n'}
+[18.784303] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping\n'}
+[18.784407] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping\n'}
+[18.784506] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh\n'}
+[18.784602] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv\n'}
+[18.784697] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/environment/path.sh\n'}
+[18.784791] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/environment/path.dsv\n'}
+[18.784885] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/local_setup.bash\n'}
+[18.784980] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/local_setup.sh\n'}
+[18.785075] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/local_setup.zsh\n'}
+[18.785170] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/local_setup.dsv\n'}
+[18.785265] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/package.dsv\n'}
+[18.785350] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping\n'}
+[18.785453] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake\n'}
+[18.785548] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake\n'}
+[18.785636] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/package.xml\n'}
+[18.786858] (slam_gmapping) CommandEnded: {'returncode': 0}
+[18.841423] (-) TimerEvent: {}
+[18.942483] (-) TimerEvent: {}
+[18.944498] (slam_gmapping) JobEnded: {'identifier': 'slam_gmapping', 'rc': 0}
+[18.945196] (-) EventReactorShutdown: {}

@@ -1,0 +1,42 @@
+[0.009s] Invoking command in '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/car_nav2:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/home/mr-cheng/Documents/ROS2/Car/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping -- -j16 -l16
+[0.056s] [ 50%] [32mBuilding CXX object CMakeFiles/slam_gmapping.dir/src/slam_gmapping.cpp.o[0m
+[0.275s] In file included from [01m[K/home/mr-cheng/Documents/ROS2/Car/src/slam_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:38[m[K,
+[0.275s]                  from [01m[K/home/mr-cheng/Documents/ROS2/Car/src/slam_gmapping/slam_gmapping/src/slam_gmapping.cpp:24[m[K:
+[0.275s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[0.275s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[0.275s]       |  [01;35m[K^~~~~~~[m[K
+[2.432s] In file included from [01m[K/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:9[m[K,
+[2.432s]                  from [01m[K/home/mr-cheng/Documents/ROS2/Car/src/slam_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45[m[K,
+[2.432s]                  from [01m[K/home/mr-cheng/Documents/ROS2/Car/src/slam_gmapping/slam_gmapping/src/slam_gmapping.cpp:24[m[K:
+[2.432s] [01m[K/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:[m[K In function ‘[01m[Kvoid rle(OutputIterator&, const Iterator&, const Iterator&)[m[K’:
+[2.432s] [01m[K/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:140:9:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+[2.433s]   140 |         [01;35m[Kif[m[K (count>0)
+[2.433s]       |         [01;35m[K^~[m[K
+[2.433s] [01m[K/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:142:17:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+[2.433s]   142 |                 [01;36m[Kout[m[K++;
+[2.433s]       |                 [01;36m[K^~~[m[K
+[10.621s] [100%] [32m[1mLinking CXX executable slam_gmapping[0m
+[11.074s] [100%] Built target slam_gmapping
+[11.083s] Invoked command in '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/car_nav2:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/home/mr-cheng/Documents/ROS2/Car/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping -- -j16 -l16
+[11.103s] Invoking command in '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/car_nav2:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/home/mr-cheng/Documents/ROS2/Car/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping
+[11.109s] -- Install configuration: ""
+[11.109s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/lib/slam_gmapping/slam_gmapping
+[11.115s] -- Set runtime path of "/home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/lib/slam_gmapping/slam_gmapping" to ""
+[11.115s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/launch
+[11.115s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/launch/slam_gmapping.launch.py
+[11.115s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping
+[11.115s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping
+[11.115s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh
+[11.115s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv
+[11.115s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/environment/path.sh
+[11.115s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/environment/path.dsv
+[11.115s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/local_setup.bash
+[11.115s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/local_setup.sh
+[11.116s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/local_setup.zsh
+[11.116s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/local_setup.dsv
+[11.116s] -- Installing: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/package.dsv
+[11.116s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping
+[11.116s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake
+[11.116s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake
+[11.116s] -- Up-to-date: /home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping/share/slam_gmapping/package.xml
+[11.117s] Invoked command in '/home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/mr-cheng/Documents/ROS2/Car/install/openslam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/slam_gmapping:/home/mr-cheng/Documents/ROS2/Car/install/car_nav2:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/home/mr-cheng/Documents/ROS2/Car/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Documents/ROS2/Car/build/slam_gmapping

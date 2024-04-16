@@ -1,0 +1,27 @@
+[1.003s] Invoking command in '/home/mr-cheng/Documents/ROS2/Car/src/robot_description': PYTHONPATH=/home/mr-cheng/Documents/ROS2/Car/build/robot_description/prefix_override:/home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mr-cheng/Documents/ROS2/Car/build/robot_description/build install --record /home/mr-cheng/Documents/ROS2/Car/build/robot_description/install.log --single-version-externally-managed install_data
+[1.254s] running egg_info
+[1.272s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[1.272s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[1.272s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[1.272s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[1.309s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[1.311s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[1.311s] running build
+[1.311s] running build_py
+[1.311s] copying robot_description/__init__.py -> /home/mr-cheng/Documents/ROS2/Car/build/robot_description/build/lib/robot_description
+[1.311s] running install
+[1.317s] running install_lib
+[1.336s] running install_data
+[1.336s] copying resource/robot_description -> /home/mr-cheng/Documents/ROS2/Car/install/robot_description/share/ament_index/resource_index/packages
+[1.336s] copying package.xml -> /home/mr-cheng/Documents/ROS2/Car/install/robot_description/share/robot_description
+[1.337s] copying launch/gazebo.launch.py -> /home/mr-cheng/Documents/ROS2/Car/install/robot_description/share/robot_description/launch
+[1.337s] copying launch/robot_model.launch.py -> /home/mr-cheng/Documents/ROS2/Car/install/robot_description/share/robot_description/launch
+[1.337s] copying launch/gazebo.launch.py -> /home/mr-cheng/Documents/ROS2/Car/install/robot_description/share/robot_description/launch
+[1.337s] copying launch/robot_model.launch.py -> /home/mr-cheng/Documents/ROS2/Car/install/robot_description/share/robot_description/launch
+[1.337s] copying urdf/robot_gazebo.urdf -> /home/mr-cheng/Documents/ROS2/Car/install/robot_description/share/robot_description/urdf
+[1.337s] running install_egg_info
+[1.357s] removing '/home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info' (and everything under it)
+[1.357s] Copying ../../build/robot_description/robot_description.egg-info to /home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info
+[1.358s] running install_scripts
+[1.521s] writing list of installed files to '/home/mr-cheng/Documents/ROS2/Car/build/robot_description/install.log'
+[1.539s] Invoked command in '/home/mr-cheng/Documents/ROS2/Car/src/robot_description' returned '0': PYTHONPATH=/home/mr-cheng/Documents/ROS2/Car/build/robot_description/prefix_override:/home/mr-cheng/Documents/ROS2/Car/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mr-cheng/Documents/ROS2/Car/build/robot_description/build install --record /home/mr-cheng/Documents/ROS2/Car/build/robot_description/install.log --single-version-externally-managed install_data
