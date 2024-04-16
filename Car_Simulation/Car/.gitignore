@@ -1,0 +1,7 @@
+Car_Simulation/Car/build
+Car_Simulation/Car/install
+Car_Simulation/Car/log
+Car_Simulation/Car/src/slam_gmapping/slam_gmapping
+Car_Simulation/Car/src/slam_gmapping/openslam_gmapping
+
+
