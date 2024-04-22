@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lslidar_msgs/msg/LslidarPoint.msg
+// generated code does not contain a copyright notice
+
+
+module lslidar_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Time when the point is captured")
+    struct LslidarPoint {
+      float time;
+
+      @verbatim (language="comment", text=
+        "Converted distance in the sensor frame")
+      double x;
+
+      double y;
+
+      double z;
+
+      @verbatim (language="comment", text=
+        "Raw measurement from Leishen M10")
+      double azimuth;
+
+      double distance;
+
+      double intensity;
+    };
+  };
+};

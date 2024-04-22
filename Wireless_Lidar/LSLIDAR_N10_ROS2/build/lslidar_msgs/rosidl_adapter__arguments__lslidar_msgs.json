@@ -1,0 +1,10 @@
+{
+  "package_name": "lslidar_msgs",
+  "non_idl_tuples": [
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/src/lslidar_msgs:msg/LslidarDifop.msg",
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/src/lslidar_msgs:msg/LslidarPacket.msg",
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/src/lslidar_msgs:msg/LslidarPoint.msg",
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/src/lslidar_msgs:msg/LslidarScan.msg",
+    "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/src/lslidar_msgs:msg/LslidarSweep.msg"
+  ]
+}

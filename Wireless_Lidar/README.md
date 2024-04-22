@@ -18,7 +18,7 @@
 
 &emsp;&emsp;2、打开新的命令行页面,输入如下命令：
 
-    socat -d -d udp-listen:8080 /dev/pty/1,raw,echo=0
+    socat -d -d udp-listen:8080 pty,raw,echo=0
 
 &emsp;&emsp;Effects screenshot:
 
@@ -28,7 +28,21 @@
 
 </center>
 
-&emsp;&emsp;3、打开新的命令行页面，运行镭神N10的ROS2包
+注意，这里需要记住映射的是/dev/pty/3，需要在后续雷达启动包中将对应的参数更改为对应的串口。
+
+&emsp;&emsp;3、修改参数配置文件。
+
+    gedit ../Wireless_Lidar/LSLIDAR_N10_ROS2/src/lslidar_driver/params/lidar_uart_ros2/lsn10.yaml
+
+<center>
+
+![socat命令行截图](./img/配置文件修改.png "配置文件展示")
+
+</center>
+
+修改上述文件中serial_port_为步骤2中实际打开的虚拟串口编号。然后重新编译lslidar_driver。
+
+&emsp;&emsp;4、打开新的命令行页面，运行镭神N10的ROS2包
 
     ros2 launch lslidar_driver lsn10_launch.py
 
@@ -40,7 +54,7 @@
 
 </center>
 
-&emsp;&emsp;4、查看话题、频率以及rviz2查看点云效果
+&emsp;&emsp;5、查看话题、频率以及rviz2查看点云效果
 
     ros2 node list
     ros2 topic list

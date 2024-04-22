@@ -1,0 +1,6 @@
+setup.py
+lslidar_msgs/__init__.py
+lslidar_msgs.egg-info/PKG-INFO
+lslidar_msgs.egg-info/SOURCES.txt
+lslidar_msgs.egg-info/dependency_links.txt
+lslidar_msgs.egg-info/top_level.txt

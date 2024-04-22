@@ -20,9 +20,8 @@ System_Status_t System_Status_Flag;
 Motor_Data_t Wheel_L_Data_;
 Motor_Data_t Wheel_R_Data_;
 
-
 Car_Control_t Car_Control_;//机器人控制数据
-Odom_Data_Process_t Odom_Data_Process_;
+Odom_Data_Process_t Odom_Data_Processer_(&Wheel_L_Data_, &Wheel_R_Data_);
 
 /**********************Micro ROS相关*************************/
 rclc_executor_t Executor_;

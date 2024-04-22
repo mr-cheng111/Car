@@ -1,0 +1,767 @@
+[0.000000] (-) TimerEvent: {}
+[0.000245] (lslidar_msgs) JobQueued: {'identifier': 'lslidar_msgs', 'dependencies': OrderedDict()}
+[0.000326] (lslidar_driver) JobQueued: {'identifier': 'lslidar_driver', 'dependencies': OrderedDict([('lslidar_msgs', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs')])}
+[0.000382] (lslidar_msgs) JobStarted: {'identifier': 'lslidar_msgs'}
+[0.017185] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'cmake'}
+[0.017322] (lslidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/src/lslidar_msgs', '-DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs'], 'cwd': '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', ''), ('USER', 'mr-cheng'), ('LC_TIME', 'en_US.UTF-8'), ('DDSGEN', '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.0/lib64:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib'), ('HOME', '/home/mr-cheng'), ('OLDPWD', '/home/mr-cheng/Desktop/Car/Wireless_Lidar'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/mr-cheng/Bag/fastdds/gradle-6.4'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1634'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5826dc1d3618b50db844763966249c22'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install'), ('INFOPATH', '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mr-cheng'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig::/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mr-cheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.0/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/home/mr-cheng/.local/bin:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/'), ('SESSION_MANAGER', 'local/mrcheng-ROG:@/tmp/.ICE-unix/1634,unix/mrcheng-ROG:/tmp/.ICE-unix/1634'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/185613f4_704b_48b2_a71b_e550cb2e613b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('CSROOT', '/home/mr-cheng/commands'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5826dc1d3618b50db844763966249c22'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/opt/ros/humble')]), 'shell': False}
+[0.099519] (-) TimerEvent: {}
+[0.200015] (-) TimerEvent: {}
+[0.233485] (lslidar_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300181] (-) TimerEvent: {}
+[0.400705] (-) TimerEvent: {}
+[0.417488] (lslidar_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.429244] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.495478] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.500761] (-) TimerEvent: {}
+[0.503109] (lslidar_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.503649] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.504376] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.508687] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.583424] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.591563] (lslidar_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.591798] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.592248] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.600831] (-) TimerEvent: {}
+[0.604378] (lslidar_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.700915] (-) TimerEvent: {}
+[0.746242] (lslidar_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.800999] (-) TimerEvent: {}
+[0.849431] (lslidar_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.901090] (-) TimerEvent: {}
+[0.901813] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.908532] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.920056] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.939037] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.963984] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.001182] (-) TimerEvent: {}
+[1.029769] (lslidar_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.101282] (-) TimerEvent: {}
+[1.166921] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.179032] (lslidar_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.201367] (-) TimerEvent: {}
+[1.301579] (-) TimerEvent: {}
+[1.401807] (-) TimerEvent: {}
+[1.489618] (lslidar_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.501900] (-) TimerEvent: {}
+[1.602168] (-) TimerEvent: {}
+[1.702405] (-) TimerEvent: {}
+[1.802614] (-) TimerEvent: {}
+[1.836425] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.902733] (-) TimerEvent: {}
+[1.973352] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.995426] (lslidar_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.997762] (lslidar_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.002804] (-) TimerEvent: {}
+[2.025996] (lslidar_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.026255] (lslidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.026354] (lslidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.026421] (lslidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.046037] (lslidar_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.094336] (lslidar_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.096418] (lslidar_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.097702] (lslidar_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.102876] (-) TimerEvent: {}
+[2.103815] (lslidar_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.139281] (lslidar_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.141826] (lslidar_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_msgs\n'}
+[2.152092] (lslidar_msgs) CommandEnded: {'returncode': 0}
+[2.152811] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'build'}
+[2.152987] (lslidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_msgs', '--', '-j16', '-l16'], 'cwd': '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', ''), ('USER', 'mr-cheng'), ('LC_TIME', 'en_US.UTF-8'), ('DDSGEN', '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.0/lib64:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib'), ('HOME', '/home/mr-cheng'), ('OLDPWD', '/home/mr-cheng/Desktop/Car/Wireless_Lidar'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/mr-cheng/Bag/fastdds/gradle-6.4'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1634'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5826dc1d3618b50db844763966249c22'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install'), ('INFOPATH', '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mr-cheng'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig::/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mr-cheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.0/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/home/mr-cheng/.local/bin:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/'), ('SESSION_MANAGER', 'local/mrcheng-ROG:@/tmp/.ICE-unix/1634,unix/mrcheng-ROG:/tmp/.ICE-unix/1634'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/185613f4_704b_48b2_a71b_e550cb2e613b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('CSROOT', '/home/mr-cheng/commands'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5826dc1d3618b50db844763966249c22'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/opt/ros/humble')]), 'shell': False}
+[2.187030] (lslidar_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.195401] (lslidar_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.202964] (-) TimerEvent: {}
+[2.203601] (lslidar_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_lslidar_msgs\n'}
+[2.303055] (-) TimerEvent: {}
+[2.403317] (-) TimerEvent: {}
+[2.411214] (lslidar_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.412240] (lslidar_msgs) StdoutLine: {'line': b'creating lslidar_msgs.egg-info\n'}
+[2.431270] (lslidar_msgs) StdoutLine: {'line': b'writing lslidar_msgs.egg-info/PKG-INFO\n'}
+[2.431592] (lslidar_msgs) StdoutLine: {'line': b'writing dependency_links to lslidar_msgs.egg-info/dependency_links.txt\n'}
+[2.431806] (lslidar_msgs) StdoutLine: {'line': b'writing top-level names to lslidar_msgs.egg-info/top_level.txt\n'}
+[2.431916] (lslidar_msgs) StdoutLine: {'line': b"writing manifest file 'lslidar_msgs.egg-info/SOURCES.txt'\n"}
+[2.488251] (lslidar_msgs) StdoutLine: {'line': b"reading manifest file 'lslidar_msgs.egg-info/SOURCES.txt'\n"}
+[2.488854] (lslidar_msgs) StdoutLine: {'line': b"writing manifest file 'lslidar_msgs.egg-info/SOURCES.txt'\n"}
+[2.503401] (-) TimerEvent: {}
+[2.510265] (lslidar_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_lslidar_msgs_egg\n'}
+[2.603486] (-) TimerEvent: {}
+[2.664340] (lslidar_msgs) StdoutLine: {'line': b'[  3%] Built target lslidar_msgs__cpp\n'}
+[2.678073] (lslidar_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.682936] (lslidar_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.685183] (lslidar_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.702590] (lslidar_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_sweep__functions.c.o\x1b[0m\n'}
+[2.702838] (lslidar_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_packet__functions.c.o\x1b[0m\n'}
+[2.702960] (lslidar_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_point__functions.c.o\x1b[0m\n'}
+[2.703069] (lslidar_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_difop__functions.c.o\x1b[0m\n'}
+[2.703473] (lslidar_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_scan__functions.c.o\x1b[0m\n'}
+[2.703559] (-) TimerEvent: {}
+[2.771002] (lslidar_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library liblslidar_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.803650] (-) TimerEvent: {}
+[2.804237] (lslidar_msgs) StdoutLine: {'line': b'[ 17%] Built target lslidar_msgs__rosidl_generator_c\n'}
+[2.813100] (lslidar_msgs) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.813297] (lslidar_msgs) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.813404] (lslidar_msgs) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.903754] (-) TimerEvent: {}
+[3.004024] (-) TimerEvent: {}
+[3.048507] (lslidar_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_difop__type_support.cpp.o\x1b[0m\n'}
+[3.048986] (lslidar_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_scan__type_support.cpp.o\x1b[0m\n'}
+[3.049198] (lslidar_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_sweep__type_support.cpp.o\x1b[0m\n'}
+[3.051789] (lslidar_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_packet__type_support.cpp.o\x1b[0m\n'}
+[3.052012] (lslidar_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_point__type_support.cpp.o\x1b[0m\n'}
+[3.104118] (-) TimerEvent: {}
+[3.116017] (lslidar_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_packet__type_support.cpp.o\x1b[0m\n'}
+[3.116230] (lslidar_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_difop__type_support.cpp.o\x1b[0m\n'}
+[3.116383] (lslidar_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_point__type_support.cpp.o\x1b[0m\n'}
+[3.116573] (lslidar_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_scan__type_support.cpp.o\x1b[0m\n'}
+[3.116739] (lslidar_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_sweep__type_support.cpp.o\x1b[0m\n'}
+[3.204223] (-) TimerEvent: {}
+[3.205755] (lslidar_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_difop__type_support.cpp.o\x1b[0m\n'}
+[3.207581] (lslidar_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_point__type_support.cpp.o\x1b[0m\n'}
+[3.207903] (lslidar_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_packet__type_support.cpp.o\x1b[0m\n'}
+[3.304330] (-) TimerEvent: {}
+[3.332031] (lslidar_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_difop__type_support.cpp.o\x1b[0m\n'}
+[3.380929] (lslidar_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_packet__type_support.cpp.o\x1b[0m\n'}
+[3.404452] (-) TimerEvent: {}
+[3.430618] (lslidar_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_point__type_support.cpp.o\x1b[0m\n'}
+[3.478929] (lslidar_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_scan__type_support.cpp.o\x1b[0m\n'}
+[3.504579] (-) TimerEvent: {}
+[3.539629] (lslidar_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_difop__type_support.c.o\x1b[0m\n'}
+[3.539897] (lslidar_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_sweep__type_support.cpp.o\x1b[0m\n'}
+[3.554354] (lslidar_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_packet__type_support.c.o\x1b[0m\n'}
+[3.560652] (lslidar_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.561106] (lslidar_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_scan__type_support.cpp.o\x1b[0m\n'}
+[3.567271] (lslidar_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_point__type_support.c.o\x1b[0m\n'}
+[3.582249] (lslidar_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_sweep__type_support.cpp.o\x1b[0m\n'}
+[3.604724] (-) TimerEvent: {}
+[3.606245] (lslidar_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_difop__type_support_c.cpp.o\x1b[0m\n'}
+[3.608229] (lslidar_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.621513] (lslidar_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_scan__type_support.c.o\x1b[0m\n'}
+[3.622685] (lslidar_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_sweep__type_support.c.o\x1b[0m\n'}
+[3.630883] (lslidar_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_packet__type_support_c.cpp.o\x1b[0m\n'}
+[3.637256] (lslidar_msgs) StdoutLine: {'line': b'[ 68%] Built target lslidar_msgs__rosidl_typesupport_cpp\n'}
+[3.653303] (lslidar_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_point__type_support_c.cpp.o\x1b[0m\n'}
+[3.682521] (lslidar_msgs) StdoutLine: {'line': b'[ 69%] Built target lslidar_msgs__rosidl_typesupport_c\n'}
+[3.686418] (lslidar_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_scan__type_support_c.cpp.o\x1b[0m\n'}
+[3.686654] (lslidar_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking C shared library liblslidar_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.696779] (lslidar_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_sweep__type_support_c.cpp.o\x1b[0m\n'}
+[3.704866] (-) TimerEvent: {}
+[3.756572] (lslidar_msgs) StdoutLine: {'line': b'[ 74%] Built target lslidar_msgs__rosidl_typesupport_introspection_c\n'}
+[3.804977] (-) TimerEvent: {}
+[3.867730] (lslidar_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.905098] (-) TimerEvent: {}
+[3.949179] (lslidar_msgs) StdoutLine: {'line': b'[ 76%] Built target lslidar_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.005216] (-) TimerEvent: {}
+[4.105537] (-) TimerEvent: {}
+[4.123203] (lslidar_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.123348] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.194754] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.194906] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c\n'}
+[4.205640] (-) TimerEvent: {}
+[4.213363] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] Built target lslidar_msgs\n'}
+[4.232279] (lslidar_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.305715] (-) TimerEvent: {}
+[4.405915] (-) TimerEvent: {}
+[4.506117] (-) TimerEvent: {}
+[4.606318] (-) TimerEvent: {}
+[4.706524] (-) TimerEvent: {}
+[4.806725] (-) TimerEvent: {}
+[4.906930] (-) TimerEvent: {}
+[5.007208] (-) TimerEvent: {}
+[5.030793] (lslidar_msgs) StdoutLine: {'line': b'[ 80%] Built target lslidar_msgs__py\n'}
+[5.048566] (lslidar_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_difop_s.c.o\x1b[0m\n'}
+[5.048764] (lslidar_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_point_s.c.o\x1b[0m\n'}
+[5.048873] (lslidar_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_scan_s.c.o\x1b[0m\n'}
+[5.048947] (lslidar_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_packet_s.c.o\x1b[0m\n'}
+[5.049096] (lslidar_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_sweep_s.c.o\x1b[0m\n'}
+[5.107266] (-) TimerEvent: {}
+[5.169859] (lslidar_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lslidar_msgs/liblslidar_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[5.205472] (lslidar_msgs) StdoutLine: {'line': b'[ 90%] Built target lslidar_msgs__rosidl_generator_py\n'}
+[5.207351] (-) TimerEvent: {}
+[5.222617] (lslidar_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.222763] (lslidar_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.222848] (lslidar_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.307452] (-) TimerEvent: {}
+[5.323573] (lslidar_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.323715] (lslidar_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.323785] (lslidar_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.358008] (lslidar_msgs) StdoutLine: {'line': b'[100%] Built target lslidar_msgs__rosidl_typesupport_c__pyext\n'}
+[5.358235] (lslidar_msgs) StdoutLine: {'line': b'[100%] Built target lslidar_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.358432] (lslidar_msgs) StdoutLine: {'line': b'[100%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.367952] (lslidar_msgs) CommandEnded: {'returncode': 0}
+[5.407524] (-) TimerEvent: {}
+[5.473704] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'install'}
+[5.481566] (lslidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_msgs'], 'cwd': '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', ''), ('USER', 'mr-cheng'), ('LC_TIME', 'en_US.UTF-8'), ('DDSGEN', '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.0/lib64:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib'), ('HOME', '/home/mr-cheng'), ('OLDPWD', '/home/mr-cheng/Desktop/Car/Wireless_Lidar'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/mr-cheng/Bag/fastdds/gradle-6.4'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1634'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5826dc1d3618b50db844763966249c22'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install'), ('INFOPATH', '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mr-cheng'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig::/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mr-cheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.0/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/home/mr-cheng/.local/bin:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/'), ('SESSION_MANAGER', 'local/mrcheng-ROG:@/tmp/.ICE-unix/1634,unix/mrcheng-ROG:/tmp/.ICE-unix/1634'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/185613f4_704b_48b2_a71b_e550cb2e613b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('CSROOT', '/home/mr-cheng/commands'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5826dc1d3618b50db844763966249c22'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/opt/ros/humble')]), 'shell': False}
+[5.488821] (lslidar_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.489054] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/ament_index/resource_index/rosidl_interfaces/lslidar_msgs\n'}
+[5.489185] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[5.489474] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[5.489798] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_packet.h\n'}
+[5.489883] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_difop.h\n'}
+[5.489957] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_scan.h\n'}
+[5.490026] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[5.490123] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__functions.c\n'}
+[5.490210] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__functions.c\n'}
+[5.490275] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.h\n'}
+[5.490338] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.h\n'}
+[5.490402] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__functions.h\n'}
+[5.490464] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__functions.c\n'}
+[5.490598] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__functions.c\n'}
+[5.490697] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__functions.h\n'}
+[5.490787] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__functions.h\n'}
+[5.490881] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__struct.h\n'}
+[5.490971] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__struct.h\n'}
+[5.491059] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.h\n'}
+[5.491155] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__functions.h\n'}
+[5.491253] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__functions.c\n'}
+[5.491342] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__struct.h\n'}
+[5.491431] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__struct.h\n'}
+[5.491520] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.h\n'}
+[5.491602] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.h\n'}
+[5.491689] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__struct.h\n'}
+[5.491777] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__functions.h\n'}
+[5.491860] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_point.h\n'}
+[5.491949] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.492032] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_sweep.h\n'}
+[5.492188] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/environment/library_path.sh\n'}
+[5.492295] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/environment/library_path.dsv\n'}
+[5.492494] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_c.so\n'}
+[5.492748] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_c.so" to ""\n'}
+[5.492880] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[5.493059] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[5.493134] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.493306] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[5.493374] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_fastrtps_c.h\n'}
+[5.493454] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_fastrtps_c.h\n'}
+[5.493514] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_fastrtps_c.h\n'}
+[5.493572] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_fastrtps_c.h\n'}
+[5.493646] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_fastrtps_c.h\n'}
+[5.493708] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.493789] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.493871] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[5.493947] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[5.494007] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_scan.hpp\n'}
+[5.494086] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_packet.hpp\n'}
+[5.494147] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_point.hpp\n'}
+[5.494207] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_difop.hpp\n'}
+[5.494266] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_sweep.hpp\n'}
+[5.494352] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[5.494432] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__struct.hpp\n'}
+[5.494492] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__builder.hpp\n'}
+[5.494581] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__struct.hpp\n'}
+[5.494657] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__traits.hpp\n'}
+[5.494715] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__traits.hpp\n'}
+[5.494791] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__builder.hpp\n'}
+[5.494851] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__builder.hpp\n'}
+[5.494927] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__struct.hpp\n'}
+[5.495004] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__builder.hpp\n'}
+[5.495063] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__struct.hpp\n'}
+[5.495152] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__traits.hpp\n'}
+[5.495212] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__traits.hpp\n'}
+[5.495287] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__traits.hpp\n'}
+[5.495346] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__struct.hpp\n'}
+[5.495436] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__builder.hpp\n'}
+[5.495496] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[5.495556] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[5.495615] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.495703] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[5.495779] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.495840] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.495917] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.495994] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.496051] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/dds_fastrtps\n'}
+[5.496112] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.496186] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.496333] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.496554] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[5.496632] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[5.496703] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.496779] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[5.496837] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_introspection_c.h\n'}
+[5.496926] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_introspection_c.h\n'}
+[5.496984] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.c\n'}
+[5.497042] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_introspection_c.h\n'}
+[5.497101] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.c\n'}
+[5.497188] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.c\n'}
+[5.497255] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.c\n'}
+[5.497341] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_introspection_c.h\n'}
+[5.497398] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_introspection_c.h\n'}
+[5.497454] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.c\n'}
+[5.497530] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.497683] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.497764] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_c.so\n'}
+[5.497942] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_c.so" to ""\n'}
+[5.498023] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[5.498110] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[5.498169] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[5.498228] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.498305] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.cpp\n'}
+[5.498364] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.498448] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.cpp\n'}
+[5.498510] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.cpp\n'}
+[5.498595] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.498654] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.498739] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.498804] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.cpp\n'}
+[5.498877] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.cpp\n'}
+[5.498962] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.499246] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.499327] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_cpp.so\n'}
+[5.499519] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[5.499594] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/environment/pythonpath.sh\n'}
+[5.499671] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/environment/pythonpath.dsv\n'}
+[5.499771] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info\n'}
+[5.499884] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.499964] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.500050] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/PKG-INFO\n'}
+[5.500129] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/top_level.txt\n'}
+[5.500226] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs\n'}
+[5.500307] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.500465] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.500548] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.500626] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.500704] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/liblslidar_msgs__rosidl_generator_py.so\n'}
+[5.500800] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg\n'}
+[5.500872] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_difop_s.c\n'}
+[5.500950] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_sweep.py\n'}
+[5.501030] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_sweep_s.c\n'}
+[5.501109] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_packet_s.c\n'}
+[5.501191] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_point.py\n'}
+[5.501269] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_scan_s.c\n'}
+[5.501351] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/__init__.py\n'}
+[5.501429] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_point_s.c\n'}
+[5.501518] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_packet.py\n'}
+[5.501597] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_scan.py\n'}
+[5.501679] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_difop.py\n'}
+[5.501759] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/__init__.py\n'}
+[5.501840] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[5.501923] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.507579] (-) TimerEvent: {}
+[5.536857] (lslidar_msgs) StdoutLine: {'line': b"Listing '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs'...\n"}
+[5.537000] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/__init__.py'...\n"}
+[5.537073] (lslidar_msgs) StdoutLine: {'line': b"Listing '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg'...\n"}
+[5.537135] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/__init__.py'...\n"}
+[5.537194] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_difop.py'...\n"}
+[5.537252] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_packet.py'...\n"}
+[5.537310] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_point.py'...\n"}
+[5.537367] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_scan.py'...\n"}
+[5.537425] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_sweep.py'...\n"}
+[5.541112] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.541374] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.541588] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.541770] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.541973] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.542164] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.542258] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_py.so\n'}
+[5.542380] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_py.so" to ""\n'}
+[5.542471] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarDifop.idl\n'}
+[5.542557] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPacket.idl\n'}
+[5.542646] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPoint.idl\n'}
+[5.542748] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarScan.idl\n'}
+[5.542849] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarSweep.idl\n'}
+[5.542948] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarDifop.msg\n'}
+[5.543047] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPacket.msg\n'}
+[5.543149] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPoint.msg\n'}
+[5.543248] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarScan.msg\n'}
+[5.543347] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarSweep.msg\n'}
+[5.543489] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/ament_index/resource_index/package_run_dependencies/lslidar_msgs\n'}
+[5.543630] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/ament_index/resource_index/parent_prefix_path/lslidar_msgs\n'}
+[5.543737] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/environment/ament_prefix_path.sh\n'}
+[5.543841] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/environment/ament_prefix_path.dsv\n'}
+[5.543942] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/environment/path.sh\n'}
+[5.544043] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/environment/path.dsv\n'}
+[5.544146] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/local_setup.bash\n'}
+[5.544246] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/local_setup.sh\n'}
+[5.544352] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/local_setup.zsh\n'}
+[5.544470] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/local_setup.dsv\n'}
+[5.544569] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/package.dsv\n'}
+[5.544706] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/ament_index/resource_index/packages/lslidar_msgs\n'}
+[5.544850] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cExport.cmake\n'}
+[5.544959] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.545077] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.545189] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.545305] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.545429] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.545553] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.545678] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.545788] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.545904] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.546014] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.546131] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.546242] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.546358] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.546466] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.546584] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.546692] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.546800] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.546904] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.547011] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.547114] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.547219] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.547325] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.547435] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.547541] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgsConfig.cmake\n'}
+[5.547623] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgsConfig-version.cmake\n'}
+[5.547720] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/package.xml\n'}
+[5.549415] (lslidar_msgs) CommandEnded: {'returncode': 0}
+[5.607668] (-) TimerEvent: {}
+[5.679237] (lslidar_msgs) JobEnded: {'identifier': 'lslidar_msgs', 'rc': 0}
+[5.680275] (lslidar_driver) JobStarted: {'identifier': 'lslidar_driver'}
+[5.686795] (lslidar_driver) JobProgress: {'identifier': 'lslidar_driver', 'progress': 'cmake'}
+[5.686994] (lslidar_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/src/lslidar_driver', '-DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver'], 'cwd': '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', ''), ('USER', 'mr-cheng'), ('LC_TIME', 'en_US.UTF-8'), ('DDSGEN', '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.0/lib64:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib'), ('HOME', '/home/mr-cheng'), ('OLDPWD', '/home/mr-cheng/Desktop/Car/Wireless_Lidar'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/mr-cheng/Bag/fastdds/gradle-6.4'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1634'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5826dc1d3618b50db844763966249c22'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install'), ('INFOPATH', '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mr-cheng'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig::/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mr-cheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.0/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/home/mr-cheng/.local/bin:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/'), ('SESSION_MANAGER', 'local/mrcheng-ROG:@/tmp/.ICE-unix/1634,unix/mrcheng-ROG:/tmp/.ICE-unix/1634'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/185613f4_704b_48b2_a71b_e550cb2e613b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('CSROOT', '/home/mr-cheng/commands'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5826dc1d3618b50db844763966249c22'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/opt/ros/humble')]), 'shell': False}
+[5.707764] (-) TimerEvent: {}
+[5.736652] (lslidar_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.791400] (lslidar_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.799146] (lslidar_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.807873] (-) TimerEvent: {}
+[5.875563] (lslidar_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.885211] (lslidar_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.885514] (lslidar_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.886025] (lslidar_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.889544] (lslidar_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.907967] (-) TimerEvent: {}
+[5.995110] (lslidar_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.003221] (lslidar_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.003428] (lslidar_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.003873] (lslidar_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.008034] (-) TimerEvent: {}
+[6.108252] (-) TimerEvent: {}
+[6.208637] (-) TimerEvent: {}
+[6.238442] (lslidar_driver) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread \n'}
+[6.242927] (lslidar_driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.308702] (-) TimerEvent: {}
+[6.381439] (lslidar_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.408784] (-) TimerEvent: {}
+[6.508995] (-) TimerEvent: {}
+[6.522055] (lslidar_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.527136] (lslidar_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.535611] (lslidar_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.549472] (lslidar_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.569156] (lslidar_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.609110] (-) TimerEvent: {}
+[6.654432] (lslidar_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.658228] (lslidar_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.709190] (-) TimerEvent: {}
+[6.765439] (lslidar_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.794985] (lslidar_driver) StdoutLine: {'line': b'-- Found FastRTPS: /home/mr-cheng/Bag/fastdds/install/fastrtps/include  \n'}
+[6.809264] (-) TimerEvent: {}
+[6.843112] (lslidar_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.857358] (lslidar_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.909367] (-) TimerEvent: {}
+[7.009598] (-) TimerEvent: {}
+[7.045411] (lslidar_driver) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[7.056304] (lslidar_driver) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[7.084172] (lslidar_driver) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[7.084312] (lslidar_driver) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[7.104254] (lslidar_driver) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[7.109664] (-) TimerEvent: {}
+[7.120317] (lslidar_driver) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[7.131873] (lslidar_driver) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[7.165575] (lslidar_driver) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[7.165718] (lslidar_driver) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[7.205642] (lslidar_driver) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[7.209738] (-) TimerEvent: {}
+[7.212635] (lslidar_driver) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[7.309842] (-) TimerEvent: {}
+[7.376785] (lslidar_driver) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[7.377074] (lslidar_driver) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[7.380251] (lslidar_driver) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[7.390406] (lslidar_driver) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[7.408890] (lslidar_driver) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[7.409906] (-) TimerEvent: {}
+[7.434544] (lslidar_driver) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[7.510001] (-) TimerEvent: {}
+[7.520267] (lslidar_driver) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[7.520882] (lslidar_driver) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[7.599353] (lslidar_driver) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[7.599569] (lslidar_driver) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[7.610089] (-) TimerEvent: {}
+[7.665088] (lslidar_driver) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[7.665326] (lslidar_driver) StdoutLine: {'line': b'-- Looking for connect\n'}
+[7.710227] (-) TimerEvent: {}
+[7.734375] (lslidar_driver) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[7.734619] (lslidar_driver) StdoutLine: {'line': b'-- Looking for remove\n'}
+[7.810329] (-) TimerEvent: {}
+[7.816439] (lslidar_driver) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[7.816687] (lslidar_driver) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[7.910457] (-) TimerEvent: {}
+[7.928821] (lslidar_driver) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[7.929295] (lslidar_driver) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[8.010579] (-) TimerEvent: {}
+[8.026733] (lslidar_driver) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[8.095623] (lslidar_driver) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[8.099270] (lslidar_driver) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[8.101668] (lslidar_driver) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[8.103588] (lslidar_driver) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[8.110642] (-) TimerEvent: {}
+[8.165239] (lslidar_driver) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[8.171192] (lslidar_driver) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[8.174894] (lslidar_driver) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[8.181070] (lslidar_driver) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[8.210756] (-) TimerEvent: {}
+[8.252926] (lslidar_driver) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[8.264278] (lslidar_driver) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[8.294936] (lslidar_driver) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[8.295950] (lslidar_driver) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[8.296021] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[8.310834] (-) TimerEvent: {}
+[8.343725] (lslidar_driver) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[8.343864] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[8.343983] (lslidar_driver) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[8.410926] (-) TimerEvent: {}
+[8.483453] (lslidar_driver) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[8.488836] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[8.494047] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[8.511035] (-) TimerEvent: {}
+[8.611254] (-) TimerEvent: {}
+[8.629063] (lslidar_driver) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[8.711344] (-) TimerEvent: {}
+[8.763929] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[8.811434] (-) TimerEvent: {}
+[8.892976] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[8.893881] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[8.894050] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[8.894803] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[8.894973] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[8.895627] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[8.895822] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[8.896636] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[8.896809] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[8.897567] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[8.897732] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[8.898459] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[8.898630] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[8.898846] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[8.898977] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[8.899229] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[8.899341] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[8.900124] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[8.900313] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[8.901210] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[8.901459] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[8.902281] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[8.902447] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[8.903242] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[8.903493] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[8.904312] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[8.904546] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[8.905371] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[8.905582] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[8.906327] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[8.906560] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[8.907299] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[8.907511] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[8.908746] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[8.908817] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[8.909434] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[8.909551] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[8.910374] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[8.910539] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[8.911286] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[8.911491] (-) TimerEvent: {}
+[8.911850] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[8.912106] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[8.912198] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[8.912348] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[8.912580] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[8.914296] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[8.914469] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[8.915176] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[8.915344] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[8.916091] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[8.916845] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[8.919761] (lslidar_driver) StdoutLine: {'line': b'-- Found diagnostic_updater: 3.1.2 (/opt/ros/humble/share/diagnostic_updater/cmake)\n'}
+[8.996533] (lslidar_driver) StdoutLine: {'line': b'-- Found lslidar_msgs: 1.2.0 (/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/share/lslidar_msgs/cmake)\n'}
+[9.011594] (-) TimerEvent: {}
+[9.050803] (lslidar_driver) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[9.084359] (lslidar_driver) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[9.111666] (-) TimerEvent: {}
+[9.211866] (-) TimerEvent: {}
+[9.312083] (-) TimerEvent: {}
+[9.412297] (-) TimerEvent: {}
+[9.468807] (lslidar_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.512495] (-) TimerEvent: {}
+[9.529409] (lslidar_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[9.533956] (lslidar_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_driver\n'}
+[9.553274] (lslidar_driver) CommandEnded: {'returncode': 0}
+[9.554041] (lslidar_driver) JobProgress: {'identifier': 'lslidar_driver', 'progress': 'build'}
+[9.554452] (lslidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_driver', '--', '-j16', '-l16'], 'cwd': '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', ''), ('USER', 'mr-cheng'), ('LC_TIME', 'en_US.UTF-8'), ('DDSGEN', '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.0/lib64:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib'), ('HOME', '/home/mr-cheng'), ('OLDPWD', '/home/mr-cheng/Desktop/Car/Wireless_Lidar'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/mr-cheng/Bag/fastdds/gradle-6.4'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1634'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5826dc1d3618b50db844763966249c22'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install'), ('INFOPATH', '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mr-cheng'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig::/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mr-cheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.0/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/home/mr-cheng/.local/bin:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/'), ('SESSION_MANAGER', 'local/mrcheng-ROG:@/tmp/.ICE-unix/1634,unix/mrcheng-ROG:/tmp/.ICE-unix/1634'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/185613f4_704b_48b2_a71b_e550cb2e613b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('CSROOT', '/home/mr-cheng/commands'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5826dc1d3618b50db844763966249c22'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/opt/ros/humble')]), 'shell': False}
+[9.607060] (lslidar_driver) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_driver_node.dir/src/lslidar_driver.cc.o\x1b[0m\n'}
+[9.607225] (lslidar_driver) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_driver_node.dir/src/input.cc.o\x1b[0m\n'}
+[9.607398] (lslidar_driver) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_driver_node.dir/src/lslidar_driver_node.cc.o\x1b[0m\n'}
+[9.607510] (lslidar_driver) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_driver_node.dir/src/lsiosr.cpp.o\x1b[0m\n'}
+[9.612554] (-) TimerEvent: {}
+[9.712775] (-) TimerEvent: {}
+[9.813001] (-) TimerEvent: {}
+[9.913229] (-) TimerEvent: {}
+[10.013454] (-) TimerEvent: {}
+[10.113682] (-) TimerEvent: {}
+[10.213901] (-) TimerEvent: {}
+[10.314126] (-) TimerEvent: {}
+[10.414351] (-) TimerEvent: {}
+[10.514586] (-) TimerEvent: {}
+[10.614854] (-) TimerEvent: {}
+[10.715108] (-) TimerEvent: {}
+[10.815388] (-) TimerEvent: {}
+[10.915610] (-) TimerEvent: {}
+[11.015833] (-) TimerEvent: {}
+[11.116058] (-) TimerEvent: {}
+[11.216308] (-) TimerEvent: {}
+[11.316550] (-) TimerEvent: {}
+[11.416819] (-) TimerEvent: {}
+[11.517101] (-) TimerEvent: {}
+[11.617329] (-) TimerEvent: {}
+[11.717594] (-) TimerEvent: {}
+[11.817837] (-) TimerEvent: {}
+[11.918096] (-) TimerEvent: {}
+[12.018400] (-) TimerEvent: {}
+[12.118706] (-) TimerEvent: {}
+[12.219002] (-) TimerEvent: {}
+[12.319315] (-) TimerEvent: {}
+[12.419728] (-) TimerEvent: {}
+[12.520175] (-) TimerEvent: {}
+[12.620518] (-) TimerEvent: {}
+[12.720847] (-) TimerEvent: {}
+[12.821213] (-) TimerEvent: {}
+[12.921592] (-) TimerEvent: {}
+[13.021899] (-) TimerEvent: {}
+[13.122201] (-) TimerEvent: {}
+[13.222520] (-) TimerEvent: {}
+[13.322865] (-) TimerEvent: {}
+[13.423234] (-) TimerEvent: {}
+[13.523548] (-) TimerEvent: {}
+[13.623855] (-) TimerEvent: {}
+[13.724160] (-) TimerEvent: {}
+[13.824458] (-) TimerEvent: {}
+[13.924759] (-) TimerEvent: {}
+[14.025089] (-) TimerEvent: {}
+[14.125550] (-) TimerEvent: {}
+[14.225833] (-) TimerEvent: {}
+[14.326060] (-) TimerEvent: {}
+[14.426278] (-) TimerEvent: {}
+[14.526510] (-) TimerEvent: {}
+[14.626748] (-) TimerEvent: {}
+[14.726998] (-) TimerEvent: {}
+[14.827265] (-) TimerEvent: {}
+[14.927531] (-) TimerEvent: {}
+[15.027776] (-) TimerEvent: {}
+[15.128087] (-) TimerEvent: {}
+[15.228547] (-) TimerEvent: {}
+[15.328790] (-) TimerEvent: {}
+[15.429014] (-) TimerEvent: {}
+[15.529244] (-) TimerEvent: {}
+[15.629464] (-) TimerEvent: {}
+[15.729689] (-) TimerEvent: {}
+[15.829910] (-) TimerEvent: {}
+[15.930156] (-) TimerEvent: {}
+[16.030539] (-) TimerEvent: {}
+[16.130869] (-) TimerEvent: {}
+[16.231092] (-) TimerEvent: {}
+[16.331334] (-) TimerEvent: {}
+[16.431654] (-) TimerEvent: {}
+[16.531886] (-) TimerEvent: {}
+[16.632158] (-) TimerEvent: {}
+[16.732414] (-) TimerEvent: {}
+[16.832661] (-) TimerEvent: {}
+[16.932921] (-) TimerEvent: {}
+[17.033195] (-) TimerEvent: {}
+[17.133465] (-) TimerEvent: {}
+[17.233749] (-) TimerEvent: {}
+[17.333997] (-) TimerEvent: {}
+[17.434268] (-) TimerEvent: {}
+[17.534515] (-) TimerEvent: {}
+[17.634802] (-) TimerEvent: {}
+[17.735056] (-) TimerEvent: {}
+[17.835277] (-) TimerEvent: {}
+[17.935495] (-) TimerEvent: {}
+[18.035715] (-) TimerEvent: {}
+[18.135937] (-) TimerEvent: {}
+[18.236155] (-) TimerEvent: {}
+[18.336373] (-) TimerEvent: {}
+[18.436608] (-) TimerEvent: {}
+[18.536843] (-) TimerEvent: {}
+[18.637072] (-) TimerEvent: {}
+[18.737290] (-) TimerEvent: {}
+[18.837510] (-) TimerEvent: {}
+[18.937737] (-) TimerEvent: {}
+[19.037962] (-) TimerEvent: {}
+[19.138184] (-) TimerEvent: {}
+[19.238421] (-) TimerEvent: {}
+[19.338638] (-) TimerEvent: {}
+[19.438854] (-) TimerEvent: {}
+[19.539076] (-) TimerEvent: {}
+[19.639291] (-) TimerEvent: {}
+[19.739505] (-) TimerEvent: {}
+[19.839725] (-) TimerEvent: {}
+[19.939938] (-) TimerEvent: {}
+[20.040164] (-) TimerEvent: {}
+[20.140380] (-) TimerEvent: {}
+[20.240605] (-) TimerEvent: {}
+[20.340825] (-) TimerEvent: {}
+[20.441051] (-) TimerEvent: {}
+[20.541271] (-) TimerEvent: {}
+[20.641490] (-) TimerEvent: {}
+[20.741709] (-) TimerEvent: {}
+[20.841928] (-) TimerEvent: {}
+[20.942146] (-) TimerEvent: {}
+[21.042361] (-) TimerEvent: {}
+[21.142576] (-) TimerEvent: {}
+[21.242792] (-) TimerEvent: {}
+[21.343018] (-) TimerEvent: {}
+[21.443251] (-) TimerEvent: {}
+[21.543468] (-) TimerEvent: {}
+[21.643708] (-) TimerEvent: {}
+[21.743946] (-) TimerEvent: {}
+[21.844220] (-) TimerEvent: {}
+[21.846878] (lslidar_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable lslidar_driver_node\x1b[0m\n'}
+[21.944305] (-) TimerEvent: {}
+[22.044539] (-) TimerEvent: {}
+[22.144763] (-) TimerEvent: {}
+[22.245054] (-) TimerEvent: {}
+[22.345323] (-) TimerEvent: {}
+[22.445555] (-) TimerEvent: {}
+[22.545772] (-) TimerEvent: {}
+[22.646009] (-) TimerEvent: {}
+[22.649220] (lslidar_driver) StdoutLine: {'line': b'[100%] Built target lslidar_driver_node\n'}
+[22.659506] (lslidar_driver) CommandEnded: {'returncode': 0}
+[22.690646] (lslidar_driver) JobProgress: {'identifier': 'lslidar_driver', 'progress': 'install'}
+[22.691046] (lslidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_driver'], 'cwd': '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', ''), ('USER', 'mr-cheng'), ('LC_TIME', 'en_US.UTF-8'), ('DDSGEN', '/home/mr-cheng/Bag/fastdds/src/fastddsgen/scripts'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.0/lib64:/home/mr-cheng/Bag/fastdds/install/fastrtps/lib:/home/mr-cheng/Bag/fastdds/install/fastcdr/lib'), ('HOME', '/home/mr-cheng'), ('OLDPWD', '/home/mr-cheng/Desktop/Car/Wireless_Lidar'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/mr-cheng/Bag/fastdds/gradle-6.4'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1634'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5826dc1d3618b50db844763966249c22'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/mr-cheng/Bag/fastdds/install'), ('INFOPATH', '/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/info:'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mr-cheng'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/x86_64-linux-gnu/pkgconfig:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/lib/pkgconfig::/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mr-cheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.0/bin:/home/mr-cheng/Bag/fastdds/install/fastrtps/bin:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor/bin:/usr/bin/gcc-11:/home/mr-cheng/Bag/texlive/2023/texmf-dist/scripts/latexindent:/home/mr-cheng/Bag/texlive/2023/bin/x86_64-linux:/home/mr-cheng/.local/bin:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin:/usr/lib/jvm/java-11-openjdk-amd64/BIN:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/mr-cheng/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/Bag/fastdds/gradle-6.4/bin/:/home/mr-cheng/.fishros/bin/'), ('SESSION_MANAGER', 'local/mrcheng-ROG:@/tmp/.ICE-unix/1634,unix/mrcheng-ROG:/tmp/.ICE-unix/1634'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/185613f4_704b_48b2_a71b_e550cb2e613b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('CSROOT', '/home/mr-cheng/commands'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/build/lslidar_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5826dc1d3618b50db844763966249c22'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', ':/home/mr-cheng/Bag/texlive/2023/texmf-dist/doc/man'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_msgs:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/opt/ros/humble')]), 'shell': False}
+[22.698580] (lslidar_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.698783] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/launch\n'}
+[22.698854] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/launch/lsm10p_net_launch.py\n'}
+[22.698917] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/launch/lsm10_uart_launch.py\n'}
+[22.699011] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/launch/lsn10_launch.py\n'}
+[22.699097] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/launch/lslidar_double_launch.py\n'}
+[22.699158] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/launch/lsm10_net_launch.py\n'}
+[22.699250] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/launch/lsm10p_uart_launch.py\n'}
+[22.699314] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/params\n'}
+[22.699372] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/params/lidar_net_ros2\n'}
+[22.699430] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/params/lidar_net_ros2/lsm10_net.yaml\n'}
+[22.699505] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/params/lidar_net_ros2/lsm10p_net.yaml\n'}
+[22.699724] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/params/lidar_uart_ros2\n'}
+[22.699807] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/params/lidar_uart_ros2/lsm10_p.yaml\n'}
+[22.699955] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/params/lidar_uart_ros2/lsm10.yaml\n'}
+[22.700130] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/params/lidar_uart_ros2/lsn10.yaml\n'}
+[22.700211] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/rviz\n'}
+[22.700286] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/rviz/lslidar.rviz\n'}
+[22.701133] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node\n'}
+[22.703968] (lslidar_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node" to ""\n'}
+[22.704070] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/ament_index/resource_index/package_run_dependencies/lslidar_driver\n'}
+[22.704180] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/ament_index/resource_index/parent_prefix_path/lslidar_driver\n'}
+[22.704819] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.sh\n'}
+[22.704929] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.dsv\n'}
+[22.705018] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/environment/path.sh\n'}
+[22.705103] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/environment/path.dsv\n'}
+[22.705188] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/local_setup.bash\n'}
+[22.705269] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/local_setup.sh\n'}
+[22.705363] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/local_setup.zsh\n'}
+[22.705460] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/local_setup.dsv\n'}
+[22.705556] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/package.dsv\n'}
+[22.705690] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/ament_index/resource_index/packages/lslidar_driver\n'}
+[22.705816] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[22.705917] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[22.706018] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig.cmake\n'}
+[22.706097] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig-version.cmake\n'}
+[22.706194] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/mr-cheng/Desktop/Car/Wireless_Lidar/LSLIDAR_N10_ROS2/install/lslidar_driver/share/lslidar_driver/package.xml\n'}
+[22.707544] (lslidar_driver) CommandEnded: {'returncode': 0}
+[22.746156] (-) TimerEvent: {}
+[22.749631] (lslidar_driver) JobEnded: {'identifier': 'lslidar_driver', 'rc': 0}
+[22.750365] (-) EventReactorShutdown: {}

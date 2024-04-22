@@ -79,8 +79,8 @@ typedef struct
 
 typedef struct 
 {
-    float Forward_Speed;
-    float Spinning_Speed;
+    float Forward_Speed;    //输入速度控制数据，单位：m/s
+    float Spinning_Speed;   //输入旋转速度控制，单位：rad/s
     
 }Car_Control_t;
 

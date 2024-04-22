@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lslidar_msgs/msg/LslidarDifop.msg
+// generated code does not contain a copyright notice
+
+
+module lslidar_msgs {
+  module msg {
+    struct LslidarDifop {
+      int64 temperature;
+
+      int64 rpm;
+    };
+  };
+};

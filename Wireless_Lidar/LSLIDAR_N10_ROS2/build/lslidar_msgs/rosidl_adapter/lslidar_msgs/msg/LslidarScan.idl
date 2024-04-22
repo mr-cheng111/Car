@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lslidar_msgs/msg/LslidarScan.msg
+// generated code does not contain a copyright notice
+
+#include "lslidar_msgs/msg/LslidarPoint.idl"
+
+module lslidar_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Altitude of all the points within this scan")
+    struct LslidarScan {
+      double altitude;
+
+      @verbatim (language="comment", text=
+        "The valid points in this scan sorted by azimuth" "\n"
+        "from 0 to 359.99")
+      sequence<lslidar_msgs::msg::LslidarPoint> points;
+    };
+  };
+};

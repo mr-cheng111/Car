@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lslidar_msgs/msg/LslidarPacket.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module lslidar_msgs {
+  module msg {
+    typedef uint8 uint8__2000[2000];
+    @verbatim (language="comment", text=
+      "Raw Leishen LIDAR packet.")
+    struct LslidarPacket {
+      @verbatim (language="comment", text=
+        "packet timestamp")
+      builtin_interfaces::msg::Time stamp;
+
+      @verbatim (language="comment", text=
+        "packet contents")
+      uint8__2000 data;
+    };
+  };
+};
