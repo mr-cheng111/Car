@@ -1,0 +1,16 @@
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/lib/robot_bringup/robot_bringup
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/ament_index/resource_index/package_run_dependencies/robot_bringup
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/ament_index/resource_index/parent_prefix_path/robot_bringup
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.sh
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.dsv
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/environment/path.sh
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/environment/path.dsv
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/local_setup.bash
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/local_setup.sh
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/local_setup.zsh
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/local_setup.dsv
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.dsv
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/ament_index/resource_index/packages/robot_bringup
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig.cmake
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig-version.cmake
+/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.xml

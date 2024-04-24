@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="装配体2.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.01937 0.014215 -0.031766"
+        rpy="0 0 0" />
+      <mass
+        value="0.05348" />
+      <inertia
+        ixx="1.9037E-05"
+        ixy="9.0913E-07"
+        ixz="8.2924E-06"
+        iyy="1.9739E-05"
+        iyz="-2.6249E-06"
+        izz="2.2591E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体2.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体2.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L_Wheel_Link">
+    <inertial>
+      <origin
+        xyz="0.000463862335734803 -3.46944695195361E-18 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0179804452244831" />
+      <inertia
+        ixx="8.63535084652758E-06"
+        ixy="0"
+        ixz="8.470329472543E-22"
+        iyy="5.3047571295336E-06"
+        iyz="6.74979379843271E-22"
+        izz="5.3047571295336E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体2.SLDASM/meshes/L_Wheel_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体2.SLDASM/meshes/L_Wheel_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_Wheel_Joint"
+    type="fixed">
+    <origin
+      xyz="0.051368 -0.0087694 0.0078864"
+      rpy="1.2801 0.15409 -0.91224" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_Wheel_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="R_Wheel_Link">
+    <inertial>
+      <origin
+        xyz="0.000463862335734824 -6.93889390390723E-18 -1.04083408558608E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0179804452244832" />
+      <inertia
+        ixx="8.63535084652759E-06"
+        ixy="-3.4410713482206E-22"
+        ixz="-6.35274710440725E-22"
+        iyy="5.30475712953361E-06"
+        iyz="5.69100261436483E-22"
+        izz="5.30475712953361E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体2.SLDASM/meshes/R_Wheel_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体2.SLDASM/meshes/R_Wheel_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_Wheel_Joint"
+    type="fixed">
+    <origin
+      xyz="-0.011523 0.072507 0.023848"
+      rpy="-1.2801 -0.15409 2.2294" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_Wheel_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Imu_Link">
+    <inertial>
+      <origin
+        xyz="-1.66786113457856E-05 2.94635585590848E-05 0.0185293572913523"
+        rpy="0 0 0" />
+      <mass
+        value="0.146517583349119" />
+      <inertia
+        ixx="0.000106561565461267"
+        ixy="7.39273664502817E-08"
+        ixz="-4.86277419580688E-08"
+        iyy="0.000239273370617792"
+        iyz="2.46677341491623E-07"
+        izz="0.000232025790118781" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体2.SLDASM/meshes/Imu_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体2.SLDASM/meshes/Imu_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Imu_Joint"
+    type="fixed">
+    <origin
+      xyz="0.027079 0.033205 0.037263"
+      rpy="2.8509 0.15409 -0.91224" />
+    <parent
+      link="base_link" />
+    <child
+      link="Imu_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Laser_Link">
+    <inertial>
+      <origin
+        xyz="-0.0002667 -0.00093869 -0.00028765"
+        rpy="0 0 0" />
+      <mass
+        value="0.020045" />
+      <inertia
+        ixx="6.0464E-06"
+        ixy="4.204E-08"
+        ixz="1.1728E-07"
+        iyy="1.0842E-05"
+        iyz="4.3064E-08"
+        izz="6.0561E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体2.SLDASM/meshes/Laser_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体2.SLDASM/meshes/Laser_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Laser_Joint"
+    type="fixed">
+    <origin
+      xyz="0.031612 0.034051 0.050811"
+      rpy="1.8861 0.09187 1.4812" />
+    <parent
+      link="base_link" />
+    <child
+      link="Laser_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

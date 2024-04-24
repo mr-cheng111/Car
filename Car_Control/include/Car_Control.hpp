@@ -18,6 +18,7 @@
 
 using namespace std;
 
+
 class Car_t
 {
 public:
@@ -26,14 +27,14 @@ public:
     Micro_ROS_t *ROS;
     Odom_Data_Process_t *Odom_Data_Processer;
 
-    Motor_Data_t *Wheel_L;
-    Motor_Data_t *Wheel_R;
+    volatile int16_t *Wheel_L_Speed;
+    volatile int16_t *Wheel_R_Speed;
     
     uint64_t Get_MOTOR_Data_Counter1 = 0;
     uint64_t Get_MOTOR_Data_Counter2 = 0;
 
 public:
-    Car_t(uint8_t Serial_Num,Bmi088 *_Mpu = &Imu_,Micro_ROS_t *ROS_Pointer = NULL,Odom_Data_Process_t *Odom_Data_Processer = NULL, Motor_Data_t *Wheel_L_p = NULL,  Motor_Data_t *Wheel_R_p = NULL) : BMI(_Mpu)
+    Car_t(uint8_t Serial_Num,Bmi088 *_Mpu = &Imu_,Micro_ROS_t *ROS_Pointer = NULL,Odom_Data_Process_t *Odom_Data_Processer = NULL, volatile int16_t *Wheel_L_p = NULL, volatile int16_t *Wheel_R_p = NULL) : BMI(_Mpu)
     {
         System_Status_Flag.System_Status = SYSTEM_INIT;
         if(ROS_Pointer != NULL)
@@ -71,8 +72,8 @@ public:
         }
         else
         {
-            this->Wheel_L = Wheel_L_p;
-            this->Wheel_R = Wheel_R_p;
+            this->Wheel_L_Speed = Wheel_L_p;
+            this->Wheel_R_Speed = Wheel_R_p;
         }
 
         IMU_Init();
@@ -141,8 +142,8 @@ public:
                     Car_Control_t Temp;
                     Set_Motor_Speed(Temp);
                     //Serial.printf("BBB\r\n");
-
                 }
+
                 this->Odom_Data_Processer->Update_Odom();
             }
             vTaskDelay(1);
@@ -235,11 +236,12 @@ public:
     {
         uint16_t Temp_CRC  = 0;
         int32_t Speed_L,Speed_R;
-        // this->Odom_Data_Processer->Robot_Inverse(Control_Data.Forward_Speed*1000,0,Speed_L,Speed_R);
+        //this->Odom_Data_Processer->Robot_Inverse(Control_Data.Forward_Speed*1000,0,Speed_L,Speed_R);
         this->Odom_Data_Processer->Robot_Inverse(Control_Data.Forward_Speed*1000,-Control_Data.Spinning_Speed*8,Speed_L,Speed_R);
 
+        vTaskDelay(2);
+
         uint8_t Temp_Data1[13] = {0x3E,0x01,0x08,0xA2,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
-        
         memcpy(Temp_Data1 + 7, (void*)&Speed_L, 4);
         Temp_CRC = crc16tablefast(Temp_Data1,11);
 
@@ -247,7 +249,7 @@ public:
         Temp_Data1[12] = Temp_CRC>>8;
         this->MOTOR_Serial->write((char *)Temp_Data1,13);
         
-        vTaskDelay(1);
+        vTaskDelay(3);
 
         uint8_t Temp_Data2[13] = {0x3E,0x02,0x08,0xA2,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
         memcpy(Temp_Data2 + 7, (void*)&Speed_R, 4);
@@ -275,22 +277,23 @@ public:
                 {
                     if(Temp_Data_Buffer[1] == 0x01)
                     {
-                        memcpy(this->Wheel_L,(Temp_Data_Buffer + 3),8);
+                        *this->Wheel_L_Speed = (int16_t)*(Temp_Data_Buffer + 8)<<8|*(Temp_Data_Buffer + 7);
                         // for(uint8_t i = 0; i < 13; i++)
                         // {
                         //     Serial.printf("%x ",Temp_Data_Buffer[i]);     
                         // }
                         // Serial.printf("\r\n ");                  
                     }
-                    else if(Temp_Data_Buffer[1] == 0x02)
+                    if(Temp_Data_Buffer[1] == 0x02)
                     {
-                        memcpy(this->Wheel_R,(Temp_Data_Buffer + 3),8);
+                        *this->Wheel_R_Speed = (int16_t)*(Temp_Data_Buffer + 8)<<8|*(Temp_Data_Buffer + 7);
                         // for(uint8_t i = 0; i < 13; i++)
                         // {
                         //     Serial.printf("%x ",Temp_Data_Buffer[i]);     
                         // }
-                        // Serial.printf("\r\n ");       
+                        // Serial.printf("%d\r\n",*this->Wheel_R_Speed);       
                     }
+                    
                 }
             }
             

@@ -72,7 +72,7 @@ typedef struct
 {
     String Wifi_SSID = "Xiaomi_WIFI";
     String Pass_Word = "12345678910";
-    String Host_Ip = "192.168.31.255";
+    String Host_Ip = "192.168.31.197";
     uint16_t Port = 9999;
     
 }WIFI_Data_t;
@@ -98,8 +98,8 @@ extern nav_msgs__msg__Odometry Odom_msg_;
 extern Car_Control_t Car_Control_;//机器人控制数据
 extern Odom_Data_Process_t Odom_Data_Processer_;
 extern System_Status_t System_Status_Flag;
-extern Motor_Data_t Wheel_L_Data_;
-extern Motor_Data_t Wheel_R_Data_;
+extern volatile int16_t Wheel_L_Data_;
+extern volatile int16_t Wheel_R_Data_;
 
 extern rclc_executor_t Executor_;
 extern rclc_support_t Support_;

@@ -17,8 +17,8 @@ LEDs LED_;
 WIFI_Data_t Wifi_input_;
 System_Status_t System_Status_Flag;
 
-Motor_Data_t Wheel_L_Data_;
-Motor_Data_t Wheel_R_Data_;
+volatile int16_t Wheel_L_Data_;
+volatile int16_t Wheel_R_Data_;
 
 Car_Control_t Car_Control_;//机器人控制数据
 Odom_Data_Process_t Odom_Data_Processer_(&Wheel_L_Data_, &Wheel_R_Data_);
