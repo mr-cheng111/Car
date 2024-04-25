@@ -13,9 +13,7 @@
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(921600);
-  Imu_.begin();
-  Imu_.setRange(Bmi088::ACCEL_RANGE_3G,Bmi088::GYRO_RANGE_1000DPS);
-  Imu_.setOdr(Bmi088::ODR_2000HZ);
+
   Serial.printf("Setting Microros\r\n");
   Micro_ROS_t *B = new Micro_ROS_t(Wifi_input_);
   Serial.printf("Setting Car\r\n");

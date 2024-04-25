@@ -1,0 +1,2 @@
+[0.023s] Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup -- -j16 -l16
+[0.233s] [100%] Built target robot_bringup

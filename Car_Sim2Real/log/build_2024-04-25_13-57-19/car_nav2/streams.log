@@ -1,0 +1,53 @@
+[0.021s] Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr-cheng/Desktop/Car/Car_Sim2Real/src/car_nav2 -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2
+[0.221s] -- The C compiler identification is GNU 11.4.0
+[0.229s] -- The CXX compiler identification is GNU 11.4.0
+[0.238s] -- Detecting C compiler ABI info
+[0.296s] -- Detecting C compiler ABI info - done
+[0.303s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.304s] -- Detecting C compile features
+[0.305s] -- Detecting C compile features - done
+[0.308s] -- Detecting CXX compiler ABI info
+[0.375s] -- Detecting CXX compiler ABI info - done
+[0.382s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.382s] -- Detecting CXX compile features
+[0.383s] -- Detecting CXX compile features - done
+[0.387s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.527s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.622s] -- Found nav2_bringup: 1.1.13 (/opt/ros/humble/share/nav2_bringup/cmake)
+[0.623s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.713s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.714s] -- Added test 'lint_cmake' to check CMake code style
+[0.714s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.716s] -- Added test 'xmllint' to check XML markup files
+[0.717s] -- Configuring done
+[0.719s] -- Generating done
+[0.720s] -- Build files have been written to: /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2
+[0.725s] Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr-cheng/Desktop/Car/Car_Sim2Real/src/car_nav2 -DCMAKE_INSTALL_PREFIX=/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2
+[0.726s] Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2 -- -j16 -l16
+[0.757s] Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2 -- -j16 -l16
+[0.774s] Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2
+[0.782s] -- Install configuration: ""
+[0.783s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/launch
+[0.783s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/launch/car_nav2.launch.py
+[0.783s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/param
+[0.783s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/param/car_nav2.yaml
+[0.783s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/maps
+[0.783s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/maps/Sim_Map
+[0.783s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/maps/Sim_Map/sim_map.pgm
+[0.784s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/maps/Sim_Map/sim_map.yaml
+[0.784s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/ament_index/resource_index/package_run_dependencies/car_nav2
+[0.784s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/ament_index/resource_index/parent_prefix_path/car_nav2
+[0.784s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/environment/ament_prefix_path.sh
+[0.784s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/environment/ament_prefix_path.dsv
+[0.784s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/environment/path.sh
+[0.784s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/environment/path.dsv
+[0.784s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/local_setup.bash
+[0.785s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/local_setup.sh
+[0.785s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/local_setup.zsh
+[0.785s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/local_setup.dsv
+[0.785s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/package.dsv
+[0.785s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/ament_index/resource_index/packages/car_nav2
+[0.785s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/cmake/car_nav2Config.cmake
+[0.785s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/cmake/car_nav2Config-version.cmake
+[0.785s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/package.xml
+[0.787s] Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2

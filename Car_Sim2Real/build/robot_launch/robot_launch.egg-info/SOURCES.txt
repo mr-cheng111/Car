@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../../build/robot_launch/robot_launch.egg-info/PKG-INFO
+../../build/robot_launch/robot_launch.egg-info/SOURCES.txt
+../../build/robot_launch/robot_launch.egg-info/dependency_links.txt
+../../build/robot_launch/robot_launch.egg-info/requires.txt
+../../build/robot_launch/robot_launch.egg-info/top_level.txt
+../../build/robot_launch/robot_launch.egg-info/zip-safe
+launch/robot.launch.py
+resource/robot_launch
+robot_launch/__init__.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

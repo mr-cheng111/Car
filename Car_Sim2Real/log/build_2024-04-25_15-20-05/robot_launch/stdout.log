@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/robot_launch/robot_launch.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_launch/robot_launch.egg-info/dependency_links.txt
+writing requirements to ../../build/robot_launch/robot_launch.egg-info/requires.txt
+writing top-level names to ../../build/robot_launch/robot_launch.egg-info/top_level.txt
+reading manifest file '../../build/robot_launch/robot_launch.egg-info/SOURCES.txt'
+writing manifest file '../../build/robot_launch/robot_launch.egg-info/SOURCES.txt'
+running build
+running build_py
+copying robot_launch/__init__.py -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/build/lib/robot_launch
+running install
+running install_lib
+running install_data
+copying resource/robot_launch -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/ament_index/resource_index/packages
+copying package.xml -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch
+copying launch/robot.launch.py -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/launch
+running install_egg_info
+removing '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/lib/python3.10/site-packages/robot_launch-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/robot_launch/robot_launch.egg-info to /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/lib/python3.10/site-packages/robot_launch-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/install.log'

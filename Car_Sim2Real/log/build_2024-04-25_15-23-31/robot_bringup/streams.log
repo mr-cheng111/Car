@@ -1,0 +1,25 @@
+[0.023s] Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup -- -j16 -l16
+[0.233s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_bringup.dir/src/robot_bringup.cpp.o[0m
+[7.910s] [100%] [32m[1mLinking CXX executable robot_bringup[0m
+[8.279s] [100%] Built target robot_bringup
+[8.287s] Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup -- -j16 -l16
+[8.308s] Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup
+[8.314s] -- Install configuration: ""
+[8.314s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/lib/robot_bringup/robot_bringup
+[8.317s] -- Set runtime path of "/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/lib/robot_bringup/robot_bringup" to ""
+[8.317s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/ament_index/resource_index/package_run_dependencies/robot_bringup
+[8.317s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/ament_index/resource_index/parent_prefix_path/robot_bringup
+[8.317s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.sh
+[8.317s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.dsv
+[8.317s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/environment/path.sh
+[8.318s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/environment/path.dsv
+[8.318s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/local_setup.bash
+[8.318s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/local_setup.sh
+[8.318s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/local_setup.zsh
+[8.318s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/local_setup.dsv
+[8.318s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.dsv
+[8.318s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/ament_index/resource_index/packages/robot_bringup
+[8.318s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig.cmake
+[8.318s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig-version.cmake
+[8.318s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.xml
+[8.319s] Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup

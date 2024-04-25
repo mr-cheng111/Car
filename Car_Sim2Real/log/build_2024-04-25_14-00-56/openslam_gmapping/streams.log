@@ -1,0 +1,13 @@
+[0.028s] Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping -- -j16 -l16
+[0.240s] [35m[1mConsolidate compiler generated dependencies of target sensor_base[0m
+[0.240s] [35m[1mConsolidate compiler generated dependencies of target utils[0m
+[0.240s] [ 27%] Built target utils
+[0.241s] [ 27%] Built target sensor_base
+[0.241s] [35m[1mConsolidate compiler generated dependencies of target sensor_odometry[0m
+[0.242s] [35m[1mConsolidate compiler generated dependencies of target sensor_range[0m
+[0.242s] [ 54%] Built target sensor_odometry
+[0.242s] [ 54%] Built target sensor_range
+[0.242s] [35m[1mConsolidate compiler generated dependencies of target scanmatcher[0m
+[0.243s] [ 77%] Built target scanmatcher
+[0.243s] [35m[1mConsolidate compiler generated dependencies of target gridfastslam[0m
+[0.243s] [100%] Built target gridfastslam

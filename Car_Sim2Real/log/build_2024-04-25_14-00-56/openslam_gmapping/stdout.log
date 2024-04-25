@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target sensor_base[0m
+[35m[1mConsolidate compiler generated dependencies of target utils[0m
+[ 27%] Built target utils
+[ 27%] Built target sensor_base
+[35m[1mConsolidate compiler generated dependencies of target sensor_odometry[0m
+[35m[1mConsolidate compiler generated dependencies of target sensor_range[0m
+[ 54%] Built target sensor_odometry
+[ 54%] Built target sensor_range
+[35m[1mConsolidate compiler generated dependencies of target scanmatcher[0m
+[ 77%] Built target scanmatcher
+[35m[1mConsolidate compiler generated dependencies of target gridfastslam[0m
+[100%] Built target gridfastslam

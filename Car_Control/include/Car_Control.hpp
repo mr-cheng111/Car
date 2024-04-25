@@ -143,7 +143,7 @@ public:
                     Set_Motor_Speed(Temp);
                     //Serial.printf("BBB\r\n");
                 }
-
+                //Serial.printf("Wheel_L %d, Wheel_R %d\r\n",*this->Wheel_L_Speed,*this->Wheel_R_Speed);
                 this->Odom_Data_Processer->Update_Odom();
             }
             vTaskDelay(1);
@@ -193,9 +193,9 @@ public:
         
         System_Status_Flag.Sensor_Work_Flag = IMU_START_WORK;
 
-        status = Imu_.setRange(Bmi088::ACCEL_RANGE_6G,Bmi088::GYRO_RANGE_500DPS);
+        status = Imu_.setRange(Bmi088::ACCEL_RANGE_3G,Bmi088::GYRO_RANGE_500DPS);
 
-        status = Imu_.setOdr(Bmi088::ODR_2000HZ);
+        status = Imu_.setOdr(Bmi088::ODR_1000HZ);
 
         Serial.printf("Imu status: %d\r\n",status);
 
@@ -228,21 +228,23 @@ public:
         Temp_Data2[12] = Temp_CRC>>8;
         this->MOTOR_Serial->write((char *)Temp_Data2,13);
         Serial.write((char *)Temp_Data2);
+
+        this->MOTOR_Serial->setTimeout(1);
         
-        this->MOTOR_Serial->onReceive(this->Serial_Get_Motor_Data(),true);
+        this->MOTOR_Serial->onReceive(this->Serial_Get_Motor_Data(),1);
     }
 
     void Set_Motor_Speed(Car_Control_t Control_Data)
     {
         uint16_t Temp_CRC  = 0;
         int32_t Speed_L,Speed_R;
-        //this->Odom_Data_Processer->Robot_Inverse(Control_Data.Forward_Speed*1000,0,Speed_L,Speed_R);
-        this->Odom_Data_Processer->Robot_Inverse(Control_Data.Forward_Speed*1000,-Control_Data.Spinning_Speed*8,Speed_L,Speed_R);
+        // this->Odom_Data_Processer->Robot_Inverse(Control_Data.Forward_Speed*1000,0,Speed_L,Speed_R);
+        this->Odom_Data_Processer->Robot_Inverse(Control_Data.Forward_Speed*1000,Control_Data.Spinning_Speed*8,Speed_L,Speed_R);
 
         vTaskDelay(2);
 
         uint8_t Temp_Data1[13] = {0x3E,0x01,0x08,0xA2,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
-        memcpy(Temp_Data1 + 7, (void*)&Speed_L, 4);
+        memcpy(Temp_Data1 + 7, (void*)&Speed_R, 4);
         Temp_CRC = crc16tablefast(Temp_Data1,11);
 
         Temp_Data1[11] = Temp_CRC;
@@ -252,7 +254,7 @@ public:
         vTaskDelay(3);
 
         uint8_t Temp_Data2[13] = {0x3E,0x02,0x08,0xA2,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
-        memcpy(Temp_Data2 + 7, (void*)&Speed_R, 4);
+        memcpy(Temp_Data2 + 7, (void*)&Speed_L, 4);
         Temp_CRC = crc16tablefast(Temp_Data2,11);
 
         Temp_Data2[11] = Temp_CRC;
@@ -263,7 +265,7 @@ public:
      * @brief 电机串口回调
      * 
      */
-    OnReceiveCb IRAM_ATTR Serial_Get_Motor_Data(void)
+    OnReceiveCb Serial_Get_Motor_Data(void)
     {
         System_Status_Flag.Serial_Work_Flag = true;
         Serial.printf("Serial Init finished\n");
@@ -275,7 +277,7 @@ public:
                 this->MOTOR_Serial->read(Temp_Data_Buffer,13);
                 if(crc16tablefast(Temp_Data_Buffer,11) == (Temp_Data_Buffer[12]<<8 | Temp_Data_Buffer[11]))
                 {
-                    if(Temp_Data_Buffer[1] == 0x01)
+                    if(Temp_Data_Buffer[1] == 0x02)
                     {
                         *this->Wheel_L_Speed = (int16_t)*(Temp_Data_Buffer + 8)<<8|*(Temp_Data_Buffer + 7);
                         // for(uint8_t i = 0; i < 13; i++)
@@ -284,7 +286,7 @@ public:
                         // }
                         // Serial.printf("\r\n ");                  
                     }
-                    if(Temp_Data_Buffer[1] == 0x02)
+                    if(Temp_Data_Buffer[1] == 0x01)
                     {
                         *this->Wheel_R_Speed = (int16_t)*(Temp_Data_Buffer + 8)<<8|*(Temp_Data_Buffer + 7);
                         // for(uint8_t i = 0; i < 13; i++)
@@ -293,8 +295,13 @@ public:
                         // }
                         // Serial.printf("%d\r\n",*this->Wheel_R_Speed);       
                     }
-                    
                 }
+                else if(this->MOTOR_Serial->available() > 0 && this->MOTOR_Serial->available() < 13)
+                {
+                    this->MOTOR_Serial->flush();
+                }
+                // Serial.printf("%d\r\n",this->MOTOR_Serial->available());
+                // Serial.printf("Wheel_L %d, Wheel_R %d\r\n",*this->Wheel_L_Speed,*this->Wheel_R_Speed);
             }
             
         }

@@ -26,8 +26,8 @@ private:
   void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
   {
     (void)msg;
-    RCLCPP_INFO(this->get_logger(), "接收到里程计信息->底盘坐标系 tf :(%f,%f)", 
-                msg->pose.pose.position.x, msg->pose.pose.position.y);
+    //RCLCPP_INFO(this->get_logger(), "接收到里程计信息->底盘坐标系 tf :(%f,%f)", 
+    //            msg->pose.pose.position.x, msg->pose.pose.position.y);
 
     // 更新odom_msg_的姿态信息
     odom_msg_.pose.pose.position.x = msg->pose.pose.position.x;
