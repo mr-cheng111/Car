@@ -32,14 +32,8 @@ def generate_launch_description():
         
     # 启动 teleop_twist_joy控制节点，获取手柄数据并输出Vx,Vy,W的控制数据
     teleop_node_cmd = ExecuteProcess(
-        cmd=['ros2', 'launch','teleop_twist_joy', 'teleop-launch.py'],
+        cmd=['ros2', 'launch','teleop_twist_joy', 'teleop-launch.py','joy_vel:=/sim_car/cmd_vel'],
         output='screen')
-    # 启动 joy_node作为手柄驱动，读取手柄原始数据并在/joy节点输出
-    joy_node_cmd = Node(
-        package='joy',
-        executable='joy_node',
-        output='screen'
-    )
     #启动RVIZ可视化节点
     rviz2_node = Node(
         package='rviz2',
@@ -67,14 +61,11 @@ def generate_launch_description():
        remappings=[('/odometry/filtered', '/odom')],
        parameters=[os.path.join(pkg_share, 'config/ekf.yaml'),
         		   {'use_sim_time': True}])# 添加这行以设置使用仿真时间
-
-    
     
     ld.add_action(start_gazebo_cmd)
     ld.add_action(spawn_entity_cmd)
     ld.add_action(robot_localization_node)
     ld.add_action(teleop_node_cmd) 
-    ld.add_action(joy_node_cmd)
     ld.add_action(robot_state_publisher_node)
     ld.add_action(start_slam_node_cmd)
     ld.add_action(rviz2_node)

@@ -14,9 +14,9 @@ def generate_launch_description():
     
     
     #=============================2.声明参数，获取配置文件路径===================================================
-    # use_sim_time 这里要设置成true,因为gazebo是仿真环境，其时间是通过/clock话题获取，而不是系统时间
-    use_sim_time = LaunchConfiguration('use_sim_time', default='True')
-    map_yaml_path = LaunchConfiguration('map',default=os.path.join(car_nav2_dir,'maps/Sim_Map','sim_map.yaml'))
+    use_sim_time = LaunchConfiguration('use_sim_time', default='False')
+    use_slam = LaunchConfiguration('use_slam', default='False')
+    map_yaml_path = LaunchConfiguration('map',default=os.path.join(car_nav2_dir,'maps/Real_Map','real_map.yaml'))
     nav2_param_path = LaunchConfiguration('params_file',default=os.path.join(car_nav2_dir,'param','car_nav2.yaml'))
 
     #=============================3.声明启动launch文件，传入：地图路径、是否使用仿真时间以及nav2参数文件==============
@@ -25,7 +25,9 @@ def generate_launch_description():
             launch_arguments={
                 'map': map_yaml_path,
                 'use_sim_time': use_sim_time,
+                #'use_slam': use_slam,
                 'params_file': nav2_param_path}.items(),
+                
         )
     
     return LaunchDescription([nav2_bringup_launch])

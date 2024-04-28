@@ -4,3 +4,9 @@ lslidar_msgs.egg-info/PKG-INFO
 lslidar_msgs.egg-info/SOURCES.txt
 lslidar_msgs.egg-info/dependency_links.txt
 lslidar_msgs.egg-info/top_level.txt
+lslidar_msgs/msg/__init__.py
+lslidar_msgs/msg/_lslidar_difop.py
+lslidar_msgs/msg/_lslidar_packet.py
+lslidar_msgs/msg/_lslidar_point.py
+lslidar_msgs/msg/_lslidar_scan.py
+lslidar_msgs/msg/_lslidar_sweep.py

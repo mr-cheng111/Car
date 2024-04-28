@@ -298,10 +298,12 @@ public:
                 }
                 else if(this->MOTOR_Serial->available() > 0 && this->MOTOR_Serial->available() < 13)
                 {
-                    this->MOTOR_Serial->flush();
+                    uint8_t NoUse[13];
+                    this->MOTOR_Serial->read(NoUse,this->MOTOR_Serial->available());
+                    Serial.printf("%d\r\n",this->MOTOR_Serial->available());
                 }
-                // Serial.printf("%d\r\n",this->MOTOR_Serial->available());
-                // Serial.printf("Wheel_L %d, Wheel_R %d\r\n",*this->Wheel_L_Speed,*this->Wheel_R_Speed);
+                
+                //Serial.printf("Wheel_L %d, Wheel_R %d\r\n",*this->Wheel_L_Speed,*this->Wheel_R_Speed);
             }
             
         }

@@ -1,0 +1,24 @@
+[1.119s] Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_launch': PYTHONPATH=/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/prefix_override:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_launch build --build-base /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/build install --record /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/install.log --single-version-externally-managed install_data
+[1.384s] running egg_info
+[1.403s] writing ../../build/robot_launch/robot_launch.egg-info/PKG-INFO
+[1.404s] writing dependency_links to ../../build/robot_launch/robot_launch.egg-info/dependency_links.txt
+[1.404s] writing requirements to ../../build/robot_launch/robot_launch.egg-info/requires.txt
+[1.404s] writing top-level names to ../../build/robot_launch/robot_launch.egg-info/top_level.txt
+[1.443s] reading manifest file '../../build/robot_launch/robot_launch.egg-info/SOURCES.txt'
+[1.444s] writing manifest file '../../build/robot_launch/robot_launch.egg-info/SOURCES.txt'
+[1.444s] running build
+[1.444s] running build_py
+[1.444s] copying robot_launch/__init__.py -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/build/lib/robot_launch
+[1.444s] running install
+[1.450s] running install_lib
+[1.472s] running install_data
+[1.472s] copying resource/robot_launch -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/ament_index/resource_index/packages
+[1.472s] copying package.xml -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch
+[1.472s] copying launch/robot_nav2.launch.py -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/launch
+[1.472s] copying launch/robot.launch.py -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/launch
+[1.473s] running install_egg_info
+[1.493s] removing '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/lib/python3.10/site-packages/robot_launch-0.0.0-py3.10.egg-info' (and everything under it)
+[1.494s] Copying ../../build/robot_launch/robot_launch.egg-info to /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/lib/python3.10/site-packages/robot_launch-0.0.0-py3.10.egg-info
+[1.494s] running install_scripts
+[1.672s] writing list of installed files to '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/install.log'
+[1.693s] Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_launch' returned '0': PYTHONPATH=/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/prefix_override:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_launch build --build-base /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/build install --record /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/install.log --single-version-externally-managed install_data

@@ -51,7 +51,7 @@ def generate_launch_description():
 
     ld.add_action(teleop_node_cmd)
     ld.add_action(joy_node_cmd)
-    #ld.add_action(robot_localization_node)    
+    ld.add_action(robot_localization_node)    
     ld.add_action(start_slam_node_cmd)
     ld.add_action(start_robot_tf_node_cmd)
     ld.add_action(rviz2_node)

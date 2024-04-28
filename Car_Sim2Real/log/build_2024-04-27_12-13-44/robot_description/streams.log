@@ -1,0 +1,28 @@
+[1.011s] Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_description': PYTHONPATH=/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/prefix_override:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/build install --record /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/install.log --single-version-externally-managed install_data
+[1.264s] running egg_info
+[1.282s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[1.282s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[1.283s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[1.283s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[1.320s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[1.321s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[1.321s] running build
+[1.321s] running build_py
+[1.321s] copying robot_description/__init__.py -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/build/lib/robot_description
+[1.321s] running install
+[1.326s] running install_lib
+[1.346s] running install_data
+[1.346s] copying resource/robot_description -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/ament_index/resource_index/packages
+[1.346s] copying package.xml -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description
+[1.346s] copying launch/robot_description.launch.py -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/launch
+[1.346s] copying urdf/装配体2.SLDASM.csv -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/urdf
+[1.346s] copying urdf/装配体2.SLDASM.urdf -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/urdf
+[1.347s] copying meshes/Laser_Link.STL -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/meshes
+[1.347s] copying meshes/Imu_Link.STL -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/meshes
+[1.347s] copying meshes/base_link.STL -> /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/meshes
+[1.347s] running install_egg_info
+[1.367s] removing '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info' (and everything under it)
+[1.367s] Copying ../../build/robot_description/robot_description.egg-info to /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info
+[1.368s] running install_scripts
+[1.531s] writing list of installed files to '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/install.log'
+[1.552s] Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_description' returned '0': PYTHONPATH=/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/prefix_override:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/build install --record /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/install.log --single-version-externally-managed install_data

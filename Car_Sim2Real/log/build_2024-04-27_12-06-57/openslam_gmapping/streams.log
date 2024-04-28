@@ -1,0 +1,79 @@
+[0.028s] Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping -- -j16 -l16
+[0.233s] [ 22%] Built target sensor_base
+[0.233s] [ 27%] Built target utils
+[0.234s] [ 40%] Built target sensor_odometry
+[0.234s] [ 54%] Built target sensor_range
+[0.234s] [ 77%] Built target scanmatcher
+[0.235s] [100%] Built target gridfastslam
+[0.432s] Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping -- -j16 -l16
+[0.458s] Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping
+[0.467s] -- Install configuration: ""
+[0.467s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[0.467s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[0.467s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include/
+[0.467s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping
+[0.468s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/utils
+[0.468s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/utils/point.h
+[0.468s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/utils/stat.h
+[0.468s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/utils/autoptr.h
+[0.468s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/utils/commandline.h
+[0.468s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/utils/gvalues.h
+[0.468s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/utils/macro_params.h
+[0.468s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/particlefilter
+[0.468s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/particlefilter/particlefilter.h
+[0.468s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/log
+[0.468s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/log/sensorlog.h
+[0.469s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/log/configuration.h
+[0.469s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/scanmatcher
+[0.469s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/scanmatcher/smmap.h
+[0.469s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/scanmatcher/icp.h
+[0.469s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/scanmatcher/scanmatcher.h
+[0.469s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/grid
+[0.469s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/grid/accessstate.h
+[0.469s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/grid/harray2d.h
+[0.469s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/grid/array2d.h
+[0.469s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/grid/map.h
+[0.469s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/sensor
+[0.470s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/sensor/sensor_range
+[0.470s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangereading.h
+[0.470s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangesensor.h
+[0.470s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/sensor/sensor_base
+[0.470s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensorreading.h
+[0.470s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensor.h
+[0.470s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry
+[0.470s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometryreading.h
+[0.470s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometrysensor.h
+[0.470s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/gridfastslam
+[0.470s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.h
+[0.471s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.hxx
+[0.471s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/include//gmapping/gridfastslam/motionmodel.h
+[0.471s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/ament_index/resource_index/package_run_dependencies/openslam_gmapping
+[0.471s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/ament_index/resource_index/parent_prefix_path/openslam_gmapping
+[0.471s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.sh
+[0.471s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.dsv
+[0.471s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/environment/path.sh
+[0.471s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/environment/path.dsv
+[0.471s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/local_setup.bash
+[0.471s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/local_setup.sh
+[0.471s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/local_setup.zsh
+[0.471s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/local_setup.dsv
+[0.472s] -- Installing: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/package.dsv
+[0.473s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/ament_index/resource_index/packages/openslam_gmapping
+[0.473s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_libraries-extras.cmake
+[0.473s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.473s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig.cmake
+[0.473s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig-version.cmake
+[0.473s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/package.xml
+[0.473s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/lib/libgridfastslam.a
+[0.474s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/lib/libscanmatcher.a
+[0.474s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[0.474s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[0.474s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/lib/libsensor_base.a
+[0.474s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[0.474s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[0.474s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/lib/libsensor_odometry.a
+[0.474s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/lib/libsensor_range.a
+[0.474s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/lib/libutils.a
+[0.474s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh
+[0.474s] -- Up-to-date: /home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv
+[0.483s] Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping

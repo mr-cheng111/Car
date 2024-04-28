@@ -1,0 +1,446 @@
+[0.101s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.101s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ac353c4ef20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ac353d479a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ac353d479a0>>)
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.138s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mr-cheng/Desktop/Car/Car_Sim2Real'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_nav2) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_nav2) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_nav2) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_nav2) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_nav2) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_nav2) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_nav2) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_nav2) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_nav2) by extension 'ros'
+[0.165s] DEBUG:colcon.colcon_core.package_identification:Package 'src/car_nav2' with type 'ros.ament_cmake' and name 'car_nav2'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ros'
+[0.166s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_bringup' with type 'ros.ament_cmake' and name 'robot_bringup'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_description' with type 'ros.ament_python' and name 'robot_description'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extension 'ros'
+[0.168s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_launch' with type 'ros.ament_python' and name 'robot_launch'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'ros'
+[0.169s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_gmapping/openslam_gmapping' with type 'ros.ament_cmake' and name 'openslam_gmapping'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'ros'
+[0.171s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_gmapping/slam_gmapping' with type 'ros.ament_cmake' and name 'slam_gmapping'
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.190s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/mr-cheng/Desktop/Car/Car_Sim2Real/install
+[0.190s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/mr-cheng/Bag/fastdds/install
+[0.192s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 395 installed packages in /opt/ros/humble
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'car_nav2' build argument 'cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'car_nav2' build argument 'cmake_target' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'car_nav2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'car_nav2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'car_nav2' build argument 'cmake_clean_first' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'car_nav2' build argument 'cmake_force_configure' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'car_nav2' build argument 'ament_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'car_nav2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'car_nav2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.248s] DEBUG:colcon.colcon_core.verb:Building package 'car_nav2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2', 'merge_install': False, 'path': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/car_nav2', 'symlink_install': False, 'test_result_base': None}
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_target' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_clean_cache' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_clean_first' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_force_configure' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'ament_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'catkin_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.249s] DEBUG:colcon.colcon_core.verb:Building package 'openslam_gmapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping', 'merge_install': False, 'path': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/slam_gmapping/openslam_gmapping', 'symlink_install': False, 'test_result_base': None}
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.250s] DEBUG:colcon.colcon_core.verb:Building package 'robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup', 'merge_install': False, 'path': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.250s] DEBUG:colcon.colcon_core.verb:Building package 'robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description', 'merge_install': False, 'path': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_description', 'symlink_install': False, 'test_result_base': None}
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'cmake_args' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'cmake_target' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.251s] DEBUG:colcon.colcon_core.verb:Building package 'robot_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch', 'merge_install': False, 'path': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_launch', 'symlink_install': False, 'test_result_base': None}
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_args' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_target' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_clean_cache' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_clean_first' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_force_configure' from command line to 'False'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'ament_cmake_args' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'catkin_cmake_args' from command line to 'None'
+[0.251s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.251s] DEBUG:colcon.colcon_core.verb:Building package 'slam_gmapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/slam_gmapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping', 'merge_install': False, 'path': '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/slam_gmapping/slam_gmapping', 'symlink_install': False, 'test_result_base': None}
+[0.252s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.252s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.253s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/slam_gmapping/openslam_gmapping' with build type 'ament_cmake'
+[0.253s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/slam_gmapping/openslam_gmapping'
+[0.255s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.255s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.255s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.259s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/car_nav2' with build type 'ament_cmake'
+[0.259s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/car_nav2'
+[0.259s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.259s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.262s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_bringup' with build type 'ament_cmake'
+[0.262s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_bringup'
+[0.263s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.263s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.266s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_description' with build type 'ament_python'
+[0.266s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'ament_prefix_path')
+[0.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/hook/ament_prefix_path.ps1'
+[0.267s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/hook/ament_prefix_path.dsv'
+[0.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/hook/ament_prefix_path.sh'
+[0.268s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.268s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.271s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_launch' with build type 'ament_python'
+[0.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_launch', 'ament_prefix_path')
+[0.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/hook/ament_prefix_path.ps1'
+[0.272s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/hook/ament_prefix_path.dsv'
+[0.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/hook/ament_prefix_path.sh'
+[0.273s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.273s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping -- -j16 -l16
+[0.283s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2 -- -j16 -l16
+[0.286s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup -- -j16 -l16
+[0.481s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_description'
+[0.482s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.482s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.680s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_launch'
+[0.680s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.680s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.685s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2 -- -j16 -l16
+[0.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping -- -j16 -l16
+[0.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup -- -j16 -l16
+[0.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2
+[0.712s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping
+[0.713s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup
+[0.719s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(car_nav2)
+[0.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/car_nav2
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2' for CMake module files
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2' for CMake config files
+[0.729s] Level 1:colcon.colcon_core.shell:create_environment_hook('car_nav2', 'cmake_prefix_path')
+[0.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/hook/cmake_prefix_path.ps1'
+[0.729s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/hook/cmake_prefix_path.dsv'
+[0.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/hook/cmake_prefix_path.sh'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/bin'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/lib/pkgconfig/car_nav2.pc'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/lib/python3.10/site-packages'
+[0.731s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/bin'
+[0.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/package.ps1'
+[0.732s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/package.dsv'
+[0.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/package.sh'
+[0.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/package.bash'
+[0.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/package.zsh'
+[0.734s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/colcon-core/packages/car_nav2)
+[0.735s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openslam_gmapping)
+[0.736s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping' for CMake module files
+[0.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/openslam_gmapping
+[0.736s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping' for CMake config files
+[0.737s] Level 1:colcon.colcon_core.shell:create_environment_hook('openslam_gmapping', 'cmake_prefix_path')
+[0.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.ps1'
+[0.737s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.dsv'
+[0.738s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.sh'
+[0.738s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/lib'
+[0.738s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/bin'
+[0.738s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/lib/pkgconfig/openslam_gmapping.pc'
+[0.739s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/lib/python3.10/site-packages'
+[0.739s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/bin'
+[0.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/package.ps1'
+[0.739s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/package.dsv'
+[0.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/package.sh'
+[0.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/package.bash'
+[0.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/package.zsh'
+[0.741s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/colcon-core/packages/openslam_gmapping)
+[0.741s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[0.741s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup' for CMake module files
+[0.742s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_bringup
+[0.742s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup' for CMake config files
+[0.742s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.ps1'
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/lib'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/bin'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/lib/python3.10/site-packages'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/bin'
+[0.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.ps1'
+[0.745s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.dsv'
+[0.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.sh'
+[0.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.bash'
+[0.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.zsh'
+[0.746s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[0.752s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(car_nav2)
+[0.752s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2' for CMake module files
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2' for CMake config files
+[0.753s] Level 1:colcon.colcon_core.shell:create_environment_hook('car_nav2', 'cmake_prefix_path')
+[0.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/hook/cmake_prefix_path.ps1'
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/hook/cmake_prefix_path.dsv'
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/hook/cmake_prefix_path.sh'
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/bin'
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/lib/pkgconfig/car_nav2.pc'
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/lib/python3.10/site-packages'
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/bin'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/package.ps1'
+[0.756s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/package.dsv'
+[0.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/package.sh'
+[0.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/package.bash'
+[0.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/car_nav2/package.zsh'
+[0.757s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2/share/colcon-core/packages/car_nav2)
+[0.762s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openslam_gmapping)
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping' for CMake module files
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping' for CMake config files
+[0.763s] Level 1:colcon.colcon_core.shell:create_environment_hook('openslam_gmapping', 'cmake_prefix_path')
+[0.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.ps1'
+[0.763s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.dsv'
+[0.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.sh'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/lib'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/bin'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/lib/pkgconfig/openslam_gmapping.pc'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/lib/python3.10/site-packages'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/bin'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/package.ps1'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/package.dsv'
+[0.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/package.sh'
+[0.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/package.bash'
+[0.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/openslam_gmapping/package.zsh'
+[0.767s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping/share/colcon-core/packages/openslam_gmapping)
+[0.767s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/slam_gmapping/slam_gmapping' with build type 'ament_cmake'
+[0.767s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/slam_gmapping/slam_gmapping'
+[0.768s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.768s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.772s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[0.772s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup' for CMake module files
+[0.773s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup' for CMake config files
+[0.773s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[0.773s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.ps1'
+[0.774s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[0.774s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[0.774s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/lib'
+[0.774s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/bin'
+[0.774s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[0.775s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/lib/python3.10/site-packages'
+[0.775s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/bin'
+[0.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.ps1'
+[0.776s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.dsv'
+[0.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.sh'
+[0.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.bash'
+[0.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/robot_bringup/package.zsh'
+[0.777s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[0.780s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/slam_gmapping -- -j16 -l16
+[0.838s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --build /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/slam_gmapping -- -j16 -l16
+[0.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/slam_gmapping
+[0.869s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_gmapping)
+[0.869s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping' for CMake module files
+[0.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/openslam_gmapping:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_bringup:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/car_nav2:/home/mr-cheng/Bag/fastdds/install/fastrtps:/home/mr-cheng/Bag/fastdds/install/foonathan_memory_vendor:/home/mr-cheng/Bag/fastdds/install/fastcdr:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description:/opt/ros/humble /usr/bin/cmake --install /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/slam_gmapping
+[0.870s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping' for CMake config files
+[0.870s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_gmapping', 'cmake_prefix_path')
+[0.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.ps1'
+[0.871s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.dsv'
+[0.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.sh'
+[0.871s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/lib'
+[0.872s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/bin'
+[0.872s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/lib/pkgconfig/slam_gmapping.pc'
+[0.872s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/lib/python3.10/site-packages'
+[0.872s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/bin'
+[0.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/package.ps1'
+[0.873s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/package.dsv'
+[0.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/package.sh'
+[0.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/package.bash'
+[0.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/package.zsh'
+[0.874s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/colcon-core/packages/slam_gmapping)
+[0.895s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_gmapping)
+[0.895s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping' for CMake module files
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping' for CMake config files
+[0.896s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_gmapping', 'cmake_prefix_path')
+[0.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.ps1'
+[0.896s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.dsv'
+[0.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.sh'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/lib'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/bin'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/lib/pkgconfig/slam_gmapping.pc'
+[0.898s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/lib/python3.10/site-packages'
+[0.898s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/bin'
+[0.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/package.ps1'
+[0.898s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/package.dsv'
+[0.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/package.sh'
+[0.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/package.bash'
+[0.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/slam_gmapping/package.zsh'
+[0.900s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/slam_gmapping/share/colcon-core/packages/slam_gmapping)
+[1.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_description': PYTHONPATH=/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/prefix_override:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/build install --record /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/install.log --single-version-externally-managed install_data
+[1.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_launch': PYTHONPATH=/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/prefix_override:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_launch build --build-base /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/build install --record /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/install.log --single-version-externally-managed install_data
+[1.800s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description' for CMake module files
+[1.800s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description' for CMake config files
+[1.800s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_description' returned '0': PYTHONPATH=/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/prefix_override:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/build install --record /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_description/install.log --single-version-externally-managed install_data
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/lib'
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/bin'
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/lib/pkgconfig/robot_description.pc'
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/lib/python3.10/site-packages'
+[1.801s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'pythonpath')
+[1.801s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/hook/pythonpath.ps1'
+[1.802s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/hook/pythonpath.dsv'
+[1.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/hook/pythonpath.sh'
+[1.803s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/bin'
+[1.803s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[1.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/package.ps1'
+[1.803s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/package.dsv'
+[1.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/package.sh'
+[1.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/package.bash'
+[1.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/robot_description/package.zsh'
+[1.805s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_description/share/colcon-core/packages/robot_description)
+[1.827s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch' for CMake module files
+[1.828s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr-cheng/Desktop/Car/Car_Sim2Real/src/robot_launch' returned '0': PYTHONPATH=/home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/prefix_override:/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_launch build --build-base /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/build install --record /home/mr-cheng/Desktop/Car/Car_Sim2Real/build/robot_launch/install.log --single-version-externally-managed install_data
+[1.828s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch' for CMake config files
+[1.828s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/lib'
+[1.828s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/bin'
+[1.828s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/lib/pkgconfig/robot_launch.pc'
+[1.829s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/lib/python3.10/site-packages'
+[1.829s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_launch', 'pythonpath')
+[1.829s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/hook/pythonpath.ps1'
+[1.829s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/hook/pythonpath.dsv'
+[1.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/hook/pythonpath.sh'
+[1.830s] Level 1:colcon.colcon_core.environment:checking '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/bin'
+[1.830s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_launch)
+[1.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/package.ps1'
+[1.831s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/package.dsv'
+[1.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/package.sh'
+[1.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/package.bash'
+[1.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/robot_launch/package.zsh'
+[1.832s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/robot_launch/share/colcon-core/packages/robot_launch)
+[1.832s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.833s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.833s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.833s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.837s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.837s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.838s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.861s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.862s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/local_setup.ps1'
+[1.864s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/_local_setup_util_ps1.py'
+[1.866s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/setup.ps1'
+[1.867s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/local_setup.sh'
+[1.867s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/_local_setup_util_sh.py'
+[1.868s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/setup.sh'
+[1.869s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/local_setup.bash'
+[1.869s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/setup.bash'
+[1.870s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/local_setup.zsh'
+[1.871s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mr-cheng/Desktop/Car/Car_Sim2Real/install/setup.zsh'
