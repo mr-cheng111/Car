@@ -1,7 +1,5 @@
 .pio
 .vscode
-test
-lib
 extra_packages/build
 extra_packages/install
 extra_packages/log
