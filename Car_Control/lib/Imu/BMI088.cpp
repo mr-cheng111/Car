@@ -610,7 +610,6 @@ int Bmi088Accel::begin()
     pinMode(_csPin,OUTPUT);
     digitalWrite(_csPin,HIGH);
     // begin SPI communication
-    _spi->begin(40,42,41);
   } else {
     /* starting the I2C bus */
     _i2c->begin();
@@ -1532,6 +1531,16 @@ Bmi088::Bmi088(SPIClass &bus,uint8_t accel_cs,uint8_t gyro_cs)
 {
   accel = new Bmi088Accel(bus,accel_cs);
   gyro = new Bmi088Gyro(bus,gyro_cs);
+
+}
+
+/* BMI088 object, input the SPI bus, SPI Pins and chip select pin */
+Bmi088::Bmi088(SPIClass &bus,uint8_t MISO_Pin, uint8_t MOSI_Pin, uint8_t SCK_Pin, uint8_t accel_cs,uint8_t gyro_cs)
+{
+  bus.begin(SCK_Pin,MISO_Pin,MOSI_Pin);
+  accel = new Bmi088Accel(bus,accel_cs);
+  gyro = new Bmi088Gyro(bus,gyro_cs);
+
 }
 
 int Bmi088::begin()

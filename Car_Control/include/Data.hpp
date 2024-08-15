@@ -70,8 +70,8 @@ typedef struct
 
 typedef struct 
 {
-    String Wifi_SSID = "Xiaomi_WIFI";
-    String Pass_Word = "12345678910";
+    String Wifi_SSID = "Xiaomi_13";
+    String Pass_Word = "123456789";
     String Host_Ip = "192.168.31.197";
     uint16_t Port = 9999;
     

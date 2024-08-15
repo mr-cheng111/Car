@@ -376,6 +376,7 @@ class Bmi088 {
     };
     Bmi088(TwoWire &bus,uint8_t accel_addr,uint8_t gyro_addr);
     Bmi088(SPIClass &bus,uint8_t accel_cs,uint8_t gyro_cs);
+    Bmi088(SPIClass &bus,uint8_t MISO_Pin, uint8_t MOSI_Pin, uint8_t SCK_Pin, uint8_t accel_cs,uint8_t gyro_cs);
     int begin();
     bool setOdr(Odr odr);
     bool setRange(AccelRange accel_range,GyroRange gyro_range);

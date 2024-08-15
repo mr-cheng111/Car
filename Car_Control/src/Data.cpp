@@ -10,7 +10,7 @@ SemaphoreHandle_t xMutexImu_ = NULL; //创建信号量Handler
 TickType_t timeOut_ = 1; //用于获取信号量的Timeout 1 ticks
 
 SPIClass Imu_SPI(0);
-Bmi088 Imu_(Imu_SPI,39,38);
+Bmi088 Imu_(Imu_SPI,42,41,40,39,38);
 BMI088_Data_t Imu_Data_;
 
 LEDs LED_;
