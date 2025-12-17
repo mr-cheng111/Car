@@ -1,0 +1,54 @@
+slam_gmapping:
+  ros__parameters:
+    use_sim_time: true
+    # Map frame name
+    map_frame: map
+    base_frame: base_link
+    odom_frame: odom
+
+    # Initial position (map should start at odom origin)
+    initialX: 0.0
+    initialY: 0.0
+    initialTheta: 0.0
+
+    # Map resolution
+    delta: 0.05  # meters per pixel
+
+    # Particle filter parameters
+    particles: 30
+    maxrange: 25.0
+    maxurange: 25.0
+
+    # Likelihood field standard deviation
+    sigma: 0.05
+    kernelSize: 1
+
+    # Sampling parameters
+    linearUpdate: 0.2  # meters
+    angularUpdate: 0.1  # radians
+
+    # Scan matching parameters
+    minimumScore: 0.0
+    nScanMatches: 1
+
+    # Likelihood parameters
+    score_type: 1
+    llsamplerange: 0.01
+    llsamplestep: 0.01
+    lsigma: 0.075
+
+    # Occupancy grid parameters
+    occ_thresh: 0.25
+    srandom_time_seed: true
+
+    # Update params
+    xmin: -10.0
+    xmax: 10.0
+    ymin: -10.0
+    ymax: 10.0
+
+    # Time parameters
+    tmpscansize: 400
+
+    # Resampling threshold
+    resampleThreshold: 0.5
